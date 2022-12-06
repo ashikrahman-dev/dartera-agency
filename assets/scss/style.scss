@@ -61,13 +61,13 @@ html {
 body {
     padding: 0;
     margin: 0;
-    background-color: #003a75;
+    background-color: #ffffff;
     overflow-x: hidden;
     font-family: "Space Grotesk", sans-serif !important;
     transition: 0.8s ease-in-out;
-    &.body-bg {
-        background-color: #002448;
-    }
+    // &.body-bg {
+    //     background-color: #002448;
+    // }
 }
 
 :root {
@@ -101,6 +101,8 @@ body {
     --light_white: #b5d5f4;
     --blue-eyes: #acd5ff;
     --dark_6: #D8E2DF;
+
+    --cornflower-blue: #B5D5F4;
 }
 
 /* reset, root - END */
@@ -208,6 +210,10 @@ body {
     color: var(--dark_6);
 }
 
+.text-cornflower-blue {
+    color: var(--cornflower-blue);
+}
+
 // BG color
 
 .bg-gray_8 {
@@ -287,6 +293,10 @@ body {
 }
 .bg-blue-eyes {
     background-color: var(--blue-eyes);
+}
+
+.bg-cornflower-blue {
+    background-color: var(--cornflower-blue);
 }
 
 //font size
@@ -1045,7 +1055,7 @@ body {
     background-color: #edf1f4 !important;
     height: 52px;
     width: 52px;
-    border-radius: 50px;
+    border-radius: 50px !important;
 
     &:hover {
         background-color: #00f5eb !important;
@@ -2758,3 +2768,163 @@ background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox=
     }
 }
 /*-- Context Menue CSS ---*/
+
+
+/*-- Portfolio details SEA -/Start ---*/
+.objective {
+    padding: 40px;
+}
+
+.objective-list {
+    counter-reset: so-counter;
+    position: relative;
+    padding-left: 20px;
+}
+
+.objective-list-item {
+    padding: 5px 0;
+    &::before {
+        counter-increment: so-counter;
+        content: counter(so-counter) ". ";
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: var(--gray_2);
+        // width: 34px;
+        // height: 34px;
+        position: absolute;
+        left: 0;
+        margin-top: 0px;
+    }
+}
+/*-- Portfolio details SEA -/End ---*/
+
+
+
+/*-- Execution style -/Start ---*/
+.execution {
+    background: linear-gradient(180deg, rgba(232, 243, 255, 0.5) 0%, #E8F3FF 100%);
+    z-index: 8;
+
+}
+.execution-shape-1 {
+    left: 135px;
+    bottom: 73px;
+    z-index: -8;
+}
+.execution-shape-2 {
+    top: 80px;
+    right: 135px;
+    z-index: -9;
+}
+/*-- Execution style -/End ---*/
+
+
+
+/*-- Afzal bhai style -/End ---*/
+
+/*-- aws-features ---*/
+.aws-features {
+    background-image: url('../img/big-shape.svg'), url('../img/big-shape.svg');
+    background-repeat: no-repeat;
+    background-position: 7% 90%, 90% 7%;
+}
+/*-- aws-features end ---*/
+
+/*-- process-slider ---*/
+.process-slider{
+    .process-slider-active{
+        .owl-item{
+            opacity: 0.1 !important;
+            &.active{
+                opacity: 1 !important;
+            }
+        }
+        .owl-nav{
+            margin-top: 50px;
+            position: initial;
+            button{
+                margin: 0 10px;
+            }
+            .owl-prev, .owl-next{
+                position: initial;
+                background-color: transparent !important;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                line-height: 61px;
+                i{
+                    transition: all 0.3s linear;
+                }
+                &:hover{
+                    background-color: var(--cyan) !important;
+                    i{
+                        color: #374957;
+                    }
+                }
+            }
+        }
+    }
+    #process2{
+        .owl-item{
+            opacity: 1 !important;
+        }
+        .owl-nav{
+            button{
+                border: 1px solid rgba(0, 36, 72, 0.1);
+                i{
+                    color: #374957;
+                }
+                &:hover{
+                    i{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+/*-- process-slider end ---*/
+
+/*-- execution ---*/
+.abschluss{
+    background-image: url(../img/abs-shape.png), url(../img/abs-shape.png);
+    background-repeat: no-repeat;
+    background-position: 7% 70%, 93% 20%;
+    .imageSlider{
+        .carousel-item{
+            max-height: 330px;
+        }
+        .carousel-indicators{
+            bottom: -50px;
+            button{
+                width: 8px;
+                height: 8px;
+                margin: 0 8px;
+                background-color: #D2DBE2;
+                border-radius: 50%;
+                &.active{
+                    background-color: var(--flourescent_blue);
+                }
+            }
+        }
+    }
+}
+
+
+.user-flow {
+    min-height: 710px;
+}
+.user-flow-image {
+    margin-top: -362px;
+}
+.user-flow-img {
+    background: #FFFFFF;
+    box-shadow: 15px 30px 60px rgba(0, 36, 72, 0.1);
+}
+/*-- execution end ---*/
+
+/*-- Afzal bhai style -/End ---*/
+
+
+
+
+
