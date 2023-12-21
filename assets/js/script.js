@@ -18,6 +18,10 @@
 $(window).on('load', function () {
 
     // code should be execute here
+    // $(function () {
+    //     $("#header").load("header.html");
+    //     $("#footer").load("footer.html");
+    // });
 
 });
 
@@ -66,7 +70,6 @@ $(document).ready(function () {
         if ($("#testimonial-slider").length) {
             $("#testimonial-slider").owlCarousel({
                 loop: true,
-                center: true,
                 items: 3,
                 margin: 30,
                 autoplay: true,
@@ -97,7 +100,6 @@ $(document).ready(function () {
         if ($("#projects-slider").length) {
             $("#projects-slider").owlCarousel({
                 loop: true,
-                center: true,
                 items: 5,
                 margin: 30,
                 autoplay: true,
@@ -128,7 +130,6 @@ $(document).ready(function () {
         if ($("#webDesign-portfolio-slider").length) {
             $("#webDesign-portfolio-slider").owlCarousel({
                 loop: true,
-                center: true,
                 items: 5,
                 margin: 30,
                 autoplay: true,
@@ -160,7 +161,6 @@ $(document).ready(function () {
         if ($("#arbeit-slider").length) {
             $("#arbeit-slider").owlCarousel({
                 loop: true,
-                center: true,
                 items: 3,
                 margin: 30,
                 autoplay: true,
@@ -197,7 +197,7 @@ $(document).ready(function () {
                 margin: 30,
                 autoplay: false,
                 nav: true,
-                autoplayTimeout: 2500,
+                autoplayTimeout: 3500,
                 animateOut: "fadeOut",
                 smartSpeed: 2500,
                 navText: ["<img src='assets/img/arrow-left.svg' class='img-fluid' />", "<img src='assets/img/arrow-right.svg' class='img-fluid' />"],
@@ -207,7 +207,7 @@ $(document).ready(function () {
                     0: {
                         items: 1,
                     },
-                    575: {
+                    767: {
                         items: 2,
                     },
                     1200: {
@@ -219,6 +219,8 @@ $(document).ready(function () {
     });
 
 
+
+
     // process2
     $(function () {
         if ($("#process2").length) {
@@ -226,7 +228,7 @@ $(document).ready(function () {
                 loop: false,
                 items: 3,
                 margin: 30,
-                center:true,
+                center: true,
                 autoplay: true,
                 rewindNav: true,
                 nav: true,
@@ -251,6 +253,40 @@ $(document).ready(function () {
         }
     });
     // process2 -end
+
+    // process3
+    $(function () {
+        if ($("#process3").length) {
+            $("#process3").owlCarousel({
+                loop: true,
+                items: 3,
+                margin: 30,
+                center: true,
+                autoplay: true,
+                rewindNav: true,
+                nav: false,
+                autoplayTimeout: 3500,
+                animateOut: "fadeOut",
+                smartSpeed: 1500,
+                navText: ["<i class='ni ni-arrow-long-left text-cyan fs-4'></i>", "<i class='ni ni-arrow-long-right text-cyan fs-4'></i>"],
+                dots: false,
+                autoplayHoverPause: true,
+                stagePadding: 90,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    575: {
+                        items: 2,
+                    },
+                    1200: {
+                        items: 3,
+                    },
+                },
+            });
+        }
+    });
+    // process3 -end
 
 
 
@@ -288,6 +324,45 @@ $(document).ready(function () {
 
 
 
+    // "blog-carousel
+    $(function () {
+        if ($(".blog-slide-active").length) {
+            $(".blog-slide-active").owlCarousel({
+                loop: true,
+                items: 1,
+                margin: 0,
+                autoplay: true,
+                nav: true,
+                autoplayTimeout: 2500,
+                animateOut: "fadeOut",
+                smartSpeed: 2500,
+                navText: ["<i class='ni ni-arrow-long-left text-cyan fs-4'></i>", "<i class='ni ni-arrow-long-right text-cyan fs-4'></i>"],
+                dots: true,
+                autoplayHoverPause: true,
+            });
+        }
+    });
+
+
+
+
+    // searchBar
+    $('.search-btn').click(function (e) {
+        e.stopPropagation();
+        $('.searchBar').slideToggle(500);
+    });
+    $('.searchBar').click(function (e) {
+        e.stopPropagation();
+    });
+    $('body,html').click(function (e) {
+        $('.searchBar').slideUp(500);
+    });
+    // searchBar -end
+
+
+
+
+
 
 
     // wow js init
@@ -303,32 +378,8 @@ $(document).ready(function () {
 
 // Custom Js 
 
-// custom dropdown
 
-$(function () {
-    if ($('.navbar').length) {
-        console.log("i am ok");
-        $('.sidebar').on('click', function (e) {
-            e.preventDefault();
-            $(this).closest('body').find('.nav-dropdown').toggleClass('navbar-toggle')
-            $(this).closest('body').find('.navbar-nav').toggleClass('top-menu-toggle')
-            $(this).closest('body').find('.contactInfo ').toggleClass('top-menu-toggle')
-            $(this).closest('body').find('.language ').toggleClass('top-menu-toggle')
-            $(this).closest('body').find('.navbar').toggleClass('change-nav-bg')
-            $(this).closest('body').find('.banner ').toggleClass('banner-mt')
-            $(this).closest('body').find('.subpage-page-banner2').toggleClass('banner-mt')
-            $(this).closest('body').find('.subpage-page-banner3').toggleClass('banner-mt')
-            $(this).closest('body').find('.subpage-page-banner').toggleClass('banner-mt')
-            $(this).closest('body').toggleClass('body-bg')
-            $(this).closest('body').find('.sidebarToggle').toggleClass('d-none')
-            $(this).closest('body').find('.sidebarClose').toggleClass('d-none')
-
-        });
-    }
-})
-
-
-// custom accordion
+// custom accordion// custom accordion
 $(function () {
     if ($('.accordion-list').length) {
         $('.accordion-list').on('click', '.accordion-title', function (e) {
@@ -346,25 +397,6 @@ $(function () {
 
 
 
-
-
-// Cookie popup
-
-const cookieContainer = document.querySelector(".cookie-popup");
-const agreeBtn = document.getElementById("agree-btn");
-
-setTimeout(() => {
-    cookieContainer.classList.remove("hide");
-}, 3000);
-
-agreeBtn.addEventListener("click", () => {
-    cookieContainer.classList.add("hide");
-});
-
-
-
-
-
 //counter
 
 if ($('.price-counter').length) {
@@ -377,64 +409,26 @@ if ($('.price-counter').length) {
 
 
 
+// back to top
+if ($('#back-to-top').length) {
 
-//Scroll to top -/ Script
-//Get the button
-let mybutton = document.getElementById("btn-back-to-top");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-    scrollFunction();
-};
-
-function scrollFunction() {
-    if (
-        document.body.scrollTop > 500 ||
-        document.documentElement.scrollTop > 800
-    ) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
-    }
-}
-// When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click", backToTop);
-
-function backToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
-
-
-
-
-// Filterable portfolio 
-
-const filterNav = document.querySelector(".filter-nav"),
-    filterableItems = document.querySelectorAll(".filterable-item");
-
-filterNav.addEventListener("click", (event) => {
-
-    if (event.target.classList.contains("filter-nav-item")) {
-
-
-        // deactivate existing active 'filter-item'
-        filterNav.querySelector(".active").classList.remove("active");
-
-        // activate new 'filter-item'
-        event.target.classList.add("active");
-
-        const filterValue = event.target.getAttribute("data-filter");
-
-        filterableItems.forEach((item) => {
-            if (item.classList.contains(filterValue) || filterValue === "all") {
-                item.classList.remove("hide");
-                item.classList.add("show");
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
             } else {
-                item.classList.remove("show");
-                item.classList.add("hide");
+                $('#back-to-top').removeClass('show');
             }
-        });
-    }
-});
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+}

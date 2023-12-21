@@ -56,7 +56,7 @@
 
 
     <!-- header -/Start -->
-    <header id="header">
+    <header id="header" class="position-absolute top-0 start-0 end-0 w-100">
         <!-- navbar -/Start -->
         <div class="header">
             <div class="container-fluid p-0">
@@ -66,14 +66,41 @@
                             <img src="assets/img/logo.svg" alt="logo" class="img-fluid">
                         </a>
 
-                        <div class="d-xxl-none d-flex align-items-center gap-4 contactInfo px-4">
-                            <a href="+41315520083" class=" text-decoration-none phone text-white fs-5">
+                        <div class="d-xxl-none d-flex align-items-center ms-auto gap-sm-3 gap-2 contactInfo px-0 me-2">
+                            <div class="nav-item dropdown language pe-2">
+                                <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-0 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <!-- Deutsch -->
+                                    <img src="assets/img/language.png" class="img-fluid language-icon" alt="">
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end fade-down all-language ">
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            English
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            Hindi
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            Bangla
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="tel:+41315520083" class=" text-decoration-none phone text-white fs-5">
                                 <span><img src="assets/img/call.svg" class="img-fluid" alt="call"></span>
-                                +41 31 552 00 83
                             </a>
-                            <button type="button" class="nav-btn px-4 border-0 fs-6 fw-semi-bold text-gray_1">
-                                Termin vereinbaren
-                            </button>
+                            <a href="#" class=" text-decoration-none phone text-white fs-5">
+                                <span><img src="assets/img/appointment.png" class="img-fluid appointment"
+                                        alt="appointment"></span>
+                            </a>
+                            <!-- <button type="button" class="nav-btn px-4 border-0 fs-6 fw-semi-bold text-gray_1">
+                                    Termin vereinbaren
+                                </button> -->
                         </div>
 
 
@@ -88,11 +115,11 @@
                         <div class="collapse navbar-collapse" id="nav-toggle">
                             <ul class="menu navbar-nav mx-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active py-4 px-0 mx-3 active fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link active py-xxl-4 py-2 px-0 mx-3 active fs-14 fw-bold text-uppercase"
                                         aria-current="page" href="index.html">Startseite</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
                                         href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Leistungen
                                     </a>
@@ -103,12 +130,12 @@
                                         </div>
                                         <div class="row gx-2">
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="web-design.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo1.png"
                                                             class="img-fluid dropdown-logo d-flex align-items-center justify-content-center"
-                                                            alt="sidebarlogo">
+                                                            alt="sidebar logo">
                                                         <div>
                                                             <h5 class="fs-6 fw-bold text-indigo_dye">Webdesign</h5>
                                                             <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">
@@ -117,8 +144,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -127,7 +155,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="maintenance.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo6.png"
@@ -141,8 +169,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -151,7 +180,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="seo.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo2.png"
@@ -165,8 +194,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -175,7 +205,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="sea.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo7.png"
@@ -189,8 +219,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -199,7 +230,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="content.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo3.png"
@@ -213,8 +244,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -223,7 +255,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="branding.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo8.png"
@@ -237,8 +269,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -247,7 +280,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="animations.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo4.png"
@@ -261,8 +294,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -274,41 +308,44 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
                                         href="referenzen.html">Referenzen</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
-                                        href="#">Über
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                        href="uber.html">Über
                                         uns</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
-                                        href="#">Kontakt</a>
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                        href="contact.html">Kontakt</a>
                                 </li>
                             </ul>
 
 
                             <div class="nav-right d-flex align-items-center">
-                                <div class="nav-item dropdown language pe-2">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                <div class="nav-item dropdown language pe-2 d-xxl-block d-none">
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
                                         href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        German
+                                        Deutsch
                                     </a>
-                                    <ul class="dropdown-menu dropdown-menu-end fade-down">
+                                    <ul class="dropdown-menu dropdown-menu-end fade-down all-language ">
                                         <li>
-                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
-                                                Action
+                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
+                                                href="#">
+                                                English
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
-                                                Another action
+                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
+                                                href="#">
+                                                Hindi
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
-                                                Something else here
+                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
+                                                href="#">
+                                                Bangla
                                             </a>
                                         </li>
                                     </ul>
@@ -322,33 +359,7 @@
                                         Termin vereinbaren
                                     </button>
                                 </div>
-                                <div class="sidebar">
-                                    <!-- <img src="assets/img/humbarger.svg" class="img-fluid" alt="sidebar"> -->
 
-                                    <!-- <svg width="24" height="18" viewBox="0 0 24 18" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="12" width="12" height="2" fill="#00BAEB" />
-                                                <rect x="12" y="16" width="12" height="2" fill="#00BAEB" />
-                                                <rect x="0" y="8" width="24" height="2" fill="#00BAEB" />
-                                            </svg> -->
-
-                                    <svg class="sidebarToggle d-block" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="12" y="3" width="24" height="2" fill="#00BAEB" />
-                                        <rect x="12" y="19" width="24" height="2" fill="#00BAEB" />
-                                        <rect x="0" y="11" width="24" height="2" fill="#00BAEB" />
-                                    </svg>
-                                    
-                                    
-                                    
-                                    <svg class="sidebarClose d-none" width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="0.804688" y="17.7783" width="24" height="2" transform="rotate(-45 0.804688 17.7783)" fill="#00BAEB" />
-                                        <rect x="2.21875" y="0.807617" width="24" height="2" transform="rotate(45 2.21875 0.807617)" fill="#00BAEB" />
-                                    </svg>
-
-
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -358,7 +369,6 @@
         <!-- navbar -/End -->
     </header>
     <!--/ header -/End -->
-
 
 
     <!-- Banner -->
@@ -373,8 +383,8 @@
         </div>
 
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
+            <div class="row align-items-center banner-wrapper">
+                <div class="col-lg-6">
                     <div class="banner-left border-1 pb-3 mb-30 pb-4">
                         <div class="mb-3 d-flex align-items-center gap-3">
                             <a href="#"
@@ -402,7 +412,7 @@
                             Dartera Online Marketing Agency
                         </h1>
 
-                        <div class="portfolio-auth-info d-flex flex-wrap align-items-center gap-5 pb-1">
+                        <div class="portfolio-auth-info d-flex flex-wrap align-items-center gap-4 gap-xl-5 pb-1">
                             <div class="portfolio-auth-info-item d-flex align-items-center gap-2">
                                 <div class="info-icon radius-16 d-flex align-items-center justify-content-center">
                                     <img src="assets/img/single-author.svg" alt="User" class="img-fluid">
@@ -414,10 +424,10 @@
                                     <p class="mb-0 fs-18 fw-semi-bold text-blue-eyes">
                                         Daniel Eskandar
                                     </p>
-    
+
                                 </div>
                             </div>
-    
+
                             <div class="portfolio-auth-info-item d-flex align-items-center gap-2">
                                 <div class="info-icon radius-16 d-flex align-items-center justify-content-center">
                                     <img src="assets/img/glove-icon.svg" alt="User" class="img-fluid">
@@ -429,13 +439,13 @@
                                     <a class="mb-0 fs-18 fw-semi-bold text-blue-eyes d-block text-hover transition-02">
                                         https://dartera.ch/
                                     </a>
-    
+
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="">
+                    <div class="mb-5 mb-lg-0">
                         <h5 class="fs-4 text-cyan fw-bold">
                             Services
                         </h5>
@@ -479,12 +489,13 @@
                         </ul>
                     </div>
 
-                    
+
 
                 </div>
-                <div class="col-md-6">
-                    <div class="">
-                        <img src="assets/img/portfoliodetails_sea-img.jpg" alt="Banner image" class="img-fluid radius-12">
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <img src="assets/img/portfoliodetails_sea-img.jpg" alt="Banner image"
+                            class="img-fluid radius-12">
                     </div>
                 </div>
             </div>
@@ -494,30 +505,33 @@
     <!--/ Banner -->
 
 
-
     <!-- About the Project / Start -->
     <section class="section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="project-about">
-                        <h6 class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block mb-2">
+                    <div class="project-about pb-5 pb-lg-0">
+                        <h6
+                            class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block mb-2">
                             Dartera
                         </h6>
                         <h2 class="fs-48 fw-bold text-gray_1 mb-0 pb-3">
                             About the Project
                         </h2>
                         <p class="fs-5 text-gray_1 mb-0 pb-3">
-                            Dartera ist eine Agentur für Online-Marketing und Webdesign aus Bern: Strategie, Design und Entwicklung über alle Plattformen hinweg
+                            Dartera ist eine Agentur für Online-Marketing und Webdesign aus Bern: Strategie, Design und
+                            Entwicklung über alle Plattformen hinweg
                         </p>
                         <p class="fs-18 text-gray_2 mb-0 pb-3">
-                            Sit feugiat urna platea vitae amet eleifend in malesuada egestas. Leo pellentesque amet estas turpis convallis.
+                            Sit feugiat urna platea vitae amet eleifend in malesuada egestas. Leo pellentesque amet
+                            estas turpis convallis.
                         </p>
                         <p class="fs-18 text-gray_2 mb-0">
                             Mattis gravida lectus tellus mi dictum vulputate aliquam, Metus elementum.
                         </p>
                     </div>
                 </div>
+
                 <div class="col-lg-6">
                     <div class="objective bg-thristle_purple_light radius-8">
                         <h4 class="fs-30 text-gray_1 fw-bold pb-2">
@@ -525,12 +539,18 @@
                         </h4>
 
                         <ul class="objective-list list-unstyled">
-                            <li class="objective-list-item mb-0 fs-18 text-gray_2">Ensure accessible information architecture for easy content discovery by several unique audiences.</li>
-                            <li class="objective-list-item mb-0 fs-18 text-gray_2">Align visual elements and storytelling with refreshed branding while improving user navigation.</li>
-                            <li class="objective-list-item mb-0 fs-18 text-gray_2">Mauris fermentum elit ut odio malesuada tempus.</li>
-                            <li class="objective-list-item mb-0 fs-18 text-gray_2">Build out a powerful farm tour locator functionality filtered by user location.</li>
-                            <li class="objective-list-item mb-0 fs-18 text-gray_2">Vivamus fringilla velit sit amet lectus eleifend, sit amet venenatis justo hendrerit.</li>
-                            <li class="objective-list-item mb-0 fs-18 text-gray_2">Quisque faucibus felis ut turpis cursus pretium.</li>
+                            <li class="objective-list-item mb-0 fs-18 text-gray_2">Ensure accessible information
+                                architecture for easy content discovery by several unique audiences.</li>
+                            <li class="objective-list-item mb-0 fs-18 text-gray_2">Align visual elements and
+                                storytelling with refreshed branding while improving user navigation.</li>
+                            <li class="objective-list-item mb-0 fs-18 text-gray_2">Mauris fermentum elit ut odio
+                                malesuada tempus.</li>
+                            <li class="objective-list-item mb-0 fs-18 text-gray_2">Build out a powerful farm tour
+                                locator functionality filtered by user location.</li>
+                            <li class="objective-list-item mb-0 fs-18 text-gray_2">Vivamus fringilla velit sit amet
+                                lectus eleifend, sit amet venenatis justo hendrerit.</li>
+                            <li class="objective-list-item mb-0 fs-18 text-gray_2">Quisque faucibus felis ut turpis
+                                cursus pretium.</li>
                         </ul>
                     </div>
                 </div>
@@ -551,16 +571,18 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <div class="">
-                        <img src="assets/img/execution-image.png" alt="Execution">
+                    <div class="text-center">
+                        <img src="assets/img/execution-image.png" alt="Execution" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <h3 class="fs-36 fw-bold text-gray_1 mb-0 pb-3">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h3 class="fs-36 fw-bold text-gray_1 mb-0 pb-3 mt-5 mt-lg-0">
                         The Execution
                     </h3>
                     <p class="fs-18 text-gray_2 mb-0 pb-3">
-                        Faucibus adipiscing suscipit dolor duis vitae felis. Imperdiet ac semper dignissim nulla lacus. Nisl enim nibh molestie turpis massa rhoncus in. Ante viverra eu sed aliquet non eget lacus. Id pharetra id scelerisque in a nunc facilisis vivamus elit.
+                        Faucibus adipiscing suscipit dolor duis vitae felis. Imperdiet ac semper dignissim nulla lacus.
+                        Nisl enim nibh molestie turpis massa rhoncus in. Ante viverra eu sed aliquet non eget lacus. Id
+                        pharetra id scelerisque in a nunc facilisis vivamus elit.
                     </p>
                     <p class="fs-18 text-gray_2 mb-0">
                         Diam pellentesque orci feugiat accumsan euismod orci ut malesuada. Semper dictumst volutpat.
@@ -575,7 +597,7 @@
     <!-- Results / Start -->
     <section class="results section-padding bg-indigo_dye">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center flex-lg-row flex-column flex-column-reverse">
                 <div class="col-lg-6">
                     <div class="banner-left pb-4">
                         <h1 class="fs-36 fw-bold text-white">
@@ -587,9 +609,10 @@
 
                         <div class="portfolio-auth-info pb-1">
                             <div class="row gy-4">
-                                <div class="col-lg-5">
+                                <div class="col-sm-5 col-lg-5">
                                     <div class="portfolio-auth-info-item d-flex align-items-center gap-2">
-                                        <div class="info-icon radius-16 d-flex align-items-center justify-content-center">
+                                        <div
+                                            class="info-icon radius-16 d-flex align-items-center justify-content-center">
                                             <img src="assets/img/website-traffic-icon.svg" alt="User" class="img-fluid">
                                         </div>
                                         <div class="info-content ms-1">
@@ -599,13 +622,14 @@
                                             <p class="mb-0 fs-6 fw-semi-bold text-blue-eyes">
                                                 +80.9%
                                             </p>
-            
+
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-sm-6 col-lg-6">
                                     <div class="portfolio-auth-info-item d-flex align-items-center gap-2">
-                                        <div class="info-icon radius-16 d-flex align-items-center justify-content-center">
+                                        <div
+                                            class="info-icon radius-16 d-flex align-items-center justify-content-center">
                                             <img src="assets/img/users-icon.svg" alt="User" class="img-fluid">
                                         </div>
                                         <div class="info-content ms-1">
@@ -618,9 +642,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-5">
+                                <div class="col-sm-5 col-lg-5">
                                     <div class="portfolio-auth-info-item d-flex align-items-center gap-2">
-                                        <div class="info-icon radius-16 d-flex align-items-center justify-content-center">
+                                        <div
+                                            class="info-icon radius-16 d-flex align-items-center justify-content-center">
                                             <img src="assets/img/goal-icon.svg" alt="User" class="img-fluid">
                                         </div>
                                         <div class="info-content ms-1">
@@ -633,9 +658,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-sm-6 col-lg-6">
                                     <div class="portfolio-auth-info-item d-flex align-items-center gap-2">
-                                        <div class="info-icon radius-16 d-flex align-items-center justify-content-center">
+                                        <div
+                                            class="info-icon radius-16 d-flex align-items-center justify-content-center">
                                             <img src="assets/img/time-icon.svg" alt="User" class="img-fluid">
                                         </div>
                                         <div class="info-content ms-1">
@@ -653,16 +679,14 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="">
-                        <img src="assets/img/results-image.png" alt="Result">
+                    <div class="mb-5 mb-lg-0">
+                        <img src="assets/img/results-image.png" alt="Result" class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Results / End -->
-
-
 
 
     <!-- Portfolio section started  -->
@@ -911,18 +935,24 @@
                             Newsletter
                         </h4>
                         <p class="mb-0 text-dark_6">
-                            Abonnieren Sie unseren Newsletter, um die neuesten <br class="d-none d-lg-block"> Nachrichten und Updates zu erhalten.
+                            Abonnieren Sie unseren Newsletter, um die neuesten <br class="d-none d-lg-block">
+                            Nachrichten und Updates zu erhalten.
                         </p>
 
                         <div class="subscribe-box mt-3 position-relative">
-                            <input class="subscribe-field radius-12 w-100 text-white " type="email" name="subscribe-mail" id="" placeholder="Geben Sie hier Ihre E-Mail ein">
+                            <input class="subscribe-field radius-12 w-100 text-white transition-02" type="email"
+                                name="subscribe-mail" id="" placeholder="Geben Sie hier Ihre E-Mail ein">
                             <div class="subscribe-btn">
-                                <a href="#" class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2">
+                                <a href="#"
+                                    class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2">
                                     <span>Anmelden</span>
                                     <span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.842238 3.8902C0.646913 3.94601 0.469545 4.05186 0.327685 4.19726C0.185826 4.34267 0.0843913 4.52259 0.0334185 4.71923C-0.0175542 4.91588 -0.0162984 5.12242 0.0370618 5.31843C0.090422 5.51444 0.194037 5.69311 0.337654 5.83678L2.32799 7.82478V11.6666H6.1739L8.17765 13.6674C8.2852 13.7759 8.41313 13.8621 8.55408 13.9209C8.69504 13.9798 8.84624 14.0102 8.99899 14.0104C9.09938 14.0102 9.19935 13.9973 9.29649 13.9719C9.49305 13.9224 9.6731 13.822 9.81851 13.6808C9.96393 13.5396 10.0696 13.3626 10.1248 13.1675L13.9947 0.012207L0.842238 3.8902ZM1.16657 5.01195L11.0996 2.08362L3.49582 9.67511V7.34178L1.16657 5.01195ZM9.00657 12.8426L6.65749 10.4999H4.32415L11.9267 2.90379L9.00657 12.8426Z" fill="#002448"/>
-                                            </svg>                                            
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.842238 3.8902C0.646913 3.94601 0.469545 4.05186 0.327685 4.19726C0.185826 4.34267 0.0843913 4.52259 0.0334185 4.71923C-0.0175542 4.91588 -0.0162984 5.12242 0.0370618 5.31843C0.090422 5.51444 0.194037 5.69311 0.337654 5.83678L2.32799 7.82478V11.6666H6.1739L8.17765 13.6674C8.2852 13.7759 8.41313 13.8621 8.55408 13.9209C8.69504 13.9798 8.84624 14.0102 8.99899 14.0104C9.09938 14.0102 9.19935 13.9973 9.29649 13.9719C9.49305 13.9224 9.6731 13.822 9.81851 13.6808C9.96393 13.5396 10.0696 13.3626 10.1248 13.1675L13.9947 0.012207L0.842238 3.8902ZM1.16657 5.01195L11.0996 2.08362L3.49582 9.67511V7.34178L1.16657 5.01195ZM9.00657 12.8426L6.65749 10.4999H4.32415L11.9267 2.90379L9.00657 12.8426Z"
+                                                fill="#002448" />
+                                        </svg>
                                     </span>
                                 </a>
                             </div>
@@ -935,15 +965,15 @@
             <!-- Fooetr Main -/Start -->
             <div class="footer-main">
                 <div class="row">
-                    
-                    <div class="col-sm-6 col-lg-3">
+
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
-                            
+
                             <a href="index.html" class="site-logo mb-30 d-inline-block">
                                 <img src="assets/img/footer-logo.svg" alt="">
                             </a>
-                            
-                            <ul class="widget-list list-unstyled m-0 d-flex flex-wrap gap-4">
+
+                            <ul class="widget-list list-unstyled m-0 d-flex flex-wrap gap-lg-4 gap-3 ">
                                 <li class="widget-list-item pb-0">
                                     <a href="#" class="text-decoration-none text-white fs-6 d-flex align-items-center">
                                         <span class="pe-2 me-1 ">
@@ -978,7 +1008,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
                             <h6
                                 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
@@ -1014,7 +1044,7 @@
                                             </svg>
                                         </span>
                                         <span class="widget-list-item-hover position-relative">
-                                            hey@dartera.ch
+                                            mailto:hey@dartera.ch
                                         </span>
                                     </a>
                                 </li>
@@ -1022,7 +1052,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
                             <h6
                                 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
@@ -1038,7 +1068,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
                             <h6
                                 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
@@ -1053,21 +1083,21 @@
                                     </a>
                                 </li>
                                 <li class="widget-list-item">
-                                    <a href="#" class="text-decoration-none text-white fs-6 fw-medium">
+                                    <a href="impressum.html" class="text-decoration-none text-white fs-6 fw-medium">
                                         <span class="widget-list-item-hover footer-right-arrow position-relative">
                                             Impressum
                                         </span>
                                     </a>
                                 </li>
                                 <li class="widget-list-item">
-                                    <a href="#" class="text-decoration-none text-white fs-6 fw-medium">
+                                    <a href="privacy.html" class="text-decoration-none text-white fs-6 fw-medium">
                                         <span class="widget-list-item-hover footer-right-arrow position-relative">
-                                            Datenschutz
+                                            Privacy
                                         </span>
                                     </a>
                                 </li>
                                 <li class="widget-list-item pb-0">
-                                    <a href="#" class="text-decoration-none text-white fs-6 fw-medium">
+                                    <a href="agb.html" class="text-decoration-none text-white fs-6 fw-medium">
                                         <span class="widget-list-item-hover footer-right-arrow position-relative">
                                             AGB
                                         </span>
@@ -1084,17 +1114,18 @@
 
             <div class="footer-bottom">
                 <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <div class="col text-white fw-medium">
-                            © 2022 Dartera GmbH
+                    <div class="col-12 col-xl-5 text-xl-start text-center">
+                        <div class="text-white fw-medium">
+                            © 2024 Dartera GmbH
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="footer-button-wrapper d-flex align-items-center justify-content-end gap-4">
+                    <div class="col-12 col-xl-7 text-xl-end text-center">
+                        <div
+                            class="footer-button-wrapper d-flex flex-wrap align-items-center justify-content-xl-end justify-content-center mt-xl-0 mt-4 gap-4">
 
                             <div class="footer-common-btn">
-                                <a href="#"
-                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
+                                <a href="blog.html"
+                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between transition-02">
                                     <span class="fw-bold ">
                                         Blog
                                     </span>
@@ -1110,27 +1141,10 @@
                             </div>
 
                             <div class="footer-common-btn">
-                                <a href="#"
-                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
+                                <a href="ressourcen.html"
+                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between transition-02">
                                     <span class="fw-bold ">
                                         Ressourcen
-                                    </span>
-                                    <span>
-                                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.22446 0.214993L3.28476 0.214992L3.28476 2.17137L7.84088 2.17137L0.922998 9.08926L2.30658 10.4728L9.22446 3.55495L9.22446 8.11107L11.1808 8.11107L11.1808 2.17137C11.1808 1.65253 10.9746 1.15496 10.6077 0.78809C10.2409 0.421214 9.7433 0.215072 9.22446 0.214993V0.214993Z"
-                                                fill="#385470" />
-                                        </svg>
-                                    </span>
-                                </a>
-                            </div>
-
-                            <div class="footer-common-btn">
-                                <a href="#"
-                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
-                                    <span class="fw-bold ">
-                                        Preis-Rechner
                                     </span>
                                     <span>
                                         <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
@@ -1148,7 +1162,7 @@
                 </div>
             </div>
         </div>
-        <button type="button" class="border-0 rounded-pill" id="btn-back-to-top">
+        <button type="button" class="border-0 rounded-pill" id="back-to-top">
             <img src="assets/img/back-to-top-icon.svg" alt="Back To Top" class="img-fluid">
         </button>
     </footer>
@@ -1350,7 +1364,8 @@
                         class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-flex align-items-center gap-2 justify-content-center">
                         <span>Senden</span>
                         <span>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
                                     fill="#002448" />
@@ -1478,7 +1493,8 @@
                         class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-flex align-items-center gap-2 justify-content-center">
                         <span>Senden</span>
                         <span>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
                                     fill="#002448" />

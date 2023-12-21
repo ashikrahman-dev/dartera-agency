@@ -44,6 +44,8 @@
     <!-- CDN Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- Main CSS -->
@@ -55,8 +57,9 @@
 <body>
     <!-- Main Coding Start Here -->
 
+
     <!-- header -/Start -->
-    <header id="header">
+    <header id="header" class="position-absolute top-0 start-0 end-0 w-100">
         <!-- navbar -/Start -->
         <div class="header">
             <div class="container-fluid p-0">
@@ -66,14 +69,41 @@
                             <img src="assets/img/logo.svg" alt="logo" class="img-fluid">
                         </a>
 
-                        <div class="d-xxl-none d-flex align-items-center gap-4 contactInfo px-4">
-                            <a href="+41315520083" class=" text-decoration-none phone text-white fs-5">
+                        <div class="d-xxl-none d-flex align-items-center ms-auto gap-sm-3 gap-2 contactInfo px-0 me-2">
+                            <div class="nav-item dropdown language pe-2">
+                                <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-0 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <!-- Deutsch -->
+                                    <img src="assets/img/language.png" class="img-fluid language-icon" alt="">
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end fade-down all-language ">
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            English
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            Hindi
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            Bangla
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="tel:+41315520083" class=" text-decoration-none phone text-white fs-5">
                                 <span><img src="assets/img/call.svg" class="img-fluid" alt="call"></span>
-                                +41 31 552 00 83
                             </a>
-                            <button type="button" class="nav-btn px-4 border-0 fs-6 fw-semi-bold text-gray_1">
-                                Termin vereinbaren
-                            </button>
+                            <a href="#" class=" text-decoration-none phone text-white fs-5">
+                                <span><img src="assets/img/appointment.png" class="img-fluid appointment"
+                                        alt="appointment"></span>
+                            </a>
+                            <!-- <button type="button" class="nav-btn px-4 border-0 fs-6 fw-semi-bold text-gray_1">
+                                    Termin vereinbaren
+                                </button> -->
                         </div>
 
 
@@ -88,11 +118,11 @@
                         <div class="collapse navbar-collapse" id="nav-toggle">
                             <ul class="menu navbar-nav mx-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active py-4 px-0 mx-3 active fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link active py-xxl-4 py-2 px-0 mx-3 active fs-14 fw-bold text-uppercase"
                                         aria-current="page" href="index.html">Startseite</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
                                         href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Leistungen
                                     </a>
@@ -103,12 +133,12 @@
                                         </div>
                                         <div class="row gx-2">
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="web-design.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo1.png"
                                                             class="img-fluid dropdown-logo d-flex align-items-center justify-content-center"
-                                                            alt="sidebarlogo">
+                                                            alt="sidebar logo">
                                                         <div>
                                                             <h5 class="fs-6 fw-bold text-indigo_dye">Webdesign</h5>
                                                             <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">
@@ -117,8 +147,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -127,7 +158,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="maintenance.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo6.png"
@@ -141,8 +172,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -151,7 +183,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="seo.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo2.png"
@@ -165,8 +197,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -175,7 +208,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="sea.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo7.png"
@@ -189,8 +222,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -199,7 +233,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="content.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo3.png"
@@ -213,8 +247,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -223,7 +258,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="branding.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo8.png"
@@ -237,8 +272,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -247,7 +283,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="animations.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo4.png"
@@ -261,8 +297,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -274,41 +311,44 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
                                         href="referenzen.html">Referenzen</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
-                                        href="#">Über
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                        href="uber.html">Über
                                         uns</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
-                                        href="#">Kontakt</a>
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                        href="contact.html">Kontakt</a>
                                 </li>
                             </ul>
 
 
                             <div class="nav-right d-flex align-items-center">
-                                <div class="nav-item dropdown language pe-2">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                <div class="nav-item dropdown language pe-2 d-xxl-block d-none">
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
                                         href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        German
+                                        Deutsch
                                     </a>
-                                    <ul class="dropdown-menu dropdown-menu-end fade-down">
+                                    <ul class="dropdown-menu dropdown-menu-end fade-down all-language ">
                                         <li>
-                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
-                                                Action
+                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
+                                                href="#">
+                                                English
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
-                                                Another action
+                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
+                                                href="#">
+                                                Hindi
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
-                                                Something else here
+                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
+                                                href="#">
+                                                Bangla
                                             </a>
                                         </li>
                                     </ul>
@@ -322,31 +362,7 @@
                                         Termin vereinbaren
                                     </button>
                                 </div>
-                                <div class="sidebar">
-                                    <!-- <img src="assets/img/humbarger.svg" class="img-fluid" alt="sidebar"> -->
 
-                                    <!-- <svg width="24" height="18" viewBox="0 0 24 18" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="12" width="12" height="2" fill="#00BAEB" />
-                                                <rect x="12" y="16" width="12" height="2" fill="#00BAEB" />
-                                                <rect x="0" y="8" width="24" height="2" fill="#00BAEB" />
-                                            </svg> -->
-
-                                            <svg class="sidebarToggle d-block" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="12" y="3" width="24" height="2" fill="#00BAEB" />
-                                                <rect x="12" y="19" width="24" height="2" fill="#00BAEB" />
-                                                <rect x="0" y="11" width="24" height="2" fill="#00BAEB" />
-                                            </svg>
-                                            
-                                            
-                                            
-                                            <svg class="sidebarClose d-none" width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="0.804688" y="17.7783" width="24" height="2" transform="rotate(-45 0.804688 17.7783)" fill="#00BAEB" />
-                                                <rect x="2.21875" y="0.807617" width="24" height="2" transform="rotate(45 2.21875 0.807617)" fill="#00BAEB" />
-                                            </svg>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -358,233 +374,6 @@
     <!--/ header -/End -->
 
 
-    <!-- Dropdown -/start -->
-    <div class="nav-dropdown py-5">
-        <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="footer-common-btn mb-4">
-                    <a href="#"
-                        class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
-                        <span class="fw-bold ">
-                            Blog
-                        </span>
-                        <span>
-                            <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9.22446 0.214993L3.28476 0.214992L3.28476 2.17137L7.84088 2.17137L0.922998 9.08926L2.30658 10.4728L9.22446 3.55495L9.22446 8.11107L11.1808 8.11107L11.1808 2.17137C11.1808 1.65253 10.9746 1.15496 10.6077 0.78809C10.2409 0.421214 9.7433 0.215072 9.22446 0.214993V0.214993Z"
-                                    fill="#385470" />
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-                <div>
-                    <a class="sidebar-drop-item transition-02 fs-5 mb-3 d-block fw-bold text-decoration-none">
-                        <svg class="me-2" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.414 4.58597L8.121 0.292969L6.707 1.70697L10 4.99997H0V6.99997H10L6.707 10.293L8.121 11.707L12.414 7.41397C12.7889 7.03891 12.9996 6.5303 12.9996 5.99997C12.9996 5.46964 12.7889 4.96102 12.414 4.58597Z"
-                                fill="#5C83AA" />
-                        </svg>
-                        <span>Startseite</span>
-
-                    </a>
-                </div>
-                <div>
-                    <a class="sidebar-drop-item transition-02 fs-5 mb-3 d-block fw-bold text-decoration-none">
-                        <svg class="me-2" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.414 4.58597L8.121 0.292969L6.707 1.70697L10 4.99997H0V6.99997H10L6.707 10.293L8.121 11.707L12.414 7.41397C12.7889 7.03891 12.9996 6.5303 12.9996 5.99997C12.9996 5.46964 12.7889 4.96102 12.414 4.58597Z"
-                                fill="#5C83AA" />
-                        </svg>
-                        <span>Referenzen</span>
-
-                    </a>
-                </div>
-                <div>
-                    <a class="sidebar-drop-item transition-02 fs-5 mb-3 d-block fw-bold text-decoration-none">
-                        <svg class="me-2" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.414 4.58597L8.121 0.292969L6.707 1.70697L10 4.99997H0V6.99997H10L6.707 10.293L8.121 11.707L12.414 7.41397C12.7889 7.03891 12.9996 6.5303 12.9996 5.99997C12.9996 5.46964 12.7889 4.96102 12.414 4.58597Z"
-                                fill="#5C83AA" />
-                        </svg>
-                        <span>Über uns</span>
-
-                    </a>
-                </div>
-                <div>
-                    <a class="sidebar-drop-item transition-02 fs-5 mb-3 d-block fw-bold text-decoration-none">
-                        <svg class="me-2" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.414 4.58597L8.121 0.292969L6.707 1.70697L10 4.99997H0V6.99997H10L6.707 10.293L8.121 11.707L12.414 7.41397C12.7889 7.03891 12.9996 6.5303 12.9996 5.99997C12.9996 5.46964 12.7889 4.96102 12.414 4.58597Z"
-                                fill="#5C83AA" />
-                        </svg>
-                        <span>Kontakt</span>
-                    </a>
-                </div>
-
-            </div>
-
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="footer-common-btn mb-4">
-                    <a href="#"
-                        class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
-                        <span class="fw-bold ">
-                            Ressourcen
-                        </span>
-                        <span>
-                            <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9.22446 0.214993L3.28476 0.214992L3.28476 2.17137L7.84088 2.17137L0.922998 9.08926L2.30658 10.4728L9.22446 3.55495L9.22446 8.11107L11.1808 8.11107L11.1808 2.17137C11.1808 1.65253 10.9746 1.15496 10.6077 0.78809C10.2409 0.421214 9.7433 0.215072 9.22446 0.214993V0.214993Z"
-                                    fill="#385470" />
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-                <div>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown1.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Webdesign</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown2.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Webdesign</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown3.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Content</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between mb-3">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown4.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Animations</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="footer-common-btn mb-4">
-                    <a href="#"
-                        class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
-                        <span class="fw-bold ">
-                            Preis-Rechner
-                        </span>
-                        <span>
-                            <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9.22446 0.214993L3.28476 0.214992L3.28476 2.17137L7.84088 2.17137L0.922998 9.08926L2.30658 10.4728L9.22446 3.55495L9.22446 8.11107L11.1808 8.11107L11.1808 2.17137C11.1808 1.65253 10.9746 1.15496 10.6077 0.78809C10.2409 0.421214 9.7433 0.215072 9.22446 0.214993V0.214993Z"
-                                    fill="#385470" />
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-                <div>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown5.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Maintenance</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                    <a href=""
-                        class="text-decoration-none  nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown6.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">SEA</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown7.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Branding</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>
-                    <h3 class=" text-info-light fs-5 fw-bold">Weil gutes Marketing schon immer glücklich gemacht hat.
-                    </h3>
-                    <p class="text-info-light fs-14 pt-2">Buchen Sie jetzt einen kostenlosen Beratungstermin. Wir freuen
-                        uns auf das Gespräch.</p>
-                    <div class="common-btn pt-3 mt-3">
-                        <a href="#"
-                            class=" lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2 py-2 px-3 text-gray_1 fs-14 fw-semi-bold">
-                            <span>Buchen Sie Ihren Anruf</span>
-                            <span>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
-                                        fill="#002448" />
-                                </svg>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--/ Dropdown -/End -->
 
     <!-- Banner -->
     <section class="subpage-page-banner2 research-banner d-flex align-items-center position-relative">
@@ -597,21 +386,26 @@
         </div>
 
         <div class="container">
-            <div class="row gx-0 align-items-center">
-                <div class="col-xl-6">
-                    <div class="banner-left">
-                        <div class="subpage-badge px-3 text-cyan fs-18 fw-semi-bold d-inline-flex align-items-center justify-content-center">
+            <div class="row gx-0 align-items-center banner-wrapper">
+                <div class="col-lg-6">
+                    <div class="banner-left text-lg-start text-center mb-5 mb-lg-0">
+                        <div
+                            class="subpage-badge px-3 text-cyan fs-18 fw-semi-bold d-inline-flex align-items-center justify-content-center">
                             <p class="mb-0">SEO Schritt 2 von 4</p>
                         </div>
                         <h1 class="fs-48 fw-bold text-white mt-4">
                             Strong Optimize
                         </h1>
                         <p class="fs-18 text-light_white mt-3 mb-30">
-                            Nachdem wir alle Probleme im Deep Research aufgedeckt haben, die sich auf Ihre Rankings auswirken könnten, geht es an die Optimierung Ihrer Website und aller damit verbundenen Tools. Beim Strong Optimize konzentrieren wir unsere Bemühungen auf Quick-Win-Seiten und bringen Ihre On-Page- und technische SEO auf das richtige Niveau.
+                            Nachdem wir alle Probleme im Deep Research aufgedeckt haben, die sich auf Ihre Rankings
+                            auswirken könnten, geht es an die Optimierung Ihrer Website und aller damit verbundenen
+                            Tools. Beim Strong Optimize konzentrieren wir unsere Bemühungen auf Quick-Win-Seiten und
+                            bringen Ihre On-Page- und technische SEO auf das richtige Niveau.
                         </p>
-                    
+
                         <!-- Common Buttons -/ Start -->
-                        <div class="common-btn d-flex align-items-center justify-content-start gap-3">
+                        <div
+                            class="common-btn d-flex flex-wrap align-items-center justify-content-lg-start justify-content-center gap-3">
                             <a href="#"
                                 class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2">
                                 <span>Kostenloses Audit</span>
@@ -624,6 +418,7 @@
                                     </svg>
                                 </span>
                             </a>
+
                             <a href="#"
                                 class="minimal-btn cyan-border fw-semi-bold text-flourescent_blue lh-20 text-decoration-none radius-4 d-inline-flex align-items-center gap-2">
                                 <span>Buchen Sie einen Rückruf</span>
@@ -640,8 +435,8 @@
                         <!-- Common Buttons -/ End -->
                     </div>
                 </div>
-                <div class="col-xl-6">
-                    <div class="ps-4">
+                <div class="col-lg-6">
+                    <div class="ps-4  text-lg-start text-center">
                         <img src="assets/img/strong-optimize-img.png" class="img-fluid" alt="banner">
                     </div>
                 </div>
@@ -655,7 +450,7 @@
     <section class="rearch-section section-padding bg-indigo_dye_light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="list-card h-100">
                         <h3 class="fs-36 fw-bold text-gray_1 mb-30">Was ist dabei</h3>
                         <div class="d-flex align-items-center gap-3 mb-3">
@@ -773,12 +568,12 @@
     <!--/ research feature end   -->
 
 
-    <!-- /fullwidth highlight -/Start  -->
+    <!-- /full width highlight -/Start  -->
     <section class="fullwidth-highlight">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <div class="section-centent">
+                    <div class="section-centent text-center text-lg-start">
                         <h2 class="fs-44 fw-bold text-flourescent_blue mb-3 pb-1">
                             <span>
                                 <img src="assets/img/amazon-icon.svg" alt="amazon icon" class="img-fluid">
@@ -790,14 +585,14 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="">
+                    <div class="text-center text-lg-start">
                         <img src="assets/img/SEO-b2b-img-2.png" alt="SEO B2B" class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- /fullwidth highlight -/End  -->
+    <!-- /full width highlight -/End  -->
 
 
     <!-- Deep research  Section -/Start -->
@@ -808,78 +603,104 @@
             <div class="task-area">
                 <div class="row align-items-center gx-5">
                     <div class="col-lg-6">
-                        <div class="task-img">
+                        <div class="task-img text-center text-lg-start">
                             <img src="assets/img/robots-txt-file-img.png" alt="Task One" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <h3 class="fs-36 text-gray_1 fw-bold pb-2 mb-3">
-                        Robots.txt <br class="d-none d-xl-inline"> Optimierung
+                        <h3 class="fs-36 text-gray_1 text-sm-start text-center fw-bold pb-2 mb-3">
+                            Robots.txt <br class="d-none d-xl-inline"> Optimierung
                         </h3>
-                        <p class="fs-18 text-gray_2">
-                            Die robots.txt-Datei mag wie ein unbedeutendes, technisches SEO-Element erscheinen, aber sie kann die Sichtbarkeit und die Platzierung Ihrer Website erheblich beeinflussen.
+                        <p class="fs-18 text-gray_2 text-sm-start text-center">
+                            Die robots.txt-Datei mag wie ein unbedeutendes, technisches SEO-Element erscheinen, aber sie
+                            kann die Sichtbarkeit und die Platzierung Ihrer Website erheblich beeinflussen.
                         </p>
 
                         <div class="strong-optimize mt-4">
-                            <ul class="so-accordion-list list-unstyled">
-                                <li class="accordion-list-item bg-white open">
-                                    <h5 class="accordion-title fw-bold fs-20 text-lapis_lazuli d-flex justify-content-between align-items-center">
-                                        Schonen Sie Ihr Crawl-Budget
-                                        <span class="accordion-icon bg-gray_6 rounded-pill d-flex align-items-center justify-content-center flex-shrink-0">
-                                            <span class="ni ni-chevron-down"></span>
-                                        </span>
-                                    </h5>
-                                    <div class="accordion-desc">
-                                        <p class="m-0 fw-normal fs-16 text-gray_2">
-                                        Ein Blick auf die Analysedaten verrät uns viel über die frühere Performance, deren Details sie noch nicht kennen.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="accordion-list-item bg-white">
-                                    <h5 class="accordion-title fw-bold fs-20 text-lapis_lazuli d-flex justify-content-between align-items-center">
-                                        Verhindern doppelter Inhalte
-                                        <span class="accordion-icon bg-gray_6 rounded-pill d-flex align-items-center justify-content-center flex-shrink-0">
-                                            <span class="ni ni-chevron-down"></span>
-                                        </span>
-                                    </h5>
-                                    <div class="accordion-desc" style="display: none">
-                                        <p class="m-0 fw-normal fs-16 text-gray_2">
-                                            Man braucht keine Bots, um Seiten mit doppeltem Inhalt zu crawlen und sie in den SERPs anzuzeigen. Robots.txt ist eine Option, um die Verfügbarkeit von doppeltem Inhalt für das Crawling zu minimieren.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="accordion-list-item bg-white">
-                                    <h5 class="accordion-title fw-bold fs-20 text-lapis_lazuli d-flex justify-content-between align-items-center">
-                                        Weitergabe von Link Equity an die richtigen Seiten
-                                        <span class="accordion-icon bg-gray_6 rounded-pill d-flex align-items-center justify-content-center flex-shrink-0">
-                                            <span class="ni ni-chevron-down"></span>
-                                        </span>
-                                    </h5>
-                                    <div class="accordion-desc" style="display: none">
-                                        <p class="m-0 fw-normal fs-16 text-gray_2">
-                                            TypeScript stands in an unusual relationship to
-                                            JavaScript. TypeScript offers all of JavaScript’s
-                                            features, and an additional layer on top of these:
-                                            TypeScript’s type system.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="accordion-list-item bg-white">
-                                    <h5 class="accordion-title fw-bold fs-20 text-lapis_lazuli d-flex justify-content-between align-items-center">
-                                        Festlegen von Crawling-Anweisungen für ausgewählte Bots
-                                        <span class="accordion-icon bg-gray_6 rounded-pill d-flex align-items-center justify-content-center flex-shrink-0">
-                                            <span class="ni ni-chevron-down"></span>
-                                        </span>
-                                    </h5>
-                                    <div class="accordion-desc" style="display: none">
-                                        <p class="m-0 fw-normal fs-16 text-gray_2">
-                                            Additional TypeScript stands in an unusual relationship to
-                                            JavaScript. TypeScript offers all of JavaScript’s
-                                            features.
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
+                            <div class="faq">
+
+                                <ul class="accordion-list list-unstyled">
+                                    <li class="accordion-list-item radius-16 bg-white  mb-4 ">
+                                        <h5
+                                            class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                            Schonen Sie Ihr Crawl-Budget
+                                            <span class="ni ni-plus-sm"></span>
+                                        </h5>
+                                        <div class="accordion-desc" style="display: none">
+                                            <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                                Amazon Web Services (AWS) ist eine sichere Plattform für Cloud-Dienste,
+                                                <a href="#" class="text-indigo_dye fw-bold text-decoration-none">
+                                                    die Rechenleistung, Datenbankspeicher, Inhaltsbereitstellung und
+                                                    andere
+                                                    Funktionen
+                                                    bietet, um Unternehmen beim Skalieren und Wachsen zu helfen. </a>
+                                                Web- und
+                                                Anwendungsserver werden in der Cloud betrieben, um dynamische Websites
+                                                zu
+                                                hosten.
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li class="accordion-list-item radius-16 bg-white  mb-4 open">
+                                        <h5
+                                            class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                            Verhindern doppelter Inhalte
+                                            <span class="ni ni-minus"></span>
+                                        </h5>
+                                        <div class="accordion-desc">
+                                            <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                                Man braucht keine Bots, um Seiten mit doppeltem Inhalt zu crawlen und
+                                                sie in den SERPs anzuzeigen. Robots.txt ist eine
+                                                Option, um die Verfügbarkeit von doppeltem Inhalt für das Crawling zu
+                                                minimieren.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-list-item radius-16 bg-white  mb-4 ">
+                                        <h5
+                                            class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                            Weitergabe von Link Equity an die richtigen Seiten
+                                            <span class="ni ni-plus-sm"></span>
+                                        </h5>
+                                        <div class="accordion-desc" style="display: none">
+                                            <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                                Amazon Web Services (AWS) ist eine sichere Plattform für Cloud-Dienste,
+                                                <a href="#" class="text-indigo_dye fw-bold text-decoration-none">
+                                                    die Rechenleistung, Datenbankspeicher, Inhaltsbereitstellung und
+                                                    andere
+                                                    Funktionen
+                                                    bietet, um Unternehmen beim Skalieren und Wachsen zu helfen. </a>
+                                                Web- und
+                                                Anwendungsserver werden in der Cloud betrieben, um dynamische Websites
+                                                zu
+                                                hosten.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-list-item radius-16 bg-white  mb-4 ">
+                                        <h5
+                                            class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                            Festlegen von Crawling-Anweisungen für ausgewählte Bots
+                                            <span class="ni ni-plus-sm"></span>
+                                        </h5>
+                                        <div class="accordion-desc" style="display: none">
+                                            <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                                Amazon Web Services (AWS) ist eine sichere Plattform für Cloud-Dienste,
+                                                <a href="#" class="text-indigo_dye fw-bold text-decoration-none">
+                                                    die Rechenleistung, Datenbankspeicher, Inhaltsbereitstellung und
+                                                    andere
+                                                    Funktionen
+                                                    bietet, um Unternehmen beim Skalieren und Wachsen zu helfen. </a>
+                                                Web- und
+                                                Anwendungsserver werden in der Cloud betrieben, um dynamische Websites
+                                                zu
+                                                hosten.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
@@ -890,24 +711,31 @@
 
             <!-- Task item - 2  -->
             <div class="task-area">
-                <div class="row align-items-center gx-5">
+                <div class="row align-items-center gx-5 flex-column flex-column-reverse flex-lg-row">
                     <div class="col-lg-6">
                         <div class="task-content-area">
-                            <h3 class="fs-36 text-gray_1 fw-bold mb-4">
+                            <h3 class="fs-36 text-gray_1 fw-bold mb-4 text-sm-start text-center">
                                 XML-Sitemap <br class="d-none d-xl-inline"> Optimierung
                             </h3>
                             <div class="quality">
                                 <h5 class="text-lapis_lazuli fs-20 fw-bold pb-2"> Was ist eine XML-Sitemap? </h5>
                                 <p class="fs-6 text-gray_2">
-                                    Eine Sitemap ist eine Skizze Ihrer Website. Es handelt sich um eine Datei mit Informationen über die Seiten, Videos und anderen Dateien auf Ihrer Website und die Beziehungen zwischen ihnen. Suchmaschinen sind auf Bots, so genannte Crawler, angewiesen, die das Internet durchforsten, um Seiten zu finden.
+                                    Eine Sitemap ist eine Skizze Ihrer Website. Es handelt sich um eine Datei mit
+                                    Informationen über die Seiten, Videos und anderen Dateien auf Ihrer Website und die
+                                    Beziehungen zwischen ihnen. Suchmaschinen sind auf Bots, so genannte Crawler,
+                                    angewiesen, die das Internet durchforsten, um Seiten zu finden.
                                     <br> <br>
-                                    Auch wenn sie dabei recht schnell sind, kann es aufgrund der schieren Menge der online verfügbaren Inhalte eine ganze Weile dauern, bis sie eine bestimmte Seite auf Ihrer Website finden. An dieser Stelle kommt eine XML-Sitemap ins Spiel! Eine XML-Sitemap ist eine Datei auf Ihrer Website, die den Suchmaschinen-Crawlern mitteilt, was sie sich auf Ihrer Website ansehen sollen. Sie sieht in etwa so aus:
+                                    Auch wenn sie dabei recht schnell sind, kann es aufgrund der schieren Menge der
+                                    online verfügbaren Inhalte eine ganze Weile dauern, bis sie eine bestimmte Seite auf
+                                    Ihrer Website finden. An dieser Stelle kommt eine XML-Sitemap ins Spiel! Eine
+                                    XML-Sitemap ist eine Datei auf Ihrer Website, die den Suchmaschinen-Crawlern
+                                    mitteilt, was sie sich auf Ihrer Website ansehen sollen. Sie sieht in etwa so aus:
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="task-img">
+                        <div class="task-img text-center text-lg-start">
                             <img src="assets/img/xml-sitemap-img.png" alt="Task One" class="img-fluid">
                         </div>
                     </div>
@@ -920,77 +748,104 @@
             <div class="task-area">
                 <div class="row align-items-center gx-5">
                     <div class="col-lg-6">
-                        <div class="task-img">
+                        <div class="task-img text-center text-lg-start">
                             <img src="assets/img/interne-link-img.png" alt="Task One" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <h3 class="fs-36 text-gray_1 fw-bold pb-2 mb-3">
-                            Interne Link- <br class="d-none d-xl-inline"> Optimierungen 
+                        <h3 class="fs-36 text-gray_1 fw-bold pb-2 mb-3 text-sm-start text-center">
+                            Interne Link- <br class="d-none d-xl-inline"> Optimierungen
                         </h3>
-                        
+
 
                         <div class="strong-optimize mt-4">
-                            <ul class="so-accordion-list-2 list-unstyled">
-                                <li class="accordion-list-item bg-white open">
-                                    <h5 class="accordion-title fw-bold fs-20 text-lapis_lazuli px-4 d-flex justify-content-between align-items-center">
-                                        Was ist interne Verlinkung?
-                                        <span class="accordion-icon bg-gray_6 rounded-pill d-flex align-items-center justify-content-center flex-shrink-0">
-                                            <span class="ni ni-chevron-down"></span>
-                                        </span>
-                                    </h5>
-                                    <div class="accordion-desc">
-                                        <p class="px-4 m-0 fw-normal fs-16 text-gray_2">
-                                            Interne Links sind Hyperlinks, die von einer Seite auf einer Domain zu einer anderen Seite auf derselben Domain führen. Mit anderen Worten: Interne Links verbinden Seiten auf derselben Website, was bedeutet, dass die Quell- und die Zieldomain dieselbe sind.
-                                        </p>
-                                    </div>
-                                </li>
-                        
-                                <li class="accordion-list-item bg-white">
-                                    <h5 class="accordion-title fw-bold fs-20 text-gray_1 px-4 d-flex justify-content-between align-items-center">
-                                        Verbesserung der Navigation
-                                        <span class="accordion-icon bg-gray_6 rounded-pill d-flex align-items-center justify-content-center flex-shrink-0">
-                                            <span class="ni ni-chevron-down"></span>
-                                        </span>
-                                    </h5>
-                                    <div class="accordion-desc" style="display: none">
-                                        <p class="px-4 m-0 fw-normal fs-16 text-gray_2">
-                                            Man braucht keine Bots, um Seiten mit doppeltem Inhalt zu crawlen und sie in den SERPs anzuzeigen. Robots.txt ist eine Option, um die Verfügbarkeit von doppeltem Inhalt für das Crawling zu minimieren.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="accordion-list-item bg-white">
-                                    <h5 class="accordion-title fw-bold fs-20 text-gray_1 px-4 d-flex justify-content-between align-items-center">
-                                        Verbreitet Ranking Power
-                                        <span class="accordion-icon bg-gray_6 rounded-pill d-flex align-items-center justify-content-center flex-shrink-0">
-                                            <span class="ni ni-chevron-down"></span>
-                                        </span>
-                                    </h5>
-                                    <div class="accordion-desc" style="display: none">
-                                        <p class="px-4 m-0 fw-normal fs-16 text-gray_2">
-                                            TypeScript stands in an unusual relationship to
-                                            JavaScript. TypeScript offers all of JavaScript’s
-                                            features, and an additional layer on top of these:
-                                            TypeScript’s type system.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="accordion-list-item bg-white">
-                                    <h5 class="accordion-title fw-bold fs-20 text-gray_1 px-4 d-flex justify-content-between align-items-center">
-                                        Verringert die Bounce Rate
-                                        <span class="accordion-icon bg-gray_6 rounded-pill d-flex align-items-center justify-content-center flex-shrink-0">
-                                            <span class="ni ni-chevron-down"></span>
-                                        </span>
-                                    </h5>
-                                    <div class="accordion-desc" style="display: none">
-                                        <p class="px-4 m-0 fw-normal fs-16 text-gray_2">
-                                            Additional TypeScript stands in an unusual relationship to
-                                            JavaScript. TypeScript offers all of JavaScript’s
-                                            features.
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
+                            <div class="faq">
+
+                                <ul class="accordion-list list-unstyled">
+                                    <li class="accordion-list-item radius-16 bg-white  mb-4 open">
+                                        <h5
+                                            class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                            Was ist interne Verlinkung?
+                                            <span class="ni ni-minus"></span>
+                                        </h5>
+                                        <div class="accordion-desc">
+                                            <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                                Interne Links sind Hyperlinks, die von einer Seite auf einer Domain zu
+                                                einer anderen Seite auf derselben Domain führen.
+                                                Mit anderen Worten: Interne Links verbinden Seiten auf derselben
+                                                Website, was bedeutet, dass die Quell- und die
+                                                Zieldomain dieselbe sind.
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li class="accordion-list-item radius-16 bg-white  mb-4 ">
+                                        <h5
+                                            class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                            Verbesserung der Navigation
+                                            <span class="ni ni-plus-sm"></span>
+                                        </h5>
+                                        <div class="accordion-desc" style="display: none">
+                                            <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                                Amazon Web Services (AWS) ist eine sichere Plattform für Cloud-Dienste,
+                                                <a href="#" class="text-indigo_dye fw-bold text-decoration-none">
+                                                    die Rechenleistung, Datenbankspeicher, Inhaltsbereitstellung und
+                                                    andere
+                                                    Funktionen
+                                                    bietet, um Unternehmen beim Skalieren und Wachsen zu helfen. </a>
+                                                Web- und
+                                                Anwendungsserver werden in der Cloud betrieben, um dynamische Websites
+                                                zu
+                                                hosten.
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                    <li class="accordion-list-item radius-16 bg-white  mb-4 ">
+                                        <h5
+                                            class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                            Verbreitet Ranking Power
+                                            <span class="ni ni-plus-sm"></span>
+                                        </h5>
+                                        <div class="accordion-desc" style="display: none">
+                                            <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                                Amazon Web Services (AWS) ist eine sichere Plattform für Cloud-Dienste,
+                                                <a href="#" class="text-indigo_dye fw-bold text-decoration-none">
+                                                    die Rechenleistung, Datenbankspeicher, Inhaltsbereitstellung und
+                                                    andere
+                                                    Funktionen
+                                                    bietet, um Unternehmen beim Skalieren und Wachsen zu helfen. </a>
+                                                Web- und
+                                                Anwendungsserver werden in der Cloud betrieben, um dynamische Websites
+                                                zu
+                                                hosten.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-list-item radius-16 bg-white  mb-4 ">
+                                        <h5
+                                            class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                            Verringert die Bounce Rate
+                                            <span class="ni ni-plus-sm"></span>
+                                        </h5>
+                                        <div class="accordion-desc" style="display: none">
+                                            <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                                Amazon Web Services (AWS) ist eine sichere Plattform für Cloud-Dienste,
+                                                <a href="#" class="text-indigo_dye fw-bold text-decoration-none">
+                                                    die Rechenleistung, Datenbankspeicher, Inhaltsbereitstellung und
+                                                    andere
+                                                    Funktionen
+                                                    bietet, um Unternehmen beim Skalieren und Wachsen zu helfen. </a>
+                                                Web- und
+                                                Anwendungsserver werden in der Cloud betrieben, um dynamische Websites
+                                                zu
+                                                hosten.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
@@ -998,21 +853,23 @@
             </div>
             <!-- Task item - 3  -->
 
-            
+
             <!-- Task item - 4  -->
             <div class="task-area">
-                <div class="row align-items-center gx-5">
+                <div class="row align-items-center gx-5 flex-column flex-column-reverse flex-lg-row">
                     <div class="col-lg-6">
-                        <h3 class="fs-36 text-gray_1 fw-bold pb-2 mb-3">
-                            Generelle SEO <br class="d-none d-xl-inline"> Optimierungen für alle <br class="d-none d-xl-inline"> Seiten 
+                        <h3 class="fs-36 text-gray_1 fw-bold pb-2 mb-3 text-sm-start text-center">
+                            Generelle SEO <br class="d-none d-xl-inline"> Optimierungen für alle <br
+                                class="d-none d-xl-inline"> Seiten
                         </h3>
-                        <p class="fs-18 text-gray_2">
-                            Wir liefern Ihnen allgemeine SEO-Optimierungen für alle Seiten. So stellen wir sicher, dass die gesamte Website den SEO-Anforderungen entspricht
+                        <p class="fs-18 text-gray_2 text-sm-start text-center">
+                            Wir liefern Ihnen allgemeine SEO-Optimierungen für alle Seiten. So stellen wir sicher, dass
+                            die gesamte Website den SEO-Anforderungen entspricht
                         </p>
 
                     </div>
                     <div class="col-lg-6">
-                        <div class="task-img">
+                        <div class="task-img text-center text-lg-start">
                             <img src="assets/img/gen-SEO-optimize.png" alt="Task One" class="img-fluid">
                         </div>
                     </div>
@@ -1025,59 +882,71 @@
             <div class="task-area">
                 <div class="row align-items-center gx-5">
                     <div class="col-lg-6">
-                        <div class="task-img">
+                        <div class="task-img  text-center text-lg-start">
                             <img src="assets/img/schema-optimize-img.png" alt="Task One" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="task-content-area">
-                            <h3 class="fs-36 text-gray_1 fw-bold mb-3">
+                            <h3 class="fs-36 text-gray_1 fw-bold mb-3 text-sm-start text-center">
                                 Schema-Optimierung
                             </h3>
-                                <div class="quality">
-                                    <p class="fs-6 text-gray_2">
-                                        Schema-Markup ist ein Code, den Sie auf Ihrer Website platzieren, um den Suchmaschinen zu helfen, informativere Ergebnisse für die Nutzer zu liefern. Der Inhalt Ihrer Website wird indexiert und in den Suchergebnissen angezeigt. Offensichtlich. Aber mit Schema-Markup werden einige dieser Inhalte auf andere Weise indexiert und angezeigt.
-                                    </p>
-                                    <h5 class="text-lapis_lazuli fs-20 fw-bold">
-                                        Die Vorteile von Schema-Markup
-                                    </h5>
-                                    <p class="fs-6 text-gray_2">
-                                        Zusammengefasst gibt es 14 Vorteile der Implementierung von Schema- Markup auf Ihrer Website:
-                                    </p>
+                            <div class="quality">
+                                <p class="fs-6 text-gray_2 text-sm-start text-center">
+                                    Schema-Markup ist ein Code, den Sie auf Ihrer Website platzieren, um den
+                                    Suchmaschinen zu helfen, informativere Ergebnisse für die Nutzer zu liefern. Der
+                                    Inhalt Ihrer Website wird indexiert und in den Suchergebnissen angezeigt.
+                                    Offensichtlich. Aber mit Schema-Markup werden einige dieser Inhalte auf andere Weise
+                                    indexiert und angezeigt.
+                                </p>
+                                <h5 class="text-lapis_lazuli fs-20 fw-bold text-sm-start text-center">
+                                    Die Vorteile von Schema-Markup
+                                </h5>
+                                <p class="fs-6 text-gray_2 text-sm-start text-center">
+                                    Zusammengefasst gibt es 14 Vorteile der Implementierung von Schema- Markup auf Ihrer
+                                    Website:
+                                </p>
 
-                                    <div class="so-website-quality mt-4">
-                                        <ul class="so-quality-list list-unstyled">
-                                            <li class="bg-white">
-                                                <h5 class="so-quality-title fw-bold fs-6 text-gray_2 py-2 d-flex  align-items-center mb-0">
-                                                    Helfen Sie Suchmaschinen, den Inhalt Ihrer Website besser zu verstehen
-                                                </h5>
-                                            </li>
-                                            <li class="bg-white">
-                                                <h5 class="so-quality-title fw-bold fs-6 text-gray_2 py-2 d-flex  align-items-center mb-0">
-                                                    Verbessern Sie die Präsenz Ihrer Marke mit einem vollständigen Knowledge Graph
-                                                </h5>
-                                            </li>
-                                            <li class="bg-white">
-                                                <h5 class="so-quality-title fw-bold fs-6 text-gray_2 py-2 d-flex  align-items-center mb-0">
-                                                    Erhalten Sie aufmerksamkeitsstarke Rich Results, um die CTR zu erhöhen
-                                                </h5>
-                                            </li>
-                                            <li class="bg-white">
-                                                <h5 class="so-quality-title fw-bold fs-6 text-gray_2 py-2 d-flex  align-items-center mb-0">
-                                                    Werden Sie für sogenannte Featured Snippets ganz oben in den Suchergebnissen qualifiziert, um einen prominenten Platz in
-                                                    den SERPs zu erhalten
-                                                </h5>
-                                            </li>
-                                            <li class="bg-white">
-                                                <h5 class="so-quality-title fw-bold fs-6 text-gray_2 py-2 d-flex  align-items-center mb-0">
-                                                    Verbessern Sie Ihre Ranking-Position
-                                                </h5>
-                                            </li>
-                                        </ul>
-                                    </div>
-
+                                <div class="so-website-quality mt-4">
+                                    <ul class="so-quality-list list-unstyled">
+                                        <li class="bg-white">
+                                            <h5
+                                                class="so-quality-title fw-bold fs-6 text-gray_2 py-2 d-flex  align-items-center mb-0">
+                                                Helfen Sie Suchmaschinen, den Inhalt Ihrer Website besser zu verstehen
+                                            </h5>
+                                        </li>
+                                        <li class="bg-white">
+                                            <h5
+                                                class="so-quality-title fw-bold fs-6 text-gray_2 py-2 d-flex  align-items-center mb-0">
+                                                Verbessern Sie die Präsenz Ihrer Marke mit einem vollständigen Knowledge
+                                                Graph
+                                            </h5>
+                                        </li>
+                                        <li class="bg-white">
+                                            <h5
+                                                class="so-quality-title fw-bold fs-6 text-gray_2 py-2 d-flex  align-items-center mb-0">
+                                                Erhalten Sie aufmerksamkeitsstarke Rich Results, um die CTR zu erhöhen
+                                            </h5>
+                                        </li>
+                                        <li class="bg-white">
+                                            <h5
+                                                class="so-quality-title fw-bold fs-6 text-gray_2 py-2 d-flex  align-items-center mb-0">
+                                                Werden Sie für sogenannte Featured Snippets ganz oben in den
+                                                Suchergebnissen qualifiziert, um einen prominenten Platz in
+                                                den SERPs zu erhalten
+                                            </h5>
+                                        </li>
+                                        <li class="bg-white">
+                                            <h5
+                                                class="so-quality-title fw-bold fs-6 text-gray_2 py-2 d-flex  align-items-center mb-0">
+                                                Verbessern Sie Ihre Ranking-Position
+                                            </h5>
+                                        </li>
+                                    </ul>
                                 </div>
-                      
+
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -1086,29 +955,62 @@
 
             <!-- Task item - 6  -->
             <div class="task-area">
-                <div class="row align-items-center gx-5">
+                <div class="row align-items-center gx-5  flex-column flex-column-reverse flex-lg-row">
                     <div class="col-lg-6">
                         <div class="task-content-area">
-                            <h3 class="fs-36 text-gray_1 fw-bold mb-4">
-                                Optimierung Ihres <br class="d-none d-xl-inline"> Google <br class="d-none d-xl-inline"> Unternehmensprofils
+                            <h3 class="fs-36 text-gray_1 fw-bold mb-4 text-sm-start text-center">
+                                Optimierung Ihres <br class="d-none d-xl-inline"> Google <br class="d-none d-xl-inline">
+                                Unternehmensprofils
                             </h3>
-                            <div class="so-quality">
-                                <h5 class="text-lapis_lazuli fs-20 fw-bold pb-2"> Effektive Werbung für Ihr Unternehmen bei Google </h5>
-                                <p class="fs-6 text-gray_2 mb-0">
-                                    Nutzen Sie Beiträge, Videos und Fragen, um Besucherzahlen und Verkäufe zu steigern. Das Google Unternehmensprofil bietet eine Reihe von Funktionen, mit denen Sie mehr potenzielle Kunden erreichen und die Wirksamkeit Ihres Profils steigern können.
-                                </p>
-                            </div>
+                            <div class="faq">
 
-                            <div class="so-quality">
-                                <h5 class="text-lapis_lazuli fs-20 fw-bold pb-2"> Sichern Sie sich eine positive Reputation bei Google </h5>
-                                <p class="fs-6 text-gray_2 mb-0">
-                                    Erhalten Sie ganz einfach neue Google-Bewertungen. Denn Bewertungen sind eine Sache, die alle Kunden lesen wollen, bevor sie eine Kaufentscheidung treffen. Google stimmt dem zu. Branchenstudien zeigen, dass Google-Bewertungen ein wichtiger Faktor für die Platzierung Ihres Eintrags auf Google Maps und im Local Pack sind.
-                                </p>
+                                <ul class="accordion-list list-unstyled">
+
+
+                                    <li class="accordion-list-item radius-16 bg-white  mb-4 open">
+                                        <h5
+                                            class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                            Effektive Werbung für Ihr Unternehmen bei Google
+                                            <span class="ni ni-minus"></span>
+                                        </h5>
+                                        <div class="accordion-desc">
+                                            <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                                Nutzen Sie Beiträge, Videos und Fragen, um Besucherzahlen und Verkäufe
+                                                zu steigern. Das Google Unternehmensprofil bietet
+                                                eine Reihe von Funktionen, mit denen Sie mehr potenzielle Kunden
+                                                erreichen und die Wirksamkeit Ihres Profils steigern
+                                                können.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-list-item radius-16 bg-white  mb-4 ">
+                                        <h5
+                                            class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                            Sichern Sie sich eine positive Reputation bei Google
+                                            <span class="ni ni-plus-sm"></span>
+                                        </h5>
+                                        <div class="accordion-desc" style="display: none">
+                                            <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                                Amazon Web Services (AWS) ist eine sichere Plattform für Cloud-Dienste,
+                                                <a href="#" class="text-indigo_dye fw-bold text-decoration-none">
+                                                    die Rechenleistung, Datenbankspeicher, Inhaltsbereitstellung und
+                                                    andere
+                                                    Funktionen
+                                                    bietet, um Unternehmen beim Skalieren und Wachsen zu helfen. </a>
+                                                Web- und
+                                                Anwendungsserver werden in der Cloud betrieben, um dynamische Websites
+                                                zu
+                                                hosten.
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="task-img">
+                        <div class="task-img  text-center text-lg-start">
                             <img src="assets/img/optimizing-profile-img.png" alt="Task One" class="img-fluid">
                         </div>
                     </div>
@@ -1119,7 +1021,6 @@
         </div>
     </section>
     <!-- Deep research Section -/End -->
-
 
     <!-- Call To Action -/Start -->
     <section class="call-to-action-area section-padding bg-indigo_dye position-relative">
@@ -1143,8 +1044,9 @@
                 <!-- Common Buttons -/ Start -->
                 <div class="common-btn text-center my-3 pb-4">
                     <a href="#"
-                        class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2">
-                        <span>Buchen Sie einen Rückruf</span>
+                        class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                        aria-controls="offcanvasWithBothOptions"> <span>Buchen Sie einen Rückruf</span>
                         <span>
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -1183,7 +1085,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 mt-lg-0 mt-5">
                             <div class="CTA-form-wrapper">
                                 <h4 class="fs-30 fw-bold mb-0">
                                     Kostenloses Audit in <br class="d-none d-lg-block"> nur 1 Minute.
@@ -1257,18 +1159,24 @@
                             Newsletter
                         </h4>
                         <p class="mb-0 text-dark_6">
-                            Abonnieren Sie unseren Newsletter, um die neuesten <br class="d-none d-lg-block"> Nachrichten und Updates zu erhalten.
+                            Abonnieren Sie unseren Newsletter, um die neuesten <br class="d-none d-lg-block">
+                            Nachrichten und Updates zu erhalten.
                         </p>
 
                         <div class="subscribe-box mt-3 position-relative">
-                            <input class="subscribe-field radius-12 w-100 text-white " type="email" name="subscribe-mail" id="" placeholder="Geben Sie hier Ihre E-Mail ein">
+                            <input class="subscribe-field radius-12 w-100 text-white transition-02" type="email"
+                                name="subscribe-mail" id="" placeholder="Geben Sie hier Ihre E-Mail ein">
                             <div class="subscribe-btn">
-                                <a href="#" class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2">
+                                <a href="#"
+                                    class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2">
                                     <span>Anmelden</span>
                                     <span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.842238 3.8902C0.646913 3.94601 0.469545 4.05186 0.327685 4.19726C0.185826 4.34267 0.0843913 4.52259 0.0334185 4.71923C-0.0175542 4.91588 -0.0162984 5.12242 0.0370618 5.31843C0.090422 5.51444 0.194037 5.69311 0.337654 5.83678L2.32799 7.82478V11.6666H6.1739L8.17765 13.6674C8.2852 13.7759 8.41313 13.8621 8.55408 13.9209C8.69504 13.9798 8.84624 14.0102 8.99899 14.0104C9.09938 14.0102 9.19935 13.9973 9.29649 13.9719C9.49305 13.9224 9.6731 13.822 9.81851 13.6808C9.96393 13.5396 10.0696 13.3626 10.1248 13.1675L13.9947 0.012207L0.842238 3.8902ZM1.16657 5.01195L11.0996 2.08362L3.49582 9.67511V7.34178L1.16657 5.01195ZM9.00657 12.8426L6.65749 10.4999H4.32415L11.9267 2.90379L9.00657 12.8426Z" fill="#002448"/>
-                                            </svg>                                            
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.842238 3.8902C0.646913 3.94601 0.469545 4.05186 0.327685 4.19726C0.185826 4.34267 0.0843913 4.52259 0.0334185 4.71923C-0.0175542 4.91588 -0.0162984 5.12242 0.0370618 5.31843C0.090422 5.51444 0.194037 5.69311 0.337654 5.83678L2.32799 7.82478V11.6666H6.1739L8.17765 13.6674C8.2852 13.7759 8.41313 13.8621 8.55408 13.9209C8.69504 13.9798 8.84624 14.0102 8.99899 14.0104C9.09938 14.0102 9.19935 13.9973 9.29649 13.9719C9.49305 13.9224 9.6731 13.822 9.81851 13.6808C9.96393 13.5396 10.0696 13.3626 10.1248 13.1675L13.9947 0.012207L0.842238 3.8902ZM1.16657 5.01195L11.0996 2.08362L3.49582 9.67511V7.34178L1.16657 5.01195ZM9.00657 12.8426L6.65749 10.4999H4.32415L11.9267 2.90379L9.00657 12.8426Z"
+                                                fill="#002448" />
+                                        </svg>
                                     </span>
                                 </a>
                             </div>
@@ -1281,15 +1189,15 @@
             <!-- Fooetr Main -/Start -->
             <div class="footer-main">
                 <div class="row">
-                    
-                    <div class="col-sm-6 col-lg-3">
+
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
-                            
+
                             <a href="index.html" class="site-logo mb-30 d-inline-block">
                                 <img src="assets/img/footer-logo.svg" alt="">
                             </a>
-                            
-                            <ul class="widget-list list-unstyled m-0 d-flex flex-wrap gap-4">
+
+                            <ul class="widget-list list-unstyled m-0 d-flex flex-wrap gap-lg-4 gap-3 ">
                                 <li class="widget-list-item pb-0">
                                     <a href="#" class="text-decoration-none text-white fs-6 d-flex align-items-center">
                                         <span class="pe-2 me-1 ">
@@ -1324,7 +1232,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
                             <h6
                                 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
@@ -1360,7 +1268,7 @@
                                             </svg>
                                         </span>
                                         <span class="widget-list-item-hover position-relative">
-                                            hey@dartera.ch
+                                            mailto:hey@dartera.ch
                                         </span>
                                     </a>
                                 </li>
@@ -1368,7 +1276,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
                             <h6
                                 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
@@ -1384,7 +1292,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
                             <h6
                                 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
@@ -1399,21 +1307,21 @@
                                     </a>
                                 </li>
                                 <li class="widget-list-item">
-                                    <a href="#" class="text-decoration-none text-white fs-6 fw-medium">
+                                    <a href="impressum.html" class="text-decoration-none text-white fs-6 fw-medium">
                                         <span class="widget-list-item-hover footer-right-arrow position-relative">
                                             Impressum
                                         </span>
                                     </a>
                                 </li>
                                 <li class="widget-list-item">
-                                    <a href="#" class="text-decoration-none text-white fs-6 fw-medium">
+                                    <a href="privacy.html" class="text-decoration-none text-white fs-6 fw-medium">
                                         <span class="widget-list-item-hover footer-right-arrow position-relative">
-                                            Datenschutz
+                                            Privacy
                                         </span>
                                     </a>
                                 </li>
                                 <li class="widget-list-item pb-0">
-                                    <a href="#" class="text-decoration-none text-white fs-6 fw-medium">
+                                    <a href="agb.html" class="text-decoration-none text-white fs-6 fw-medium">
                                         <span class="widget-list-item-hover footer-right-arrow position-relative">
                                             AGB
                                         </span>
@@ -1430,17 +1338,18 @@
 
             <div class="footer-bottom">
                 <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <div class="col text-white fw-medium">
-                            © 2022 Dartera GmbH
+                    <div class="col-12 col-xl-5 text-xl-start text-center">
+                        <div class="text-white fw-medium">
+                            © 2024 Dartera GmbH
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="footer-button-wrapper d-flex align-items-center justify-content-end gap-4">
+                    <div class="col-12 col-xl-7 text-xl-end text-center">
+                        <div
+                            class="footer-button-wrapper d-flex flex-wrap align-items-center justify-content-xl-end justify-content-center mt-xl-0 mt-4 gap-4">
 
                             <div class="footer-common-btn">
-                                <a href="#"
-                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
+                                <a href="blog.html"
+                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between transition-02">
                                     <span class="fw-bold ">
                                         Blog
                                     </span>
@@ -1456,27 +1365,10 @@
                             </div>
 
                             <div class="footer-common-btn">
-                                <a href="#"
-                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
+                                <a href="ressourcen.html"
+                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between transition-02">
                                     <span class="fw-bold ">
                                         Ressourcen
-                                    </span>
-                                    <span>
-                                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.22446 0.214993L3.28476 0.214992L3.28476 2.17137L7.84088 2.17137L0.922998 9.08926L2.30658 10.4728L9.22446 3.55495L9.22446 8.11107L11.1808 8.11107L11.1808 2.17137C11.1808 1.65253 10.9746 1.15496 10.6077 0.78809C10.2409 0.421214 9.7433 0.215072 9.22446 0.214993V0.214993Z"
-                                                fill="#385470" />
-                                        </svg>
-                                    </span>
-                                </a>
-                            </div>
-
-                            <div class="footer-common-btn">
-                                <a href="#"
-                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
-                                    <span class="fw-bold ">
-                                        Preis-Rechner
                                     </span>
                                     <span>
                                         <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
@@ -1494,7 +1386,7 @@
                 </div>
             </div>
         </div>
-        <button type="button" class="border-0 rounded-pill" id="btn-back-to-top">
+        <button type="button" class="border-0 rounded-pill" id="back-to-top">
             <img src="assets/img/back-to-top-icon.svg" alt="Back To Top" class="img-fluid">
         </button>
     </footer>
@@ -1696,7 +1588,8 @@
                         class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-flex align-items-center gap-2 justify-content-center">
                         <span>Senden</span>
                         <span>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
                                     fill="#002448" />
@@ -1708,6 +1601,7 @@
         </div>
     </div>
     <!--/ sidebar2 -->
+
 
 
     <!-- sidebar3 -->
@@ -1824,7 +1718,8 @@
                         class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-flex align-items-center gap-2 justify-content-center">
                         <span>Senden</span>
                         <span>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
                                     fill="#002448" />
@@ -1836,7 +1731,6 @@
         </div>
     </div>
     <!--/ sidebar3 -->
-
 
     <!-- Main Coding End -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->

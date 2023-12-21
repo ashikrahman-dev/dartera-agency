@@ -42,6 +42,11 @@
     <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
 
     <!-- CDN Bootstrap CSS -->
+
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap">
+
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
@@ -55,8 +60,10 @@
 <body>
     <!-- Main Coding Start Here -->
 
+
+
     <!-- header -/Start -->
-    <header id="header">
+    <header id="header" class="position-absolute top-0 start-0 end-0 w-100">
         <!-- navbar -/Start -->
         <div class="header">
             <div class="container-fluid p-0">
@@ -66,14 +73,41 @@
                             <img src="assets/img/logo.svg" alt="logo" class="img-fluid">
                         </a>
 
-                        <div class="d-xxl-none d-flex align-items-center gap-4 contactInfo px-4">
-                            <a href="+41315520083" class=" text-decoration-none phone text-white fs-5">
+                        <div class="d-xxl-none d-flex align-items-center ms-auto gap-sm-3 gap-2 contactInfo px-0 me-2">
+                            <div class="nav-item dropdown language pe-2">
+                                <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-0 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <!-- Deutsch -->
+                                    <img src="assets/img/language.png" class="img-fluid language-icon" alt="">
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end fade-down all-language ">
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            English
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            Hindi
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            Bangla
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="tel:+41315520083" class=" text-decoration-none phone text-white fs-5">
                                 <span><img src="assets/img/call.svg" class="img-fluid" alt="call"></span>
-                                +41 31 552 00 83
                             </a>
-                            <button type="button" class="nav-btn px-4 border-0 fs-6 fw-semi-bold text-gray_1">
-                                Termin vereinbaren
-                            </button>
+                            <a href="#" class=" text-decoration-none phone text-white fs-5">
+                                <span><img src="assets/img/appointment.png" class="img-fluid appointment"
+                                        alt="appointment"></span>
+                            </a>
+                            <!-- <button type="button" class="nav-btn px-4 border-0 fs-6 fw-semi-bold text-gray_1">
+                                    Termin vereinbaren
+                                </button> -->
                         </div>
 
 
@@ -88,11 +122,11 @@
                         <div class="collapse navbar-collapse" id="nav-toggle">
                             <ul class="menu navbar-nav mx-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active py-4 px-0 mx-3 active fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link active py-xxl-4 py-2 px-0 mx-3 active fs-14 fw-bold text-uppercase"
                                         aria-current="page" href="index.html">Startseite</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
                                         href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Leistungen
                                     </a>
@@ -103,12 +137,12 @@
                                         </div>
                                         <div class="row gx-2">
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="web-design.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo1.png"
                                                             class="img-fluid dropdown-logo d-flex align-items-center justify-content-center"
-                                                            alt="sidebarlogo">
+                                                            alt="sidebar logo">
                                                         <div>
                                                             <h5 class="fs-6 fw-bold text-indigo_dye">Webdesign</h5>
                                                             <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">
@@ -128,7 +162,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="maintenance.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo6.png"
@@ -153,7 +187,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="seo.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo2.png"
@@ -178,7 +212,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="sea.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo7.png"
@@ -203,7 +237,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="content.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo3.png"
@@ -228,7 +262,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="branding.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo8.png"
@@ -253,7 +287,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="animations.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo4.png"
@@ -281,44 +315,44 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
                                         href="referenzen.html">Referenzen</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
-                                        href="#">Über
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                        href="uber.html">Über
                                         uns</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
-                                        href="#">Kontakt</a>
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                        href="contact.html">Kontakt</a>
                                 </li>
                             </ul>
 
 
                             <div class="nav-right d-flex align-items-center">
-                                <div class="nav-item dropdown language pe-2">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                <div class="nav-item dropdown language pe-2 d-xxl-block d-none">
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
                                         href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        German
+                                        Deutsch
                                     </a>
-                                    <ul class="dropdown-menu dropdown-menu-end fade-down">
+                                    <ul class="dropdown-menu dropdown-menu-end fade-down all-language ">
                                         <li>
                                             <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
                                                 href="#">
-                                                Action
+                                                English
                                             </a>
                                         </li>
                                         <li>
                                             <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
                                                 href="#">
-                                                Another action
+                                                Hindi
                                             </a>
                                         </li>
                                         <li>
                                             <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
                                                 href="#">
-                                                Something else here
+                                                Bangla
                                             </a>
                                         </li>
                                     </ul>
@@ -332,35 +366,7 @@
                                         Termin vereinbaren
                                     </button>
                                 </div>
-                                <div class="sidebar">
-                                    <!-- <img src="assets/img/humbarger.svg" class="img-fluid" alt="sidebar"> -->
 
-                                    <!-- <svg width="24" height="18" viewBox="0 0 24 18" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="12" width="12" height="2" fill="#00BAEB" />
-                                            <rect x="12" y="16" width="12" height="2" fill="#00BAEB" />
-                                            <rect x="0" y="8" width="24" height="2" fill="#00BAEB" />
-                                        </svg> -->
-
-                                    <svg class="sidebarToggle d-block" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="12" y="3" width="24" height="2" fill="#00BAEB" />
-                                        <rect x="12" y="19" width="24" height="2" fill="#00BAEB" />
-                                        <rect x="0" y="11" width="24" height="2" fill="#00BAEB" />
-                                    </svg>
-
-
-
-                                    <svg class="sidebarClose d-none" width="22" height="20" viewBox="0 0 22 20"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="0.804688" y="17.7783" width="24" height="2"
-                                            transform="rotate(-45 0.804688 17.7783)" fill="#00BAEB" />
-                                        <rect x="2.21875" y="0.807617" width="24" height="2"
-                                            transform="rotate(45 2.21875 0.807617)" fill="#00BAEB" />
-                                    </svg>
-
-
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -370,238 +376,6 @@
         <!-- navbar -/End -->
     </header>
     <!--/ header -/End -->
-
-
-    <!-- Dropdown -/start -->
-    <div class="nav-dropdown py-5">
-        <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="footer-common-btn mb-4">
-                    <a href="#"
-                        class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
-                        <span class="fw-bold ">
-                            Blog
-                        </span>
-                        <span>
-                            <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9.22446 0.214993L3.28476 0.214992L3.28476 2.17137L7.84088 2.17137L0.922998 9.08926L2.30658 10.4728L9.22446 3.55495L9.22446 8.11107L11.1808 8.11107L11.1808 2.17137C11.1808 1.65253 10.9746 1.15496 10.6077 0.78809C10.2409 0.421214 9.7433 0.215072 9.22446 0.214993V0.214993Z"
-                                    fill="#385470" />
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-                <div>
-                    <a class="sidebar-drop-item transition-02 fs-5 mb-3 d-block fw-bold text-decoration-none">
-                        <svg class="me-2" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.414 4.58597L8.121 0.292969L6.707 1.70697L10 4.99997H0V6.99997H10L6.707 10.293L8.121 11.707L12.414 7.41397C12.7889 7.03891 12.9996 6.5303 12.9996 5.99997C12.9996 5.46964 12.7889 4.96102 12.414 4.58597Z"
-                                fill="#5C83AA" />
-                        </svg>
-                        <span>Startseite</span>
-
-                    </a>
-                </div>
-                <div>
-                    <a class="sidebar-drop-item transition-02 fs-5 mb-3 d-block fw-bold text-decoration-none">
-                        <svg class="me-2" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.414 4.58597L8.121 0.292969L6.707 1.70697L10 4.99997H0V6.99997H10L6.707 10.293L8.121 11.707L12.414 7.41397C12.7889 7.03891 12.9996 6.5303 12.9996 5.99997C12.9996 5.46964 12.7889 4.96102 12.414 4.58597Z"
-                                fill="#5C83AA" />
-                        </svg>
-                        <span>Referenzen</span>
-
-                    </a>
-                </div>
-                <div>
-                    <a class="sidebar-drop-item transition-02 fs-5 mb-3 d-block fw-bold text-decoration-none">
-                        <svg class="me-2" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.414 4.58597L8.121 0.292969L6.707 1.70697L10 4.99997H0V6.99997H10L6.707 10.293L8.121 11.707L12.414 7.41397C12.7889 7.03891 12.9996 6.5303 12.9996 5.99997C12.9996 5.46964 12.7889 4.96102 12.414 4.58597Z"
-                                fill="#5C83AA" />
-                        </svg>
-                        <span>Über uns</span>
-
-                    </a>
-                </div>
-                <div>
-                    <a class="sidebar-drop-item transition-02 fs-5 mb-3 d-block fw-bold text-decoration-none">
-                        <svg class="me-2" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.414 4.58597L8.121 0.292969L6.707 1.70697L10 4.99997H0V6.99997H10L6.707 10.293L8.121 11.707L12.414 7.41397C12.7889 7.03891 12.9996 6.5303 12.9996 5.99997C12.9996 5.46964 12.7889 4.96102 12.414 4.58597Z"
-                                fill="#5C83AA" />
-                        </svg>
-                        <span>Kontakt</span>
-                    </a>
-                </div>
-
-            </div>
-
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="footer-common-btn mb-4">
-                    <a href="#"
-                        class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
-                        <span class="fw-bold ">
-                            Ressourcen
-                        </span>
-                        <span>
-                            <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9.22446 0.214993L3.28476 0.214992L3.28476 2.17137L7.84088 2.17137L0.922998 9.08926L2.30658 10.4728L9.22446 3.55495L9.22446 8.11107L11.1808 8.11107L11.1808 2.17137C11.1808 1.65253 10.9746 1.15496 10.6077 0.78809C10.2409 0.421214 9.7433 0.215072 9.22446 0.214993V0.214993Z"
-                                    fill="#385470" />
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-                <div>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown1.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Webdesign</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown2.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Webdesign</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown3.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Content</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between mb-3">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown4.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Animations</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="footer-common-btn mb-4">
-                    <a href="#"
-                        class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
-                        <span class="fw-bold ">
-                            Preis-Rechner
-                        </span>
-                        <span>
-                            <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9.22446 0.214993L3.28476 0.214992L3.28476 2.17137L7.84088 2.17137L0.922998 9.08926L2.30658 10.4728L9.22446 3.55495L9.22446 8.11107L11.1808 8.11107L11.1808 2.17137C11.1808 1.65253 10.9746 1.15496 10.6077 0.78809C10.2409 0.421214 9.7433 0.215072 9.22446 0.214993V0.214993Z"
-                                    fill="#385470" />
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-                <div>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown5.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Maintenance</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                    <a href=""
-                        class="text-decoration-none  nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown6.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">SEA</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown7.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Branding</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>
-                    <h3 class=" text-info-light fs-5 fw-bold">Weil gutes Marketing schon immer glücklich gemacht hat.
-                    </h3>
-                    <p class="text-info-light fs-14 pt-2">Buchen Sie jetzt einen kostenlosen Beratungstermin. Wir freuen
-                        uns auf das Gespräch.</p>
-                    <div class="common-btn pt-3 mt-3">
-                        <a href="#"
-                            class=" lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2 py-2 px-3 text-gray_1 fs-14 fw-semi-bold">
-                            <span>Buchen Sie Ihren Anruf</span>
-                            <span>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
-                                        fill="#002448" />
-                                </svg>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--/ Dropdown -/End -->
 
 
     <!-- Banner -->
@@ -614,22 +388,33 @@
             <img src="assets/img/banner-click.png" class="img-fluid" alt="banner">
         </div>
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-6">
-                    <div class="banner-left">
+            <div class="row gx-5 banner-wrapper">
+                <div class="col-lg-6">
+                    <div class="banner-left text-center text-lg-start mb-5 mb-lg-0">
+                        <div
+                            class="subpage-badge px-3 text-cyan fs-18 fw-semi-bold d-inline-flex gap-2 align-items-center justify-content-center">
+                            <img src="assets/img/settings-icon.svg" alt="settings icon" class="img-fluid">
+                            <p class="mb-0">
+                                Maintenance + Hosting
+                            </p>
+                        </div>
                         <h1 class="fs-48 fw-bold text-white mt-4">
-                            Erhöhen Sie Ihre Umsätze durch Werbung auf Google
+                            Nie wieder Stress mit Ihrer WordPress-Website
                         </h1>
                         <p class="fs-18 text-light_white mt-4 mb-30">
-                            Maximieren Sie Ihren Gewinn, verbessern Sie Ihren ROI und steigern Sie Ihre
-                            Online-Konversionen mit einer
-                            leistungsorientierten SEM-Marketingagentur.
+                            Ihre neue Website ist jetzt online, was nun? Mit den Dartera Website Care Packages erhalten
+                            Sie einen Partner, der sowohl Ihren <a href="#"
+                                class="text-flourescent_blue text-decoration-none text-hover">Server als auch Ihre
+                                Website
+                                zuverlässig wartet</a> und
+                            optimiert, um die Erreichbarkeit und Sicherheit zu gewährleisten.
                         </p>
                         <!-- Common Buttons -/ Start -->
-                        <div class="common-btn d-flex align-items-center justify-content-start gap-3">
+                        <div
+                            class="common-btn d-flex align-items-center justify-content-center justify-content-lg-start gap-3 flex-wrap">
                             <a href="#"
                                 class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2">
-                                <span>Referenzen</span>
+                                <span>Pakete</span>
                                 <span>
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -655,9 +440,9 @@
                         <!-- Common Buttons -/ End -->
                     </div>
                 </div>
-                <div class="col-xl-6">
-                    <div class="mx-5">
-                        <img src="assets/img/maintenance-bg.png" class="img-fluid" alt="banner">
+                <div class="col-lg-6">
+                    <div class="bannerImg text-center text-lg-start">
+                        <img src="assets/img/maintenance-img.png" class="img-fluid" alt="banner">
                     </div>
                 </div>
             </div>
@@ -665,63 +450,102 @@
     </section>
     <!--/ Banner -->
 
-    <!-- maintenance Service start  -->
-    <section class="section-padding bg-white">
+
+    <!-- Features Section Started -->
+    <section class="features m-shape section-padding position-relative bg-white">
+        <div class="features-bg-shape-1 position-absolute">
+            <img src="assets/img/m-shape-left.png" alt="Bg Shape" class="img-fluid">
+        </div>
+        <div class="features-bg-shape-2 position-absolute">
+            <img src="assets/img/m-shape-right.png" alt="Bg Shape" class="img-fluid">
+        </div>
         <div class="container">
-            <div class="section-heading text-center mb-5 pb-4">
-                <h2 class="fs-48 fw-bold text-gray_1">
-                    In allen Paketen enthalten
+            <div class="section-heading text-center mb-5 pb-3">
+                <h6
+                    class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block">
+                    Vorteile
+                </h6>
+                <h2 class="fs-48 fw-bold text-gray_1 mt-2 mb-3">
+                    Damit Ihre Website gesund bleibt
                 </h2>
+                <p class="fs-18 text-gray_2 mb-0">
+                    Alle Pakete garantieren, dass Ihre Website immer verfügbar bleibt.
+                </p>
             </div>
-            <div class="maintenance-service">
-                <div class="maintenance-service-card">
-                    <div>
-                        <img class="img-fluid mb-2" src="./assets/img/maintenance-img-1.png" alt="maintenance-img">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="features-card h-100">
+                        <div class="mb-3">
+                            <img class="img-fluid w-auto" src="assets/img/features-icon1.png" alt="sea-feat-img">
+                        </div>
+                        <div class="text-area mt-1">
+                            <h3 class="fs-4 fw-bold text-gray_1 mb-3">Cloud Hosting</h3>
+                            <p class="text-gray_2 m-0">
+                                Schliessen Sie sich dem wachsenden Cloud-Trend an, und profitieren Sie von besserem und
+                                schnellerem Hosting.
+                            </p>
+                        </div>
                     </div>
-                    <h5 class="fs-5 text-gray_1 mb-2">Cloud Hosting</h5>
-                    <p class="m-0">Schliessen Sie sich dem wachsenden Cloud-Trend an, und profitieren Sie von besserem
-                        und
-                        schnellerem Hosting.</p>
                 </div>
-                <div class="maintenance-service-card">
-                    <div>
-                        <img class="img-fluid mb-2" src="./assets/img/maintenance-img-2.png" alt="maintenance-img">
+                <div class="col-md-6 mb-4">
+                    <div class="features-card h-100">
+                        <div class="mb-3">
+                            <img class="img-fluid w-auto" src="assets/img/features-icon2.png" alt="sea-feat-img">
+                        </div>
+                        <div class="text-area mt-1">
+                            <h3 class="fs-4 fw-bold text-gray_1 mb-3">Backups</h3>
+                            <p class="text-gray_2 m-0">
+                                Wir speichern externe Backups Ihrer Website in Echtzeit auf unseren Amazon S3-Servern
+                                (und haben bei Bedarf Zugang zu einer 1-Klick-Wiederherstellungsfunktion)
+                            </p>
+                        </div>
                     </div>
-                    <h5 class="fs-5 text-gray_1 mb-2">Backups</h5>
-                    <p class="m-0">Wir stellen sicher, dass Ihre Website mit unseren umfassend getesteten
-                        Sicherheitslösungen so
-                        sicher wie möglich ist</p>
                 </div>
-                <div class="maintenance-service-card">
-                    <div>
-                        <img class="img-fluid mb-2" src="./assets/img/maintenance-img-3.png" alt="maintenance-img">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="features-card h-100">
+                        <div class="mb-3">
+                            <img class="img-fluid w-auto" src="assets/img/features-icon3.png" alt="sea-feat-img">
+                        </div>
+                        <div class="text-area mt-1">
+                            <h3 class="fs-4 fw-bold text-gray_1 mb-3">Updates</h3>
+                            <p class="text-gray_2 m-0">
+                                Ihre Plugins, Themes und Core-Dateien werden regelmässig aktualisiert, um einen
+                                reibungslosen Betrieb zu gewährleisten
+                            </p>
+                        </div>
                     </div>
-                    <h5 class="fs-5 text-gray_1 mb-2">Updates</h5>
-                    <p class="m-0">Ihre Plugins, Themes und Core-Dateien werden wöchentlich aktualisiert, um einen
-                        reibungslosen
-                        Betrieb zu gewährleisten</p>
                 </div>
-                <div class="maintenance-service-card">
-                    <div>
-                        <img class="img-fluid mb-2" src="./assets/img/maintenance-img-4.png" alt="maintenance-img">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="features-card h-100">
+                        <div class="mb-3">
+                            <img class="img-fluid w-auto" src="assets/img/features-icon4.png" alt="sea-feat-img">
+                        </div>
+                        <div class="text-area mt-1">
+                            <h3 class="fs-4 fw-bold text-gray_1 mb-3">24/7 Monitoring</h3>
+                            <p class="text-gray_2 m-0">
+                                Ihre Website wird 1.440-mal pro Tag überprüft. Unser Monitoring alarmiert bei
+                                Ungewissheiten.
+                            </p>
+                        </div>
                     </div>
-                    <h5 class="fs-5 text-gray_1 mb-2">24/7 Monitoring</h5>
-                    <p class="m-0">Ihre Website wird 1.440-mal pro Tag überprüft. Unser Monitoring alarmiert bei
-                        Ungewissheiten.</p>
                 </div>
-                <div class="maintenance-service-card">
-                    <div>
-                        <img class="img-fluid mb-2" src="./assets/img/maintenance-img-5.png" alt="maintenance-img">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="features-card h-100">
+                        <div class="mb-3">
+                            <img class="img-fluid w-auto" src="assets/img/features-icon1.png" alt="sea-feat-img">
+                        </div>
+                        <div class="text-area mt-1">
+                            <h3 class="fs-4 fw-bold text-gray_1 mb-3">Ongoing Security</h3>
+                            <p class="text-gray_2 m-0">
+                                Wir stellen sicher, dass Ihre Website mit unseren umfassend getesteten
+                                Sicherheitslösungen so sicher wie nur möglich ist.
+                            </p>
+                        </div>
                     </div>
-                    <h5 class="fs-5 text-gray_1 mb-2">Ongoing Security</h5>
-                    <p class="m-0">Wir stellen sicher, dass Ihre Website mit unseren umfassend getesteten
-                        Sicherheitslösungen so
-                        sicher wie möglich ist.</p>
                 </div>
             </div>
 
-            <!-- Common Buttons -/ Start -->
-            <div class="common-btn task-area d-flex align-items-center justify-content-center gap-3">
+            <div class="common-btn d-flex align-items-center justify-content-center gap-3 mt-5 flex-wrap">
                 <a href="#"
                     class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2">
                     <span>Pakete</span>
@@ -729,168 +553,297 @@
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
-                                fill="#002448" />
+                                fill="#002448"></path>
                         </svg>
                     </span>
                 </a>
                 <a href="#"
-                    class="minimal-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none radius-4 d-inline-flex align-items-center gap-2">
+                    class="minimal-btn fw-semi-bold text-indigo_dye lh-20 text-decoration-none radius-4 d-inline-flex align-items-center gap-2">
                     <span>Jetzt loslegen</span>
-                    <span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <span class="">
+                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
-                                d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
-                                fill="#002448" />
+                                d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
+                                fill="#003A75"></path>
                         </svg>
                     </span>
                 </a>
             </div>
-            <!-- Common Buttons -/ End -->
         </div>
     </section>
-    <!-- maintenance Service end  -->
+    <!-- Features Section End -->
 
-    <!-- Business service start  -->
-    <section class="maintenance-business-service section-padding">
+
+
+    <!-- research feature start -->
+    <section class="rearch-section section-padding bg-white">
         <div class="container">
-            <div class="row gy-4">
-                <div class="col-12">
-                    <div class="section-heading text-center mb-5">
-                        <h2 class="fs-48 fw-bold text-white mb-3">
-                            Mit <span><img src="./assets/img/aws-logo.png" alt="logo"></span> zum Erfolg
-                        </h2>
-                        <p class="text-white fs-18">Optimieren Sie Ihre Wartungsarbeiten mit der AWS-Lösung von Dartera.
-                            Erhalten Sie <br>
-                            in jedem Paket erstklassige
-                            Sicherheitsmechanismen ohne zusätzliche Kosten.</p>
+            <div class="section-heading text-center mb-5 pb-3">
+                <h6
+                    class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block">
+                    Features
+                </h6>
+                <h2 class="fs-48 fw-bold text-gray_1 mt-2">
+                    Wechseln Sie Ihre Website
+                </h2>
+            </div>
+            <div class="row gx-5">
+                <div class="col-lg-6">
+                    <div class="left-list mb-5 mb-lg-0">
+                        <h3 class="fs-4 fw-bold text-gray_1 mb-5">Von dem...</h3>
+                        <ul class="check-list list-unstyled mb-0">
+                            <li class="d-flex justify-content-between align-items-center gap-3 mb-4 mb-lg-5">
+                                <span class="d-flex align-items-center gap-3">
+                                    <img class="img-fluid" src="assets/img/cross-icon.svg" alt="icon">
+                                    <span class="fs-6 text-gray_1 fw-bold m-0">
+                                        SEO-Kickoff-Datenanalyse
+                                    </span>
+                                </span>
+                                <img class="img-fluid" src="assets/img/long-arrow.svg" alt="icon">
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center gap-3 mb-4 mb-lg-5">
+                                <span class="d-flex align-items-center gap-3">
+                                    <img class="img-fluid" src="assets/img/cross-icon.svg" alt="icon">
+                                    <span class="fs-6 text-gray_1 fw-bold">
+                                        Mehrere Sicherheitsverletzungen und Warnungen
+                                    </span>
+                                </span>
+                                <img class="img-fluid" src="assets/img/long-arrow.svg" alt="icon">
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center gap-3 mb-4 mb-lg-5">
+                                <span class="d-flex align-items-center gap-3">
+                                    <img class="img-fluid" src="assets/img/cross-icon.svg" alt="icon">
+                                    <span class="fs-6 text-gray_1 fw-bold">
+                                        Fehlende Leistungsverbesserungen und Funktionen
+                                    </span>
+                                </span>
+                                <img class="img-fluid" src="assets/img/long-arrow.svg" alt="icon">
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center gap-3 mb-4 mb-lg-5">
+                                <span class="d-flex align-items-center gap-3">
+                                    <img class="img-fluid" src="assets/img/cross-icon.svg" alt="icon">
+                                    <span class="fs-6 text-gray_1 fw-bold">
+                                        Sinkender Website-Traffic
+                                    </span>
+                                </span>
+                                <img class="img-fluid" src="assets/img/long-arrow.svg" alt="icon">
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center gap-3 mb-4 mb-lg-5">
+                                <span class="d-flex align-items-center gap-3">
+                                    <img class="img-fluid" src="assets/img/cross-icon.svg" alt="icon">
+                                    <span class="fs-6 text-gray_1 fw-bold">
+                                        Nicht reagierender und fehlerhafter E-Commerce-Shop
+                                    </span>
+                                </span>
+                                <img class="img-fluid" src="assets/img/long-arrow.svg" alt="icon">
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center gap-3 mb-0">
+                                <span class="d-flex align-items-center gap-3">
+                                    <img class="img-fluid" src="assets/img/cross-icon.svg" alt="icon">
+                                    <span class="fs-6 text-gray_1 fw-bold">
+                                        Unerfahrene WordPress-Entwickler
+                                    </span>
+                                </span>
+                                <img class="img-fluid" src="assets/img/long-arrow.svg" alt="icon">
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="maintenance-business-card h-100">
-                        <div>
-                            <img class="img-fluid mb-2" src="./assets/img/performance.png" alt="maintenance-img">
-                        </div>
-                        <h5 class="fs-5 text-gray_1 fw-bold mb-2">Performance steigern</h5>
-                        <p class="text-gray_2 m-0"><span class="fw-bold text-lapis_lazuli">+40 % Steigerung der
-                                Geschwindigkeit</span> der Seite gesehen auf unserer AWS-Plattform mit zuverlässiger
-                            Betriebszeit bei
-                            hohem Traffic.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="maintenance-business-card h-100">
-                        <div>
-                            <img class="img-fluid mb-2" src="./assets/img/monitoring.png" alt="maintenance-img">
-                        </div>
-                        <h5 class="fs-5 text-gray_1 fw-bold mb-2">Integriertes Monitoring der Websites</h5>
-                        <p class="text-gray_2 m-0">Ermitteln Sie die Probleme, die Ihre Website ausbremsen: mit Amazon
-                            Cloudwatch
-                            und unserem massgeschneiderten
-                            Performance-Monitoring-Tool für WordPress-Sites.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="maintenance-business-card h-100">
-                        <div>
-                            <img class="img-fluid mb-2" src="./assets/img/security.png" alt="maintenance-img">
-                        </div>
-                        <h5 class="fs-5 text-gray_1 fw-bold mb-2">Schützen Sie Ihr Business</h5>
-                        <p class="text-gray_2 m-0">Unzählige Cyberangriffe werden jedes Jahr durch unsere
-                            Sicherheitslösungen abgewehrt. Mit den individuellen
-                            Sicherheitslösungen von Dartera sind Ihre Daten sicher.</p>
+                <div class="col-lg-6">
+                    <div class="right-list ps-xl-4">
+                        <h3 class="fs-4 fw-bold text-gray_1 mb-5">Zu dem...</h3>
+                        <ul class="check-list list-unstyled mb-0">
+                            <li class="d-flex align-items-center gap-3 mb-4  mb-lg-5">
+                                <img class="img-fluid" src="assets/img/check-icon.svg" alt="icon">
+                                <span class="fs-6 text-gray_1 fw-bold">
+                                    Blitzschnelle WordPress-Website
+                                </span>
+                            </li>
+                            <li class="d-flex align-items-center gap-3 mb-4  mb-lg-5">
+                                <img class="img-fluid" src="assets/img/check-icon.svg" alt="icon">
+                                <span class="fs-6 text-gray_1 fw-bold">
+                                    Vollständig gesicherte, überwachte und gesicherte Website
+                                </span>
+                            </li>
+                            <li class="d-flex align-items-center gap-3 mb-4  mb-lg-5">
+                                <img class="img-fluid" src="assets/img/check-icon.svg" alt="icon">
+                                <span class="fs-6 text-gray_1 fw-bold">
+                                    Theme, Plugins und Core-Software in Bestform
+                                </span>
+                            </li>
+                            <li class="d-flex align-items-center gap-3 mb-4  mb-lg-5">
+                                <img class="img-fluid" src="assets/img/check-icon.svg" alt="icon">
+                                <span class="fs-6 text-gray_1 fw-bold">
+                                    Wachsender Website-Traffic
+                                </span>
+                            </li>
+                            <li class="d-flex align-items-center gap-3 mb-4  mb-lg-5">
+                                <img class="img-fluid" src="assets/img/check-icon.svg" alt="icon">
+                                <span class="fs-6 text-gray_1 fw-bold">
+                                    Mobilfreundliche und optimierte E-Commerce-Website
+                                </span>
+                            </li>
+                            <li class="d-flex align-items-center gap-3 mb-0">
+                                <img class="img-fluid" src="assets/img/check-icon.svg" alt="icon">
+                                <span class="fs-6 text-gray_1 fw-bold">
+                                    Unterstützung bei der Entwicklung von WordPress durch Experten
+                                </span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Business service end  -->
+    <!--/ research feature end   -->
+
 
 
     <!-- aws-features start  -->
     <section class="aws-features section-padding bg-indigo_dye_light">
         <div class="container">
+            <div class="section-heading text-center mb-5">
+                <h2 class="fs-48 fw-bold mb-3">
+                    Mit <span><img src="assets/img/aws-logo2.png" alt="logo"></span> zum Erfolg
+                </h2>
+                <p class="fs-18">
+                    Optimieren Sie Ihre Wartungsarbeiten mit der AWS-Lösung von Dartera. Erhalten Sie in jedem <br
+                        class="d-none d-lg-inline">
+                    Cloud-Paket erstklassige Sicherheitsmechanismen ohne zusätzliche Kosten.
+                </p>
+            </div>
+            <div class="row gy-4 mb-5 pb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="aws-features-card h-100 bg-white border-0">
+                        <div>
+                            <img class="img-fluid mb-2" src="assets/img/aws-1.svg" alt="aws icon">
+                        </div>
+                        <h5 class="fs-5 text-gray_1 fw-bold mb-2">Performance steigern</h5>
+                        <p class="text-gray_2 m-0"><span class="fw-bold text-lapis_lazuli">+40 % Steigerung der
+                                Geschwindigkeit</span> der Seite gesehen auf unserer AWS-Plattform mit zuverlässiger
+                            Betriebszeit bei
+                            hohem Traffic.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="aws-features-card h-100 bg-white border-0">
+                        <div>
+                            <img class="img-fluid mb-2" src="assets/img/aws-2.svg" alt="aws icon">
+                        </div>
+                        <h5 class="fs-5 text-gray_1 fw-bold mb-2">Integriertes Monitoring der Websites</h5>
+                        <p class="text-gray_2 m-0">Ermitteln Sie die Probleme, die Ihre Website ausbremsen: mit Amazon
+                            Cloudwatch
+                            und unserem massgeschneiderten
+                            Performance-Monitoring-Tool für WordPress-Sites.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="aws-features-card h-100 bg-white border-0">
+                        <div>
+                            <img class="img-fluid mb-2" src="assets/img/aws-3.svg" alt="aws icon">
+                        </div>
+                        <h5 class="fs-5 text-gray_1 fw-bold mb-2">Schützen Sie Ihr Business</h5>
+                        <p class="text-gray_2 m-0">Unzählige Cyberangriffe werden jedes Jahr durch unsere
+                            Sicherheitslösungen abgewehrt. Mit den individuellen
+                            Sicherheitslösungen von Dartera sind Ihre Daten sicher.</p>
+                    </div>
+                </div>
+            </div>
             <div class="row gy-4">
-                <div class="col-12">
-                    <div class="section-heading text-center mb-5">
-                        <h2 class="fs-48 fw-bold text-gray_1">
-                            Bei allen AWS Lösungen dabei
-                        </h2>
-                    </div>
+                <div class="section-heading text-center mb-4">
+                    <h2 class="fs-48 fw-bold mb-0">
+                        Ihre AWS Vorteile
+                    </h2>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="aws-features-card h-100 bg-white border-0">
                         <div>
-                            <img class="img-fluid mb-2" src="./assets/img/business-img-1.png" alt="maintenance-img">
+                            <img class="img-fluid mb-2" src="assets/img/aws-4.svg" alt="maintenance-img">
                         </div>
-                        <h5 class="fs-5 text-gray_1 fw-bold mb-2">Performance steigern</h5>
-                        <p class="text-gray_2 m-0"><span class="fw-bold text-lapis_lazuli">+40 % Steigerung der
-                                Geschwindigkeit</span> der Seite gesehen auf unserer AWS-Plattform mit zuverlässiger
-                            Betriebszeit bei
-                            hohem Traffic.</p>
+                        <h5 class="fs-5 text-gray_1 fw-bold mb-2">
+                            Kostenlose SSL-Zertifikate
+                        </h5>
+                        <p class="text-gray_2 m-0">
+                            Sie können Ihre eigenen SSL-Zertifikate installieren oder kostenlose SSL-Zertifikate von
+                            Dartera verwenden.
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="aws-features-card h-100 bg-white border-0">
                         <div>
-                            <img class="img-fluid mb-2" src="./assets/img/business-img-2.png" alt="maintenance-img">
+                            <img class="img-fluid mb-2" src="assets/img/aws-3.svg" alt="maintenance-img">
                         </div>
-                        <h5 class="fs-5 text-gray_1 fw-bold mb-2">Integriertes Monitoring der Websites</h5>
-                        <p class="text-gray_2 m-0">Ermitteln Sie die Probleme, die Ihre Website ausbremsen: mit Amazon
-                            Cloudwatch
-                            und unserem massgeschneiderten
-                            Performance-Monitoring-Tool für WordPress-Sites.</p>
+                        <h5 class="fs-5 text-gray_1 fw-bold mb-2">
+                            Sicherheit als oberste Priorität
+                        </h5>
+                        <p class="text-gray_2 m-0">
+                            Wir verwenden eine Amazon-Firewall mit DDoS-Schutz sowie aktive und passive
+                            Sicherheitsmassnahmen, um unberechtigte Zugriffe auf Ihren Server zu verhindern.
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="aws-features-card h-100 bg-white border-0">
                         <div>
-                            <img class="img-fluid mb-2" src="./assets/img/business-img-3.png" alt="maintenance-img">
+                            <img class="img-fluid mb-2" src="assets/img/aws-1.svg" alt="maintenance-img">
                         </div>
-                        <h5 class="fs-5 text-gray_1 fw-bold mb-2">Schützen Sie Ihr Business</h5>
-                        <p class="text-gray_2 m-0">Unzählige Cyberangriffe werden jedes Jahr durch unsere
-                            Sicherheitslösungen abgewehrt. Mit den individuellen
-                            Sicherheitslösungen von Dartera sind Ihre Daten sicher.</p>
+                        <h5 class="fs-5 text-gray_1 fw-bold mb-2">
+                            Selbstheilung
+                        </h5>
+                        <p class="text-gray_2 m-0">
+                            Wenn Ihre Instanz aus irgendeinem Grund ausfällt, starten wir sie automatisch wieder neu.
+                            Wenn es ein grösseres Problem gibt, wird unser Sysadmin-Team alarmiert.
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="aws-features-card h-100 bg-white border-0">
                         <div>
-                            <img class="img-fluid mb-2" src="./assets/img/business-img-4.png" alt="maintenance-img">
+                            <img class="img-fluid mb-2" src="assets/img/aws-2.svg" alt="maintenance-img">
                         </div>
-                        <h5 class="fs-5 text-gray_1 fw-bold mb-2">Performance steigern</h5>
-                        <p class="text-gray_2 m-0"><span class="fw-bold text-lapis_lazuli">+40 % Steigerung der
-                                Geschwindigkeit</span> der Seite gesehen auf unserer AWS-Plattform mit zuverlässiger
-                            Betriebszeit bei
-                            hohem Traffic.</p>
+                        <h5 class="fs-5 text-gray_1 fw-bold mb-2">
+                            Überwachung der Verfügbarkeit
+                        </h5>
+                        <p class="text-gray_2 m-0">
+                            Wir überprüfen den Status aller Websites, die wir hosten, jede Minute. Das sind 1.440
+                            Überprüfungen pro Tag.
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="aws-features-card h-100 bg-white border-0">
                         <div>
-                            <img class="img-fluid mb-2" src="./assets/img/business-img-5.png" alt="maintenance-img">
+                            <img class="img-fluid mb-2" src="assets/img/aws-6.svg" alt="maintenance-img">
                         </div>
-                        <h5 class="fs-5 text-gray_1 fw-bold mb-2">Integriertes Monitoring der Websites</h5>
-                        <p class="text-gray_2 m-0">Ermitteln Sie die Probleme, die Ihre Website ausbremsen: mit Amazon
-                            Cloudwatch
-                            und unserem massgeschneiderten
-                            Performance-Monitoring-Tool für WordPress-Sites.</p>
+                        <h5 class="fs-5 text-gray_1 fw-bold mb-2">
+                            Schnelle Reaktionszeit
+                        </h5>
+                        <p class="text-gray_2 m-0">
+                            Unser Monitoring ermöglicht es uns, auf Probleme in Echtzeit zu reagieren und proaktiven
+                            Support zu leisten, bevor Sie das Problem bemerken.
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="aws-features-card h-100 bg-white border-0">
                         <div>
-                            <img class="img-fluid mb-2" src="./assets/img/business-img-6.png" alt="maintenance-img">
+                            <img class="img-fluid mb-2" src="assets/img/aws-7.svg" alt="maintenance-img">
                         </div>
-                        <h5 class="fs-5 text-gray_1 fw-bold mb-2">Schützen Sie Ihr Business</h5>
-                        <p class="text-gray_2 m-0">Unzählige Cyberangriffe werden jedes Jahr durch unsere
-                            Sicherheitslösungen abgewehrt. Mit den individuellen
-                            Sicherheitslösungen von Dartera sind Ihre Daten sicher.</p>
+                        <h5 class="fs-5 text-gray_1 fw-bold mb-2">
+                            180 Tage Aufbewahrung von Backups
+                        </h5>
+                        <p class="text-gray_2 m-0">
+                            Alle unsere Website Care Packages beinhalten die Aufbewahrung Ihrer Backups für mindestens
+                            180 Tage.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- aws-features end  -->
+
 
 
     <!-- package Start  -->
@@ -904,7 +857,7 @@
                     Website Care Plans
                 </h2>
             </div>
-            <div class="table-responsive">
+            <div class="table-responsive pb-4 pb-xl-0">
                 <table class="table position-relative mt-5 mb-0">
                     <thead>
                         <tr>
@@ -1038,7 +991,7 @@
                         </tr>
                         <tr>
                             <td class="px-4 py-3">
-                                <span class="text-gray_1 fw-medium"> 
+                                <span class="text-gray_1 fw-medium">
                                     Wöchentliche Backups
                                 </span>
                             </td>
@@ -1065,7 +1018,7 @@
                         </tr>
                         <tr>
                             <td class="px-4 py-3">
-                                <span class="text-gray_1 fw-medium"> 
+                                <span class="text-gray_1 fw-medium">
                                     9-to-5-Crash-Schutz
                                 </span>
                             </td>
@@ -1092,7 +1045,7 @@
                         </tr>
                         <tr>
                             <td class="px-4 py-3">
-                                <span class="text-gray_1 fw-medium"> 
+                                <span class="text-gray_1 fw-medium">
                                     Wiederherstellung von Backups inbegriffen
                                 </span>
                             </td>
@@ -1119,7 +1072,7 @@
                         </tr>
                         <tr>
                             <td class="px-4 py-3">
-                                <span class="text-gray_1 fw-medium"> 
+                                <span class="text-gray_1 fw-medium">
                                     Tägliche Malware-Scans
                                 </span>
                             </td>
@@ -1146,7 +1099,7 @@
                         </tr>
                         <tr>
                             <td class="px-4 py-3">
-                                <span class="text-gray_1 fw-medium"> 
+                                <span class="text-gray_1 fw-medium">
                                     Monatlicher Bericht
                                 </span>
                             </td>
@@ -1173,7 +1126,7 @@
                         </tr>
                         <tr>
                             <td class="px-4 py-3">
-                                <span class="text-gray_1 fw-medium"> 
+                                <span class="text-gray_1 fw-medium">
                                     Unterstützung für Custom Built Websites
                                 </span>
                             </td>
@@ -1200,7 +1153,7 @@
                         </tr>
                         <tr>
                             <td class="px-4 py-3">
-                                <span class="text-gray_1 fw-medium"> 
+                                <span class="text-gray_1 fw-medium">
                                     Sorgenfrei-Garantie
                                 </span>
                             </td>
@@ -1227,7 +1180,7 @@
                         </tr>
                         <tr>
                             <td class="px-4 py-3">
-                                <span class="text-gray_1 fw-medium"> 
+                                <span class="text-gray_1 fw-medium">
                                     Technische SEO-Prüfung & Empfehlungen
                                 </span>
                             </td>
@@ -1254,7 +1207,7 @@
                         </tr>
                         <tr>
                             <td class="text-nowrap px-4 py-3 align-middle">
-                                
+
                             </td>
                             <td class="text-nowrap text-center px-4 py-3 align-middle border-top">
                                 <span class="fs-5 text-gray_2 fw-bold">
@@ -1285,6 +1238,7 @@
     <!-- package End  -->
 
 
+
     <!-- Common Slider Start  -->
     <section class="common-slider section-padding bg-gray_7">
         <div class="container">
@@ -1297,160 +1251,106 @@
                     einige unserer Projekte
                 </h2>
             </div>
-            <div id="common-slider" class="owl-carousel">
+            <div id="common-slider" class="owl-carousel owl-theme">
                 <!--slider 1 -->
                 <div class="item">
-                    <div class="slider-card">
+                    <div class="slider-card position-relative">
                         <div class="img-box">
-                            <img class="img-fluid" src="./assets/img/common-slider-1.png" alt="img" />
-                            <!-- Common Buttons -/ Start -->
-                            <!-- <div class="slider-btn text-center"> -->
-                            <a href="#"
-                                class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2 slider-btn text-center">
-                                <span>Lass dich inspirieren</span>
-                                <span>
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
-                                            fill="#002448" />
-                                    </svg>
-                                </span>
-                            </a>
-                            <!-- </div> -->
-                            <!-- Common Buttons -/ End -->
-                        </div>
-                        <div class="slider-details">
-                            <p>Maintenance</p>
-                            <h5>Dartera Corporate Website Design</h5>
+                            <img class="img-fluid slide-img" src="assets/img/slider-img2.png" alt="img" />
+                            <div
+                                class="btn-wrap position-absolute bottom-0 start-0 end-0 d-flex justify-content-center px-2">
+                                <a href="#"
+                                    class="slider-btn fs-5 fw-bold text-gray_1 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex justify-content-between align-items-center gap-2">
+                                    <span>Webdesign </span>
+                                    <span class="ni ni-forward-ios fs-14 fw-bold"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!--END OF slider 1 -->
+
                 <!--slidr 2 -->
                 <div class="item">
-                    <div class="slider-card">
+                    <div class="slider-card position-relative">
                         <div class="img-box">
-                            <img class="img-fluid" src="./assets/img/common-slider-2.png" alt="img" />
-                            <!-- Common Buttons -/ Start -->
-                            <!-- <div class="slider-btn text-center"> -->
-                            <a href="#"
-                                class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2 slider-btn text-center">
-                                <span>Lass dich inspirieren</span>
-                                <span>
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
-                                            fill="#002448" />
-                                    </svg>
-                                </span>
-                            </a>
-                            <!-- </div> -->
-                            <!-- Common Buttons -/ End -->
-                        </div>
-                        <div class="slider-details">
-                            <p>Maintenance</p>
-                            <h5>Dartera Corporate Website Design</h5>
+                            <img class="img-fluid slide-img" src="assets/img/slider-img3.png" alt="img" />
+                            <div
+                                class="btn-wrap position-absolute bottom-0 start-0 end-0 d-flex justify-content-center px-2">
+                                <a href="#"
+                                    class="slider-btn fs-5 fw-bold text-gray_1 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex justify-content-between align-items-center gap-2">
+                                    <span>Webdesign </span>
+                                    <span class="ni ni-forward-ios fs-14 fw-bold"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!--END OF slider 2 -->
+
                 <!--slider 3 -->
                 <div class="item">
-                    <div class="slider-card">
+                    <div class="slider-card position-relative">
                         <div class="img-box">
-                            <img class="img-fluid" src="./assets/img/common-slider-1.png" alt="img" />
-                            <!-- Common Buttons -/ Start -->
-                            <!-- <div class="slider-btn text-center"> -->
-                            <a href="#"
-                                class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2 slider-btn text-center">
-                                <span>Lass dich inspirieren</span>
-                                <span>
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
-                                            fill="#002448" />
-                                    </svg>
-                                </span>
-                            </a>
-                            <!-- </div> -->
-                            <!-- Common Buttons -/ End -->
-                        </div>
-                        <div class="slider-details">
-                            <p>Maintenance</p>
-                            <h5>Dartera Corporate Website Design</h5>
+                            <img class="img-fluid slide-img" src="assets/img/slider-img3.png" alt="img" />
+                            <div
+                                class="btn-wrap position-absolute bottom-0 start-0 end-0 d-flex justify-content-center px-2">
+                                <a href="#"
+                                    class="slider-btn fs-5 fw-bold text-gray_1 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex justify-content-between align-items-center gap-2">
+                                    <span>Webdesign </span>
+                                    <span class="ni ni-forward-ios fs-14 fw-bold"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!--END OF slider 3 -->
+
                 <!--slider 4 -->
                 <div class="item">
-                    <div class="slider-card">
+                    <div class="slider-card position-relative">
                         <div class="img-box">
-                            <img class="img-fluid" src="./assets/img/common-slider-2.png" alt="img" />
-                            <!-- Common Buttons -/ Start -->
-                            <!-- <div class="slider-btn text-center"> -->
-                            <a href="#"
-                                class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2 slider-btn text-center">
-                                <span>Lass dich inspirieren</span>
-                                <span>
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
-                                            fill="#002448" />
-                                    </svg>
-                                </span>
-                            </a>
-                            <!-- </div> -->
-                            <!-- Common Buttons -/ End -->
-                        </div>
-                        <div class="slider-details">
-                            <p>Maintenance</p>
-                            <h5>Dartera Corporate Website Design</h5>
+                            <img class="img-fluid slide-img" src="assets/img/slider-img2.png" alt="img" />
+                            <div
+                                class="btn-wrap position-absolute bottom-0 start-0 end-0 d-flex justify-content-center px-2">
+                                <a href="#"
+                                    class="slider-btn fs-5 fw-bold text-gray_1 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex justify-content-between align-items-center gap-2">
+                                    <span>Webdesign </span>
+                                    <span class="ni ni-forward-ios fs-14 fw-bold"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!--End slider 4 -->
+
                 <!--slider 5 -->
                 <div class="item">
-                    <div class="slider-card">
+                    <div class="slider-card position-relative">
                         <div class="img-box">
-                            <img class="img-fluid" src="./assets/img/common-slider-1.png" alt="img" />
-                            <!-- Common Buttons -/ Start -->
-                            <!-- <div class="slider-btn text-center"> -->
-                            <a href="#"
-                                class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2 slider-btn text-center">
-                                <span>Lass dich inspirieren</span>
-                                <span>
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
-                                            fill="#002448" />
-                                    </svg>
-                                </span>
-                            </a>
-                            <!-- </div> -->
-                            <!-- Common Buttons -/ End -->
-                        </div>
-                        <div class="slider-details">
-                            <p>Maintenance</p>
-                            <h5>Dartera Corporate Website Design</h5>
+                            <img class="img-fluid slide-img" src="assets/img/slider-img1.png" alt="img" />
+                            <div
+                                class="btn-wrap position-absolute bottom-0 start-0 end-0 d-flex justify-content-center px-2">
+                                <a href="#"
+                                    class="slider-btn fs-5 fw-bold text-gray_1 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex justify-content-between align-items-center gap-2">
+                                    <span>Webdesign </span>
+                                    <span class="ni ni-forward-ios fs-14 fw-bold"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!--END OF slider 5 -->
+
             </div>
         </div>
     </section>
     <!-- Common Slider Start  -->
 
 
+
     <!-- Call To Action -/Start -->
-    <section class="call-to-action-area section-padding bg-indigo_dye position-relative">
+    <section class="call-to-action-area section-padding bg-lapis_lazuli position-relative">
         <div class="CTA-bg-shape-1 position-absolute start-0">
             <img src="assets/img/call-to-action-shape-1.png" alt="Bg Shape" class="img-fluid">
         </div>
@@ -1461,10 +1361,12 @@
             <div class="call-to-action-inner-wrap position-relative">
                 <div class="section-heading text-center pb-3">
                     <h2 class="fs-48 fw-bold text-white mb-3">
-                        Weil gutes Marketing schon immer <br class="d-none d-lg-block"> glücklich gemacht hat.
+                        Weil gutes Marketing schon immer <br class="d-none d-lg-block">
+                        glücklich gemacht hat.
                     </h2>
                     <p class="fs-18 text-white mb-0">
-                        Buchen Sie jetzt einen kostenlosen Beratungstermin. Wir freuen uns auf das Gespräch.
+                        Buchen Sie jetzt einen kostenlosen Beratungstermin. Wir freuen uns
+                        auf das Gespräch.
                     </p>
                 </div>
 
@@ -1514,7 +1416,8 @@
                         <div class="col-lg-6">
                             <div class="CTA-form-wrapper">
                                 <h4 class="fs-30 fw-bold mb-0">
-                                    Kostenloses Audit in <br class="d-none d-lg-block"> nur 1 Minute.
+                                    Kostenloses Audit in <br class="d-none d-lg-block">
+                                    nur 1 Minute.
                                 </h4>
 
                                 <form class="CTA-form">
@@ -1537,7 +1440,6 @@
                                             placeholder="www.dartera.ch" id="webAdress">
                                     </div>
 
-
                                     <!-- Common Buttons -/ Start -->
                                     <div class="common-btn text-center pt-3">
                                         <a href="#"
@@ -1554,21 +1456,17 @@
                                         </a>
                                     </div>
                                     <!-- Common Buttons -/ End -->
-
-
                                 </form>
-
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- Call to action Form -/End  -->
             </div>
-
-
         </div>
     </section>
     <!-- Call To Action -/End -->
+
 
 
     <!-- FAQ's -Start -->
@@ -1585,20 +1483,63 @@
                     </h2>
                 </div>
             </div>
-            <div class="row align-items-center pt-5">
-                <div class="col-xl-6">
-                    <img src="assets/img/faqImage.png" class="img-fluid" alt="">
-                </div>
-                <div class="col-xl-6">
-                    <div class="faq">
-                        <ul class="accordion-list list-unstyled">
-                            <li class="accordion-list-item radius-16 bg-white  mb-3 open">
+            <div class="faq">
+                <div class="row pt-5">
+                    <div class="col-xl-6">
+                        <ul class="accordion-list list-unstyled mb-0">
+                            <li class="accordion-list-item radius-16 bg-white  mb-2 open">
                                 <h5
-                                    class="accordion-title fw-bold fs-20 text-indigo_dye px-4 d-flex justify-content-between align-items-center">
-                                    Wie funktioniert die Preisgestaltung?
-                                    <span class="ni ni-sort-up-fill"></span>
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                    Was ist AWS?
+                                    <span class="ni ni-minus"></span>
                                 </h5>
                                 <div class="accordion-desc">
+                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                        Amazon Web Services (AWS) ist eine sichere Plattform für Cloud-Dienste,
+                                        <a href="#" class="text-indigo_dye fw-bold text-decoration-none">
+                                            die
+                                            Rechenleistung, Datenbankspeicher, Inhaltsbereitstellung und andere
+                                            Funktionen
+                                            bietet, um Unternehmen beim Skalieren und Wachsen zu helfen.
+                                        </a> Web- und
+                                        Anwendungsserver werden in der Cloud betrieben, um dynamische Websites zu
+                                        hosten.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-list-item radius-16 bg-white  mb-2">
+                                <h5
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                    Was bedeutet eigentlich SEO?
+                                    <span class="ni ni-plus-sm"></span>
+                                </h5>
+                                <div class="accordion-desc" style="display: none">
+                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                        TypeScript stands in an unusual relationship to
+                                        JavaScript. TypeScript offers all of JavaScript’s
+                                        features, and an additional layer on top of these:
+                                        TypeScript’s type system. For example, JavaScript
+                                        provides language primitives like string, number, and
+                                        object, but it doesn’t check that you’ve consistently
+                                        assigned these. TypeScript does. This means that your
+                                        existing working JavaScript code is also TypeScript
+                                        code. The main benefit of TypeScript is that it can
+                                        highlight unexpected behavior in your code, lowering
+                                        the chance of bugs.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-6">
+                        <ul class="accordion-list list-unstyled">
+                            <li class="accordion-list-item radius-16 bg-white mb-2">
+                                <h5
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                    Wie funktioniert die Preisgestaltung?
+                                    <span class="ni ni-plus-sm"></span>
+                                </h5>
+                                <div class="accordion-desc" style="display: none;">
                                     <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
                                         Google Tag Manager allows you to combine hundreds of
                                         pixels into a single pixel. Please make sure to add
@@ -1608,12 +1549,11 @@
                                     </p>
                                 </div>
                             </li>
-
-                            <li class="accordion-list-item radius-16 bg-white  mb-3">
+                            <li class="accordion-list-item radius-16 bg-white  mb-2">
                                 <h5
-                                    class="accordion-title fw-bold fs-20 text-indigo_dye px-4 d-flex justify-content-between align-items-center">
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
                                     Was bedeutet eigentlich SEO?
-                                    <span class="ni ni-sort-down-fill"></span>
+                                    <span class="ni ni-plus-sm"></span>
                                 </h5>
                                 <div class="accordion-desc" style="display: none">
                                     <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
@@ -1631,12 +1571,11 @@
                                     </p>
                                 </div>
                             </li>
-
-                            <li class="accordion-list-item radius-16 bg-white  mb-3">
+                            <li class="accordion-list-item radius-16 bg-white  mb-2">
                                 <h5
-                                    class="accordion-title fw-bold fs-20 text-indigo_dye px-4 d-flex justify-content-between align-items-center">
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
                                     Was gehört alles zu SEO?
-                                    <span class="ni ni-sort-down-fill"></span>
+                                    <span class="ni ni-plus-sm"></span>
                                 </h5>
                                 <div class="accordion-desc" style="display: none">
                                     <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
@@ -1654,57 +1593,11 @@
                                     </p>
                                 </div>
                             </li>
-                            <li class="accordion-list-item radius-16 bg-white  mb-3">
+                            <li class="accordion-list-item radius-16 bg-white  mb-2">
                                 <h5
-                                    class="accordion-title fw-bold fs-20 text-indigo_dye px-4 d-flex justify-content-between align-items-center">
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
                                     Was bringt eine Keyword-Recherche?
-                                    <span class="ni ni-sort-down-fill"></span>
-                                </h5>
-                                <div class="accordion-desc" style="display: none">
-                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
-                                        TypeScript stands in an unusual relationship to
-                                        JavaScript. TypeScript offers all of JavaScript’s
-                                        features, and an additional layer on top of these:
-                                        TypeScript’s type system.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="accordion-list-item radius-16 bg-white  mb-3">
-                                <h5
-                                    class="accordion-title fw-bold fs-20 text-indigo_dye px-4 d-flex justify-content-between align-items-center">
-                                    Was sind SEO-Texte?
-                                    <span class="ni ni-sort-down-fill"></span>
-                                </h5>
-                                <div class="accordion-desc" style="display: none">
-                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
-                                        TypeScript stands in an unusual relationship to
-                                        JavaScript. TypeScript offers all of JavaScript’s
-                                        features, and an additional layer on top of these:
-                                        TypeScript’s type system.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li class="accordion-list-item radius-16 bg-white  mb-3">
-                                <h5
-                                    class="accordion-title fw-bold fs-20 text-indigo_dye px-4 d-flex justify-content-between align-items-center">
-                                    Lohnt sich für mich eine SEO-Agentur?
-                                    <span class="ni ni-sort-down-fill"></span>
-                                </h5>
-                                <div class="accordion-desc" style="display: none">
-                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
-                                        TypeScript stands in an unusual relationship to
-                                        JavaScript. TypeScript offers all of JavaScript’s
-                                        features, and an additional layer on top of these:
-                                        TypeScript’s type system.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="accordion-list-item radius-16 bg-white  mb-3">
-                                <h5
-                                    class="accordion-title fw-bold fs-20 text-indigo_dye px-4 d-flex justify-content-between align-items-center">
-                                    Was kostet SEO?
-                                    <span class="ni ni-sort-down-fill"></span>
+                                    <span class="ni ni-plus-sm"></span>
                                 </h5>
                                 <div class="accordion-desc" style="display: none">
                                     <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
@@ -1724,6 +1617,7 @@
     <!-- FAQ's -/End -->
 
 
+
     <!-- Footer section -/Start -->
     <footer class="footer-area position-relative">
         <div class="footer-bg-shape-1 position-absolute">
@@ -1738,18 +1632,24 @@
                             Newsletter
                         </h4>
                         <p class="mb-0 text-dark_6">
-                            Abonnieren Sie unseren Newsletter, um die neuesten <br class="d-none d-lg-block"> Nachrichten und Updates zu erhalten.
+                            Abonnieren Sie unseren Newsletter, um die neuesten <br class="d-none d-lg-block">
+                            Nachrichten und Updates zu erhalten.
                         </p>
 
                         <div class="subscribe-box mt-3 position-relative">
-                            <input class="subscribe-field radius-12 w-100 text-white " type="email" name="subscribe-mail" id="" placeholder="Geben Sie hier Ihre E-Mail ein">
+                            <input class="subscribe-field radius-12 w-100 text-white transition-02" type="email"
+                                name="subscribe-mail" id="" placeholder="Geben Sie hier Ihre E-Mail ein">
                             <div class="subscribe-btn">
-                                <a href="#" class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2">
+                                <a href="#"
+                                    class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2">
                                     <span>Anmelden</span>
                                     <span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.842238 3.8902C0.646913 3.94601 0.469545 4.05186 0.327685 4.19726C0.185826 4.34267 0.0843913 4.52259 0.0334185 4.71923C-0.0175542 4.91588 -0.0162984 5.12242 0.0370618 5.31843C0.090422 5.51444 0.194037 5.69311 0.337654 5.83678L2.32799 7.82478V11.6666H6.1739L8.17765 13.6674C8.2852 13.7759 8.41313 13.8621 8.55408 13.9209C8.69504 13.9798 8.84624 14.0102 8.99899 14.0104C9.09938 14.0102 9.19935 13.9973 9.29649 13.9719C9.49305 13.9224 9.6731 13.822 9.81851 13.6808C9.96393 13.5396 10.0696 13.3626 10.1248 13.1675L13.9947 0.012207L0.842238 3.8902ZM1.16657 5.01195L11.0996 2.08362L3.49582 9.67511V7.34178L1.16657 5.01195ZM9.00657 12.8426L6.65749 10.4999H4.32415L11.9267 2.90379L9.00657 12.8426Z" fill="#002448"/>
-                                            </svg>                                            
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.842238 3.8902C0.646913 3.94601 0.469545 4.05186 0.327685 4.19726C0.185826 4.34267 0.0843913 4.52259 0.0334185 4.71923C-0.0175542 4.91588 -0.0162984 5.12242 0.0370618 5.31843C0.090422 5.51444 0.194037 5.69311 0.337654 5.83678L2.32799 7.82478V11.6666H6.1739L8.17765 13.6674C8.2852 13.7759 8.41313 13.8621 8.55408 13.9209C8.69504 13.9798 8.84624 14.0102 8.99899 14.0104C9.09938 14.0102 9.19935 13.9973 9.29649 13.9719C9.49305 13.9224 9.6731 13.822 9.81851 13.6808C9.96393 13.5396 10.0696 13.3626 10.1248 13.1675L13.9947 0.012207L0.842238 3.8902ZM1.16657 5.01195L11.0996 2.08362L3.49582 9.67511V7.34178L1.16657 5.01195ZM9.00657 12.8426L6.65749 10.4999H4.32415L11.9267 2.90379L9.00657 12.8426Z"
+                                                fill="#002448" />
+                                        </svg>
                                     </span>
                                 </a>
                             </div>
@@ -1762,15 +1662,15 @@
             <!-- Fooetr Main -/Start -->
             <div class="footer-main">
                 <div class="row">
-                    
-                    <div class="col-sm-6 col-lg-3">
+
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
-                            
+
                             <a href="index.html" class="site-logo mb-30 d-inline-block">
                                 <img src="assets/img/footer-logo.svg" alt="">
                             </a>
-                            
-                            <ul class="widget-list list-unstyled m-0 d-flex flex-wrap gap-4">
+
+                            <ul class="widget-list list-unstyled m-0 d-flex flex-wrap gap-lg-4 gap-3 ">
                                 <li class="widget-list-item pb-0">
                                     <a href="#" class="text-decoration-none text-white fs-6 d-flex align-items-center">
                                         <span class="pe-2 me-1 ">
@@ -1805,7 +1705,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
                             <h6
                                 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
@@ -1841,7 +1741,7 @@
                                             </svg>
                                         </span>
                                         <span class="widget-list-item-hover position-relative">
-                                            hey@dartera.ch
+                                            mailto:hey@dartera.ch
                                         </span>
                                     </a>
                                 </li>
@@ -1849,7 +1749,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
                             <h6
                                 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
@@ -1865,7 +1765,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
                             <h6
                                 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
@@ -1880,21 +1780,21 @@
                                     </a>
                                 </li>
                                 <li class="widget-list-item">
-                                    <a href="#" class="text-decoration-none text-white fs-6 fw-medium">
+                                    <a href="impressum.html" class="text-decoration-none text-white fs-6 fw-medium">
                                         <span class="widget-list-item-hover footer-right-arrow position-relative">
                                             Impressum
                                         </span>
                                     </a>
                                 </li>
                                 <li class="widget-list-item">
-                                    <a href="#" class="text-decoration-none text-white fs-6 fw-medium">
+                                    <a href="privacy.html" class="text-decoration-none text-white fs-6 fw-medium">
                                         <span class="widget-list-item-hover footer-right-arrow position-relative">
-                                            Datenschutz
+                                            Privacy
                                         </span>
                                     </a>
                                 </li>
                                 <li class="widget-list-item pb-0">
-                                    <a href="#" class="text-decoration-none text-white fs-6 fw-medium">
+                                    <a href="agb.html" class="text-decoration-none text-white fs-6 fw-medium">
                                         <span class="widget-list-item-hover footer-right-arrow position-relative">
                                             AGB
                                         </span>
@@ -1911,17 +1811,18 @@
 
             <div class="footer-bottom">
                 <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <div class="col text-white fw-medium">
-                            © 2022 Dartera GmbH
+                    <div class="col-12 col-xl-5 text-xl-start text-center">
+                        <div class="text-white fw-medium">
+                            © 2024 Dartera GmbH
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="footer-button-wrapper d-flex align-items-center justify-content-end gap-4">
+                    <div class="col-12 col-xl-7 text-xl-end text-center">
+                        <div
+                            class="footer-button-wrapper d-flex flex-wrap align-items-center justify-content-xl-end justify-content-center mt-xl-0 mt-4 gap-4">
 
                             <div class="footer-common-btn">
-                                <a href="#"
-                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
+                                <a href="blog.html"
+                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between transition-02">
                                     <span class="fw-bold ">
                                         Blog
                                     </span>
@@ -1937,27 +1838,10 @@
                             </div>
 
                             <div class="footer-common-btn">
-                                <a href="#"
-                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
+                                <a href="ressourcen.html"
+                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between transition-02">
                                     <span class="fw-bold ">
                                         Ressourcen
-                                    </span>
-                                    <span>
-                                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.22446 0.214993L3.28476 0.214992L3.28476 2.17137L7.84088 2.17137L0.922998 9.08926L2.30658 10.4728L9.22446 3.55495L9.22446 8.11107L11.1808 8.11107L11.1808 2.17137C11.1808 1.65253 10.9746 1.15496 10.6077 0.78809C10.2409 0.421214 9.7433 0.215072 9.22446 0.214993V0.214993Z"
-                                                fill="#385470" />
-                                        </svg>
-                                    </span>
-                                </a>
-                            </div>
-
-                            <div class="footer-common-btn">
-                                <a href="#"
-                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
-                                    <span class="fw-bold ">
-                                        Preis-Rechner
                                     </span>
                                     <span>
                                         <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
@@ -1975,7 +1859,7 @@
                 </div>
             </div>
         </div>
-        <button type="button" class="border-0 rounded-pill" id="btn-back-to-top">
+        <button type="button" class="border-0 rounded-pill" id="back-to-top">
             <img src="assets/img/back-to-top-icon.svg" alt="Back To Top" class="img-fluid">
         </button>
     </footer>
@@ -2061,6 +1945,7 @@
         </div>
     </div>
     <!--/ sidebar1 -->
+
 
 
     <!-- sidebar2 -->
@@ -2320,6 +2205,9 @@
         </div>
     </div>
     <!--/ sidebar3 -->
+
+
+
 
     <!-- Main Coding End -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->

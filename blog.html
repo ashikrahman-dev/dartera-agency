@@ -40,8 +40,11 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <!-- Local server Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
-
+    <link href=" https://assets.calendly.com/assets/external/widget.css " rel="stylesheet">
     <!-- CDN Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
@@ -56,7 +59,7 @@
     <!-- Main Coding Start Here -->
 
     <!-- header -/Start -->
-    <header id="header">
+    <header id="header" class="position-absolute top-0 start-0 end-0 w-100">
         <!-- navbar -/Start -->
         <div class="header">
             <div class="container-fluid p-0">
@@ -66,14 +69,41 @@
                             <img src="assets/img/logo.svg" alt="logo" class="img-fluid">
                         </a>
 
-                        <div class="d-xxl-none d-flex align-items-center gap-4 contactInfo px-4">
-                            <a href="+41315520083" class=" text-decoration-none phone text-white fs-5">
+                        <div class="d-xxl-none d-flex align-items-center ms-auto gap-sm-3 gap-2 contactInfo px-0 me-2">
+                            <div class="nav-item dropdown language pe-2">
+                                <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-0 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <!-- Deutsch -->
+                                    <img src="assets/img/language.png" class="img-fluid language-icon" alt="">
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end fade-down all-language ">
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            English
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            Hindi
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            Bangla
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="tel:+41315520083" class=" text-decoration-none phone text-white fs-5">
                                 <span><img src="assets/img/call.svg" class="img-fluid" alt="call"></span>
-                                +41 31 552 00 83
                             </a>
-                            <button type="button" class="nav-btn px-4 border-0 fs-6 fw-semi-bold text-gray_1">
-                                Termin vereinbaren
-                            </button>
+                            <a href="#" class=" text-decoration-none phone text-white fs-5">
+                                <span><img src="assets/img/appointment.png" class="img-fluid appointment"
+                                        alt="appointment"></span>
+                            </a>
+                            <!-- <button type="button" class="nav-btn px-4 border-0 fs-6 fw-semi-bold text-gray_1">
+                                    Termin vereinbaren
+                                </button> -->
                         </div>
 
 
@@ -88,11 +118,11 @@
                         <div class="collapse navbar-collapse" id="nav-toggle">
                             <ul class="menu navbar-nav mx-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active py-4 px-0 mx-3 active fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link active py-xxl-4 py-2 px-0 mx-3 active fs-14 fw-bold text-uppercase"
                                         aria-current="page" href="index.html">Startseite</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
                                         href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Leistungen
                                     </a>
@@ -103,12 +133,12 @@
                                         </div>
                                         <div class="row gx-2">
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="web-design.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo1.png"
                                                             class="img-fluid dropdown-logo d-flex align-items-center justify-content-center"
-                                                            alt="sidebarlogo">
+                                                            alt="sidebar logo">
                                                         <div>
                                                             <h5 class="fs-6 fw-bold text-indigo_dye">Webdesign</h5>
                                                             <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">
@@ -117,8 +147,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -127,7 +158,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="maintenance.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo6.png"
@@ -141,8 +172,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -151,7 +183,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="seo.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo2.png"
@@ -165,8 +197,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -175,7 +208,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="sea.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo7.png"
@@ -189,8 +222,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -199,7 +233,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="content.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo3.png"
@@ -213,8 +247,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -223,7 +258,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="branding.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo8.png"
@@ -237,8 +272,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -247,7 +283,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="animations.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo4.png"
@@ -261,8 +297,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -274,41 +311,44 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
                                         href="referenzen.html">Referenzen</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
-                                        href="#">Über
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                        href="uber.html">Über
                                         uns</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
-                                        href="#">Kontakt</a>
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                        href="contact.html">Kontakt</a>
                                 </li>
                             </ul>
 
 
                             <div class="nav-right d-flex align-items-center">
-                                <div class="nav-item dropdown language pe-2">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                <div class="nav-item dropdown language pe-2 d-xxl-block d-none">
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
                                         href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        German
+                                        Deutsch
                                     </a>
-                                    <ul class="dropdown-menu dropdown-menu-end fade-down">
+                                    <ul class="dropdown-menu dropdown-menu-end fade-down all-language ">
                                         <li>
-                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
-                                                Action
+                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
+                                                href="#">
+                                                English
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
-                                                Another action
+                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
+                                                href="#">
+                                                Hindi
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
-                                                Something else here
+                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
+                                                href="#">
+                                                Bangla
                                             </a>
                                         </li>
                                     </ul>
@@ -322,35 +362,7 @@
                                         Termin vereinbaren
                                     </button>
                                 </div>
-                                <div class="sidebar">
-                                    <!-- <img src="assets/img/humbarger.svg" class="img-fluid" alt="sidebar"> -->
 
-                                    <!-- <svg width="24" height="18" viewBox="0 0 24 18" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="12" width="12" height="2" fill="#00BAEB" />
-                                                <rect x="12" y="16" width="12" height="2" fill="#00BAEB" />
-                                                <rect x="0" y="8" width="24" height="2" fill="#00BAEB" />
-                                            </svg> -->
-
-                                    <svg class="sidebarToggle d-block" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="12" y="3" width="24" height="2" fill="#00BAEB" />
-                                        <rect x="12" y="19" width="24" height="2" fill="#00BAEB" />
-                                        <rect x="0" y="11" width="24" height="2" fill="#00BAEB" />
-                                    </svg>
-
-
-
-                                    <svg class="sidebarClose d-none" width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="0.804688" y="17.7783" width="24" height="2"
-                                            transform="rotate(-45 0.804688 17.7783)" fill="#00BAEB" />
-                                        <rect x="2.21875" y="0.807617" width="24" height="2"
-                                            transform="rotate(45 2.21875 0.807617)" fill="#00BAEB" />
-                                    </svg>
-
-
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -361,684 +373,684 @@
     </header>
     <!--/ header -/End -->
 
-
-    <!-- Dropdown -/start -->
-    <div class="nav-dropdown py-5">
-        <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="footer-common-btn mb-4">
-                    <a href="#"
-                        class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
-                        <span class="fw-bold ">
-                            Blog
-                        </span>
-                        <span>
-                            <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9.22446 0.214993L3.28476 0.214992L3.28476 2.17137L7.84088 2.17137L0.922998 9.08926L2.30658 10.4728L9.22446 3.55495L9.22446 8.11107L11.1808 8.11107L11.1808 2.17137C11.1808 1.65253 10.9746 1.15496 10.6077 0.78809C10.2409 0.421214 9.7433 0.215072 9.22446 0.214993V0.214993Z"
-                                    fill="#385470" />
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-                <div>
-                    <a class="sidebar-drop-item transition-02 fs-5 mb-3 d-block fw-bold text-decoration-none">
-                        <svg class="me-2" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.414 4.58597L8.121 0.292969L6.707 1.70697L10 4.99997H0V6.99997H10L6.707 10.293L8.121 11.707L12.414 7.41397C12.7889 7.03891 12.9996 6.5303 12.9996 5.99997C12.9996 5.46964 12.7889 4.96102 12.414 4.58597Z"
-                                fill="#5C83AA" />
-                        </svg>
-                        <span>Startseite</span>
-
-                    </a>
-                </div>
-                <div>
-                    <a class="sidebar-drop-item transition-02 fs-5 mb-3 d-block fw-bold text-decoration-none">
-                        <svg class="me-2" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.414 4.58597L8.121 0.292969L6.707 1.70697L10 4.99997H0V6.99997H10L6.707 10.293L8.121 11.707L12.414 7.41397C12.7889 7.03891 12.9996 6.5303 12.9996 5.99997C12.9996 5.46964 12.7889 4.96102 12.414 4.58597Z"
-                                fill="#5C83AA" />
-                        </svg>
-                        <span>Referenzen</span>
-
-                    </a>
-                </div>
-                <div>
-                    <a class="sidebar-drop-item transition-02 fs-5 mb-3 d-block fw-bold text-decoration-none">
-                        <svg class="me-2" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.414 4.58597L8.121 0.292969L6.707 1.70697L10 4.99997H0V6.99997H10L6.707 10.293L8.121 11.707L12.414 7.41397C12.7889 7.03891 12.9996 6.5303 12.9996 5.99997C12.9996 5.46964 12.7889 4.96102 12.414 4.58597Z"
-                                fill="#5C83AA" />
-                        </svg>
-                        <span>Über uns</span>
-
-                    </a>
-                </div>
-                <div>
-                    <a class="sidebar-drop-item transition-02 fs-5 mb-3 d-block fw-bold text-decoration-none">
-                        <svg class="me-2" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.414 4.58597L8.121 0.292969L6.707 1.70697L10 4.99997H0V6.99997H10L6.707 10.293L8.121 11.707L12.414 7.41397C12.7889 7.03891 12.9996 6.5303 12.9996 5.99997C12.9996 5.46964 12.7889 4.96102 12.414 4.58597Z"
-                                fill="#5C83AA" />
-                        </svg>
-                        <span>Kontakt</span>
-                    </a>
-                </div>
-
-            </div>
-
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="footer-common-btn mb-4">
-                    <a href="#"
-                        class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
-                        <span class="fw-bold ">
-                            Ressourcen
-                        </span>
-                        <span>
-                            <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9.22446 0.214993L3.28476 0.214992L3.28476 2.17137L7.84088 2.17137L0.922998 9.08926L2.30658 10.4728L9.22446 3.55495L9.22446 8.11107L11.1808 8.11107L11.1808 2.17137C11.1808 1.65253 10.9746 1.15496 10.6077 0.78809C10.2409 0.421214 9.7433 0.215072 9.22446 0.214993V0.214993Z"
-                                    fill="#385470" />
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-                <div>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown1.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Webdesign</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown2.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Webdesign</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown3.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Content</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between mb-3">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown4.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Animations</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="footer-common-btn mb-4">
-                    <a href="#"
-                        class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
-                        <span class="fw-bold ">
-                            Preis-Rechner
-                        </span>
-                        <span>
-                            <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9.22446 0.214993L3.28476 0.214992L3.28476 2.17137L7.84088 2.17137L0.922998 9.08926L2.30658 10.4728L9.22446 3.55495L9.22446 8.11107L11.1808 8.11107L11.1808 2.17137C11.1808 1.65253 10.9746 1.15496 10.6077 0.78809C10.2409 0.421214 9.7433 0.215072 9.22446 0.214993V0.214993Z"
-                                    fill="#385470" />
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-                <div>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown5.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Maintenance</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                    <a href=""
-                        class="text-decoration-none  nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown6.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">SEA</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-                    </a>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown7.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Branding</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>
-                    <h3 class=" text-info-light fs-5 fw-bold">Weil gutes Marketing schon immer glücklich gemacht hat.
-                    </h3>
-                    <p class="text-info-light fs-14 pt-2">Buchen Sie jetzt einen kostenlosen Beratungstermin. Wir freuen
-                        uns auf das Gespräch.</p>
-                    <div class="common-btn pt-3 mt-3">
-                        <a href="#"
-                            class=" lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2 py-2 px-3 text-gray_1 fs-14 fw-semi-bold">
-                            <span>Buchen Sie Ihren Anruf</span>
-                            <span>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
-                                        fill="#002448" />
-                                </svg>
-                            </span>
-                        </a>
-                    </div>
-                </div>
+    <!-- blog-header-tab -->
+    <div class="blog-header-tab border-bottom mt-5 pt-5">
+        <div class="container">
+            <div class="blog-tab-list">
+                <ul class="nav nav-pills align-items-center justify-content-center mb-0 pb-3 pb-lg-0" id="pills-tab"
+                    role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link active py-3 py-xl-4 d-flex align-items-center gap-2 text-gray_3 fs-6 fw-semi-bold"
+                            id="pills-Neueste-tab" data-bs-toggle="pill" data-bs-target="#pills-Neueste" type="button"
+                            role="tab">
+                            <img src="assets/img/tab-icon1.svg" alt="tab icon" class="img-fluid">
+                            Neueste Artikel
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link py-3 py-xl-4 d-flex align-items-center gap-2 text-gray_3 fs-6 fw-semi-bold"
+                            id="pills-webdesign-tab" data-bs-toggle="pill" data-bs-target="#pills-webdesign"
+                            type="button" role="tab">
+                            <img src="assets/img/tab-icon2.svg" alt="tab icon" class="img-fluid">
+                            Webdesign
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link py-3 py-xl-4 d-flex align-items-center gap-2 text-gray_3 fs-6 fw-semi-bold"
+                            id="pills-maintenance-tab" data-bs-toggle="pill" data-bs-target="#pills-maintenance"
+                            type="button" role="tab">
+                            <img src="assets/img/tab-icon3.svg" alt="tab icon" class="img-fluid">
+                            Maintenance
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link py-3 py-xl-4 d-flex align-items-center gap-2 text-gray_3 fs-6 fw-semi-bold"
+                            id="pills-SEO-tab" data-bs-toggle="pill" data-bs-target="#pills-SEO" type="button"
+                            role="tab">
+                            <img src="assets/img/tab-icon4.svg" alt="tab icon" class="img-fluid">
+                            SEO
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link py-3 py-xl-4 d-flex align-items-center gap-2 text-gray_3 fs-6 fw-semi-bold"
+                            id="pills-SEA-tab" data-bs-toggle="pill" data-bs-target="#pills-SEA" type="button"
+                            role="tab">
+                            <img src="assets/img/tab-icon5.svg" alt="tab icon" class="img-fluid">
+                            SEA
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link py-3 py-xl-4 d-flex align-items-center gap-2 text-gray_3 fs-6 fw-semi-bold"
+                            id="pills-content-tab" data-bs-toggle="pill" data-bs-target="#pills-content" type="button"
+                            role="tab">
+                            <img src="assets/img/tab-icon6.svg" alt="tab icon" class="img-fluid">
+                            Content
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link py-3 py-xl-4 d-flex align-items-center gap-2 text-gray_3 fs-6 fw-semi-bold"
+                            id="pills-branding-tab" data-bs-toggle="pill" data-bs-target="#pills-branding" type="button"
+                            role="tab">
+                            <img src="assets/img/tab-icon7.svg" alt="tab icon" class="img-fluid">
+                            Branding
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link py-3 py-xl-4 d-flex align-items-center gap-2 text-gray_3 fs-6 fw-semi-bold"
+                            id="pills-animations-tab" data-bs-toggle="pill" data-bs-target="#pills-animations"
+                            type="button" role="tab">
+                            <img src="assets/img/tab-icon8.svg" alt="tab icon" class="img-fluid">
+                            Animations
+                        </button>
+                    </li>
+                    <li class="nav-item ms-lg-auto">
+                        <button type="button" class="btn search-btn p-0">
+                            <img src="assets/img/search-icon.svg" alt="tab icon" class="img-fluid">
+                        </button>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
-    <!--/ Dropdown -/End -->
+    <!--/ blog-header-tab -->
 
-    
-
-    <!-- /Blog tab -/Start -->
-    <section class="blog-header bg-white">
+    <!-- blog-main -->
+    <main class="blog-main pb-5 mt-4">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-7">
-                    <div class="blog-header-tab d-flex align-items-center justify-content-between">
-                        <div class="tab-item">
-                            <a href="#" class="fs-6 text-gray_3 fw-semi-bold text-decoration-none transition-02 d-inline-block">
-                                Neueste Artikel
-                            </a>
-                        </div>
-                        <div class="tab-item">
-                            <a href="#" class="fs-6 text-gray_3 fw-semi-bold text-decoration-none transition-02 d-inline-block">
-                                Dienstleistungen
-                            </a>
-                        </div>
-                        <div class="tab-item">
-                            <a href="#" class="fs-6 text-gray_3 fw-semi-bold text-decoration-none transition-02 d-inline-block">
-                                Hilfe und Unterstützung
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="d-flex align-items-center justify-content-end">
-                        <form class="search-box">
-                            <input type="text" id="blog-search" name="search" placeholder="Suche..." autocomplete="off" class="border-0 transition-02">
-                        </form>
-                    </div>
+            <!-- search-wrap -->
+            <div class="searchBar">
+                <div class="search-wrap position-relative pb-4">
+                    <input type="text" class="form-control rounded-pill px-4 h-52 text-gray_5 fs-14 fw-normal"
+                        placeholder="Search..">
+                    <button type="submit" class="btn position-absolute">
+                        <img src="assets/img/search-icon.svg" alt="icon" class="img-fluid">
+                    </button>
                 </div>
             </div>
-        </div>
-        <div class="border-1px"></div>
-    </section>
-    <!-- /Blog tab -/End -->
-
-    
-    <!-- /Blog header -/Start -->
-    <section class="pt-2 section-padding bg-white">
-        <div class="container">
-            <div class="blog-header">
-                <h2 class="fs-48 text-gray_1 fw-bold mb-4">
-                    Der Dartera-Blog
-                </h2>
-                <p class="fs-18 text-gray_3 mb-2">
-                    Holen Sie sich Tipps und Ratschläge, wie Sie außergewöhnlichen Kundenservice bieten, Ihre Kunden ansprechen und begeistern und ein kundenorientiertes Unternehmen aufbauen können.
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="nav-sidebar-item d-flex align-items-center gap-2 justify-content-between mb-3">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/calendar-icon-bg.svg" class="img-fluid" alt="sidebarlogo" />
-                            <p class="pb-0 text-lapis_lazuli fs-18 fw-bold mb-0">
-                                Neueste Artikel
-                            </p>
-                        </div>
-                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.4142 4.58597L8.12115 0.292969L6.70715 1.70697L10.0002 4.99997H0.000152588V6.99997H10.0002L6.70715 10.293L8.12115 11.707L12.4142 7.41397C12.7891 7.03891 12.9997 6.5303 12.9997 5.99997C12.9997 5.46964 12.7891 4.96102 12.4142 4.58597V4.58597Z"
-                                fill="#B3CFE4" />
-                        </svg>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="nav-sidebar-item d-flex align-items-center gap-2 justify-content-between mb-3">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/services-icon-bg.svg" class="img-fluid" alt="sidebarlogo" />
-                            <p class="pb-0 text-lapis_lazuli fs-18 fw-bold mb-0">
-                                Dienstleistungen
-                            </p>
-                        </div>
-                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.4142 4.58597L8.12115 0.292969L6.70715 1.70697L10.0002 4.99997H0.000152588V6.99997H10.0002L6.70715 10.293L8.12115 11.707L12.4142 7.41397C12.7891 7.03891 12.9997 6.5303 12.9997 5.99997C12.9997 5.46964 12.7891 4.96102 12.4142 4.58597V4.58597Z"
-                                fill="#B3CFE4" />
-                        </svg>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="nav-sidebar-item d-flex align-items-center gap-2 justify-content-between mb-3">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/call-iocn-bg.svg" class="img-fluid" alt="sidebarlogo" />
-                            <p class="pb-0 text-lapis_lazuli fs-18 fw-bold mb-0">
-                                Hilfe und Unterstützung
-                            </p>
-                        </div>
-                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.4142 4.58597L8.12115 0.292969L6.70715 1.70697L10.0002 4.99997H0.000152588V6.99997H10.0002L6.70715 10.293L8.12115 11.707L12.4142 7.41397C12.7891 7.03891 12.9997 6.5303 12.9997 5.99997C12.9997 5.46964 12.7891 4.96102 12.4142 4.58597V4.58597Z"
-                                fill="#B3CFE4" />
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /Blog header -/End -->
-
-
-    <!-- /Blog cart -/Start -->
-    <section class="blog-cart bg-white">
-        <div class="container">
-            <div class="blogCart-section-title d-flex align-items-center justify-content-between">
-                <h4 class="fs-30 fw-bold text-gray_1 mb-0">
-                    Neueste Beiträge
-                </h4>
-                <a href="#" class="text-decoration-none fw-semi-bold text-lapis_lazuli text-hover d-flex align-items-center gap-2 transition-02">
-                    Alle Beiträge anzeigen
-                    <span>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164Z" fill="#015EA5"/>
-                            </svg>
-                            
-                    </span>
-                </a>
-            </div>
-            <div class="border-1px mb-30"></div>
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="blog-cart-item">
-                        <div class="pb-3">
-                            <a href="#">
-                                <img src="assets/img/blog-featured-img-1.jpg" alt="Featured Image" class="img-fluid radius-4">
-                            </a>
-                        </div>
-                        <p class="fs-14 text-gray_2 lt-space-05 fw-medium mb-2 text-uppercase">
-                            Neueste Beiträge
-                        </p>
-                        <a href="#" class=" text-decoration-none text-hover">
-                            <h3 class="text-gray_1 fs-4 fw-medium mb-2">
-                                Worte sind die Brücke: Harmonie in Songwriting und Content-Strategie finden
-                            </h3>
-                        </a>
-                        <p class="fs-18 text-gray_2 pb-0 pt-1">
-                            Welcome Bambee customers; we are glad to have you here. Learn more about the benefits we offer to Bambee customers.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="blog-cart-item pb-4">
-                        <div class="pb-3">
-                            <a href="#">
-                                <img src="assets/img/blog-featured-img-2.jpg" alt="Featured Image" class="img-fluid radius-4">
-                            </a>
-                        </div>
-                        <p class="fs-11 text-gray_2 lt-space-05 fw-medium mb-2 text-uppercase">
-                            Neueste Beiträge
-                        </p>
-                        <a href="#" class=" text-decoration-none text-hover">
-                            <h3 class="text-gray_1 fs-5 fw-medium mb-0">
-                                7 GrooveHQ-Alternativen zur Skalierung Ihres Teams
-                            </h3>
-                        </a>
-                    </div>
-
-                    <div class="blog-cart-item">
-                        <div class="pb-3">
-                            <a href="#">
-                                <img src="assets/img/blog-featured-img-3.jpg" alt="Featured Image" class="img-fluid radius-4">
-                            </a>
-                        </div>
-                        <p class="fs-11 text-gray_2 lt-space-05 fw-medium mb-2 text-uppercase">
-                            Hilfe und Unterstützung
-                        </p>
-                        <a href="#" class=" text-decoration-none text-hover">
-                            <h3 class="text-gray_1 fs-5 fw-medium mb-0">
-                                Die 10 besten Web-Helpdesk-Optionen für wachsende
-                            </h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /Blog cart -/End -->
-
-
-    <!-- /Blog list -/Start -->
-    <section class="blog-list section-padding bg-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
+            <!-- search-wrap -End -->
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-Neueste" role="tabpanel" tabindex="0">
                     <div class="blogCart-section-title">
                         <h4 class="fs-30 fw-bold text-gray_1 mb-0">
-                            Redakteurfavoriten
+                            Neueste Beiträge
                         </h4>
                     </div>
+                    <div class="border-1px mb-30"></div>
 
-                    <div class="container">
-                        <div class="row align-items-center blog-list-item">
-                            <div class="col-md-3 px-0">
+                    <!-- blog-slide-active -->
+                    <div class="blog-slide-active owl-carousel owl-theme mb-5 radius-12">
+                        <div class="single-blog">
+                            <div class="featured-image">
                                 <a href="#">
-                                    <img src="assets/img/blog-featured-img-4.jpg" alt="Featured Image" class="img-fluid radius-4">
+                                    <img src="assets/img/blog-featured-img.png" alt="Featured Image"
+                                        class="img-fluid w-100 radius-4">
                                 </a>
                             </div>
-                            <div class="col-md-9">
-                                <a href="#" class="text-decoration-none text-hover">
-                                    <h3 class="text-gray_1 fs-5 fw-medium mb-0">
-                                        So stellen Sie für den Kundenservice ein: Eine Schritt-für-Schritt-Anleitung
-                                    </h3>
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="row align-items-center blog-list-item">
-                            <div class="col-md-3 px-0">
-                                    <a href="#">
-                                        <img src="assets/img/blog-featured-img-5.jpg" alt="Featured Image" class="img-fluid radius-4">
+                            <div class="blog-info">
+                                <h6
+                                    class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block mb-3">
+                                    Dienstleistungen
+                                </h6>
+                                <h3 class="mb-4">
+                                    <a href="#" class="blog-title text-gray_1 fs-4 fw-medium text-decoration-none">
+                                        Worte sind die Brücke: Harmonie in Songwriting und Content-Strategie
+                                        finden
                                     </a>
-                            </div>
-                            <div class="col-md-9">
-                                <a href="#" class=" text-decoration-none text-hover">
-                                    <h3 class="text-gray_1 fs-5 fw-medium mb-0">
-                                        Ankündigung des Help Dartera
-                                    </h3>
-                                </a>
+                                </h3>
+                                <p class="fs-18 text-gray_2 fw-normal mb-4">
+                                    Welcome Bambee customers; we are glad to have you here. Learn more about
+                                    the
+                                    benefits we ....
+                                </p>
+                                <div class="author d-flex gap-3 align-items-center flex-wrap">
+                                    <div class="author-img">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="assets/img/author-img.png" alt="author img"
+                                                class="img-fluid w-auto">
+                                        </a>
+                                    </div>
+                                    <div class="author-info">
+                                        <a href="#" class="mb-0 text-gray_1 fs-6 text-decoration-none d-block">Written
+                                            By <b>Daniel Eskandar</b>
+                                        </a>
+                                        <a href="#"
+                                            class="mb-0 fs-14 fw-normal text-gray_3 text-decoration-none d-block">October
+                                            26, 2022</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-    
-                        <div class="row align-items-center blog-list-item">
-                            <div class="col-md-3 px-0">
+                        <div class="single-blog">
+                            <div class="featured-image">
                                 <a href="#">
-                                    <img src="assets/img/blog-featured-img-6.jpg" alt="Featured Image" class="img-fluid radius-4">
+                                    <img src="assets/img/blog-details-featured-img.jpg" alt="Featured Image"
+                                        class="img-fluid w-100 radius-4">
                                 </a>
                             </div>
-                            <div class="col-md-9">
-                                <a href="#" class=" text-decoration-none text-hover">
-                                    <h3 class="text-gray_1 fs-5 fw-medium mb-0">
-                                        7 GrooveHQ-Alternativen zur Skalierung Ihres Teams
-                                    </h3>
-                                </a>
+                            <div class="blog-info">
+                                <h6
+                                    class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block mb-3">
+                                    Dienstleistungen
+                                </h6>
+                                <h3 class="mb-4">
+                                    <a href="#" class="blog-title text-gray_1 fs-4 fw-medium text-decoration-none">
+                                        Worte sind die Brücke: Harmonie in Songwriting und Content-Strategie
+                                        finden
+                                    </a>
+                                </h3>
+                                <p class="fs-18 text-gray_2 fw-normal mb-4">
+                                    Welcome Bambee customers; we are glad to have you here. Learn more about
+                                    the
+                                    benefits we ....
+                                </p>
+                                <div class="author d-flex gap-3 align-items-center flex-wrap">
+                                    <div class="author-img">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="assets/img/author-img.png" alt="author img"
+                                                class="img-fluid w-auto">
+                                        </a>
+                                    </div>
+                                    <div class="author-info">
+                                        <a href="#" class="mb-0 text-gray_1 fs-6 text-decoration-none d-block">Written
+                                            By <b>Daniel Eskandar</b>
+                                        </a>
+                                        <a href="#"
+                                            class="mb-0 fs-14 fw-normal text-gray_3 text-decoration-none d-block">October
+                                            26, 2022</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-    
-                        <div class="row align-items-center blog-list-item">
-                            <div class="col-md-3 px-0">
+                        <div class="single-blog">
+                            <div class="featured-image">
                                 <a href="#">
-                                    <img src="assets/img/blog-featured-img-7.jpg" alt="Featured Image" class="img-fluid radius-4">
+                                    <img src="assets/img/blog-featured-img.png" alt="Featured Image"
+                                        class="img-fluid w-100 radius-4">
                                 </a>
                             </div>
-                            <div class="col-md-8">
-                                <a href="#" class=" text-decoration-none text-hover">
-                                    <h3 class="text-gray_1 fs-5 fw-medium mb-0">
-                                        So stellen Sie für den Kundenservice ein: Eine Schritt-für-Schritt-Anleitung
+                            <div class="blog-info">
+                                <h6
+                                    class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block mb-3">
+                                    Dienstleistungen
+                                </h6>
+                                <h3 class="mb-4">
+                                    <a href="#" class="blog-title text-gray_1 fs-4 fw-medium text-decoration-none">
+                                        Worte sind die Brücke: Harmonie in Songwriting und Content-Strategie
+                                        finden
+                                    </a>
+                                </h3>
+                                <p class="fs-18 text-gray_2 fw-normal mb-4">
+                                    Welcome Bambee customers; we are glad to have you here. Learn more about
+                                    the
+                                    benefits we ....
+                                </p>
+                                <div class="author d-flex gap-3 align-items-center flex-wrap">
+                                    <div class="author-img">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="assets/img/author-img.png" alt="author img"
+                                                class="img-fluid w-auto">
+                                        </a>
+                                    </div>
+                                    <div class="author-info">
+                                        <a href="#" class="mb-0 text-gray_1 fs-6 text-decoration-none d-block">Written
+                                            By <b>Daniel Eskandar</b>
+                                        </a>
+                                        <a href="#"
+                                            class="mb-0 fs-14 fw-normal text-gray_3 text-decoration-none d-block">October
+                                            26, 2022</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- blog-slide-active -END -->
+
+
+                    <!-- blogs-post  -->
+                    <div class="blogs-post section-padding pt-5 pt-xl-2 bg-white">
+                        <div class="blog-post-inner">
+                            <div class="blogCart-section-title">
+                                <h4 class="fs-30 fw-bold text-gray_1 mb-0">
+                                    Alle Artikel
+                                </h4>
+                            </div>
+                            <div class="border-1px mb-30"></div>
+                            <div class="row">
+                                <div class="col-xl-4 col-md-6 mb-4">
+                                    <div class="single-blog radius-12 bg-white">
+                                        <div class="blog-img overflow-hidden radius-12">
+                                            <a href="#">
+                                                <img src="assets/img/blog-featured-img-11.jpg" alt="Featured Image"
+                                                    class="img-fluid w-100">
+                                            </a>
+                                        </div>
+                                        <div class="blog-info p-4">
+                                            <h6
+                                                class="sub-title fs-14 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block mb-3">
+                                                Neueste Beiträge
+                                            </h6>
+                                            <h3 class="mb-4">
+                                                <a href="blog-details.html"
+                                                    class="blog-title text-gray_1 fs-5 fw-medium text-decoration-none lh-26">
+                                                    Die 10 besten Web-Helpdesk-Optionen für wachsende Unternehmen
+                                                </a>
+                                            </h3>
+
+                                            <div class="author d-flex gap-3 align-items-center flex-wrap">
+                                                <div class="author-img">
+                                                    <a href="#" class="text-decoration-none">
+                                                        <img src="assets/img/author-img.png" alt="author img"
+                                                            class="img-fluid w-auto">
+                                                    </a>
+                                                </div>
+                                                <div class="author-info">
+                                                    <a href="#"
+                                                        class="mb-0 text-gray_1 fs-6 text-decoration-none d-block">Written
+                                                        By <b>Daniel Eskandar</b>
+                                                    </a>
+                                                    <a href="#"
+                                                        class="mb-0 fs-14 fw-normal text-gray_3 text-decoration-none d-block">October
+                                                        26, 2022</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-6 mb-4">
+                                    <div class="single-blog radius-12 bg-white">
+                                        <div class="blog-img overflow-hidden radius-12">
+                                            <a href="#">
+                                                <img src="assets/img/blog-featured-img-2.jpg" alt="Featured Image"
+                                                    class="img-fluid w-100">
+                                            </a>
+                                        </div>
+                                        <div class="blog-info p-4">
+                                            <h6
+                                                class="sub-title fs-14 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block mb-3">
+                                                Neueste Beiträge
+                                            </h6>
+                                            <h3 class="mb-4">
+                                                <a href="blog-details.html"
+                                                    class="blog-title text-gray_1 fs-5 fw-medium text-decoration-none lh-26">
+                                                    Die 10 besten Web-Helpdesk-Optionen für wachsende Unternehmen
+                                                </a>
+                                            </h3>
+
+                                            <div class="author d-flex gap-3 align-items-center flex-wrap">
+                                                <div class="author-img">
+                                                    <a href="#" class="text-decoration-none">
+                                                        <img src="assets/img/author-img.png" alt="author img"
+                                                            class="img-fluid w-auto">
+                                                    </a>
+                                                </div>
+                                                <div class="author-info">
+                                                    <a href="#"
+                                                        class="mb-0 text-gray_1 fs-6 text-decoration-none d-block">Written
+                                                        By <b>Daniel Eskandar</b>
+                                                    </a>
+                                                    <a href="#"
+                                                        class="mb-0 fs-14 fw-normal text-gray_3 text-decoration-none d-block">October
+                                                        26, 2022</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-6 mb-4">
+                                    <div class="single-blog radius-12 bg-white">
+                                        <div class="blog-img overflow-hidden radius-12">
+                                            <a href="#">
+                                                <img src="assets/img/blog-featured-img-3.jpg" alt="Featured Image"
+                                                    class="img-fluid w-100">
+                                            </a>
+                                        </div>
+                                        <div class="blog-info p-4">
+                                            <h6
+                                                class="sub-title fs-14 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block mb-3">
+                                                Neueste Beiträge
+                                            </h6>
+                                            <h3 class="mb-4">
+                                                <a href="blog-details.html"
+                                                    class="blog-title text-gray_1 fs-5 fw-medium text-decoration-none lh-26">
+                                                    Die 10 besten Web-Helpdesk-Optionen für wachsende Unternehmen
+                                                </a>
+                                            </h3>
+
+                                            <div class="author d-flex gap-3 align-items-center flex-wrap">
+                                                <div class="author-img">
+                                                    <a href="#" class="text-decoration-none">
+                                                        <img src="assets/img/author-img.png" alt="author img"
+                                                            class="img-fluid w-auto">
+                                                    </a>
+                                                </div>
+                                                <div class="author-info">
+                                                    <a href="#"
+                                                        class="mb-0 text-gray_1 fs-6 text-decoration-none d-block">Written
+                                                        By <b>Daniel Eskandar</b>
+                                                    </a>
+                                                    <a href="#"
+                                                        class="mb-0 fs-14 fw-normal text-gray_3 text-decoration-none d-block">October
+                                                        26, 2022</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-6 mb-4">
+                                    <div class="single-blog radius-12 bg-white">
+                                        <div class="blog-img overflow-hidden radius-12">
+                                            <a href="#">
+                                                <img src="assets/img/blog-featured-img-4.jpg" alt="Featured Image"
+                                                    class="img-fluid w-100">
+                                            </a>
+                                        </div>
+                                        <div class="blog-info p-4">
+                                            <h6
+                                                class="sub-title fs-14 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block mb-3">
+                                                Neueste Beiträge
+                                            </h6>
+                                            <h3 class="mb-4">
+                                                <a href="blog-details.html"
+                                                    class="blog-title text-gray_1 fs-5 fw-medium text-decoration-none lh-26">
+                                                    Die 10 besten Web-Helpdesk-Optionen für wachsende Unternehmen
+                                                </a>
+                                            </h3>
+
+                                            <div class="author d-flex gap-3 align-items-center flex-wrap">
+                                                <div class="author-img">
+                                                    <a href="#" class="text-decoration-none">
+                                                        <img src="assets/img/author-img.png" alt="author img"
+                                                            class="img-fluid w-auto">
+                                                    </a>
+                                                </div>
+                                                <div class="author-info">
+                                                    <a href="#"
+                                                        class="mb-0 text-gray_1 fs-6 text-decoration-none d-block">Written
+                                                        By <b>Daniel Eskandar</b>
+                                                    </a>
+                                                    <a href="#"
+                                                        class="mb-0 fs-14 fw-normal text-gray_3 text-decoration-none d-block">October
+                                                        26, 2022</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-6 mb-4">
+                                    <div class="single-blog radius-12 bg-white">
+                                        <div class="blog-img overflow-hidden radius-12">
+                                            <a href="#">
+                                                <img src="assets/img/blog-featured-img-5.jpg" alt="Featured Image"
+                                                    class="img-fluid w-100">
+                                            </a>
+                                        </div>
+                                        <div class="blog-info p-4">
+                                            <h6
+                                                class="sub-title fs-14 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block mb-3">
+                                                Neueste Beiträge
+                                            </h6>
+                                            <h3 class="mb-4">
+                                                <a href="blog-details.html"
+                                                    class="blog-title text-gray_1 fs-5 fw-medium text-decoration-none lh-26">
+                                                    Die 10 besten Web-Helpdesk-Optionen für wachsende Unternehmen
+                                                </a>
+                                            </h3>
+
+                                            <div class="author d-flex gap-3 align-items-center flex-wrap">
+                                                <div class="author-img">
+                                                    <a href="#" class="text-decoration-none">
+                                                        <img src="assets/img/author-img.png" alt="author img"
+                                                            class="img-fluid w-auto">
+                                                    </a>
+                                                </div>
+                                                <div class="author-info">
+                                                    <a href="#"
+                                                        class="mb-0 text-gray_1 fs-6 text-decoration-none d-block">Written
+                                                        By <b>Daniel Eskandar</b>
+                                                    </a>
+                                                    <a href="#"
+                                                        class="mb-0 fs-14 fw-normal text-gray_3 text-decoration-none d-block">October
+                                                        26, 2022</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-6 mb-4">
+                                    <div class="single-blog radius-12 bg-white">
+                                        <div class="blog-img overflow-hidden radius-12">
+                                            <a href="#">
+                                                <img src="assets/img/blog-featured-img-6.jpg" alt="Featured Image"
+                                                    class="img-fluid w-100">
+                                            </a>
+                                        </div>
+                                        <div class="blog-info p-4">
+                                            <h6
+                                                class="sub-title fs-14 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block mb-3">
+                                                Neueste Beiträge
+                                            </h6>
+                                            <h3 class="mb-4">
+                                                <a href="blog-details.html"
+                                                    class="blog-title text-gray_1 fs-5 fw-medium text-decoration-none lh-26">
+                                                    Die 10 besten Web-Helpdesk-Optionen für wachsende Unternehmen
+                                                </a>
+                                            </h3>
+
+                                            <div class="author d-flex gap-3 align-items-center flex-wrap">
+                                                <div class="author-img">
+                                                    <a href="#" class="text-decoration-none">
+                                                        <img src="assets/img/author-img.png" alt="author img"
+                                                            class="img-fluid w-auto">
+                                                    </a>
+                                                </div>
+                                                <div class="author-info">
+                                                    <a href="#"
+                                                        class="mb-0 text-gray_1 fs-6 text-decoration-none d-block">Written
+                                                        By <b>Daniel Eskandar</b>
+                                                    </a>
+                                                    <a href="#"
+                                                        class="mb-0 fs-14 fw-normal text-gray_3 text-decoration-none d-block">October
+                                                        26, 2022</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="common-btn banner-btn d-flex justify-content-center mt-5">
+                                <button
+                                    class="btn fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4"
+                                    type="button">
+                                    <span>Mehr laden</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ blogs-post  -->
+
+                    <!-- case-studies -->
+                    <div class="case-studies">
+                        <div
+                            class="blogCart-section-title d-flex justify-content-between gap-4 align-items-center flex-wrap">
+                            <h4 class="fs-30 fw-bold text-gray_1 mb-0">
+                                Case Studies
+                            </h4>
+                            <a href="#"
+                                class="text-lapis_lazuli text-decoration-none fw-semi-bold d-flex align-items-center gap-2">
+                                Alle Case Studies anzeigen
+                                <span class="ni ni-arrow-long-right text-lapis_lazuli fs-4"></span>
+                            </a>
+                        </div>
+                        <div class="border-1px mb-30"></div>
+
+                        <!-- blog-slide-active -->
+                        <div class="blog-slide-active owl-carousel owl-theme mb-5 radius-12">
+                            <div class="single-blog">
+                                <div class="featured-image">
+                                    <a href="#">
+                                        <img src="assets/img/blog-featured-img.png" alt="Featured Image"
+                                            class="img-fluid w-100 radius-4">
+                                    </a>
+                                </div>
+                                <div class="blog-info">
+                                    <h6
+                                        class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block mb-3">
+                                        Dienstleistungen
+                                    </h6>
+                                    <h3 class="mb-4">
+                                        <a href="#" class="blog-title text-gray_1 fs-4 fw-medium text-decoration-none">
+                                            Worte sind die Brücke: Harmonie in Songwriting und Content-Strategie
+                                            finden
+                                        </a>
                                     </h3>
-                                </a>
+                                    <p class="fs-18 text-gray_2 fw-normal mb-4">
+                                        Welcome Bambee customers; we are glad to have you here. Learn more about
+                                        the
+                                        benefits we ....
+                                    </p>
+                                    <div class="author d-flex gap-3 align-items-center flex-wrap">
+                                        <div class="author-img">
+                                            <a href="#" class="text-decoration-none">
+                                                <img src="assets/img/author-img.png" alt="author img"
+                                                    class="img-fluid w-auto">
+                                            </a>
+                                        </div>
+                                        <div class="author-info">
+                                            <a href="#"
+                                                class="mb-0 text-gray_1 fs-6 text-decoration-none d-block">Written By
+                                                <b>Daniel Eskandar</b>
+                                            </a>
+                                            <a href="#"
+                                                class="mb-0 fs-14 fw-normal text-gray_3 text-decoration-none d-block">October
+                                                26, 2022</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-blog">
+                                <div class="featured-image">
+                                    <a href="#">
+                                        <img src="assets/img/blog-details-featured-img.jpg" alt="Featured Image"
+                                            class="img-fluid w-100 radius-4">
+                                    </a>
+                                </div>
+                                <div class="blog-info">
+                                    <h6
+                                        class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block mb-3">
+                                        Dienstleistungen
+                                    </h6>
+                                    <h3 class="mb-4">
+                                        <a href="#" class="blog-title text-gray_1 fs-4 fw-medium text-decoration-none">
+                                            Worte sind die Brücke: Harmonie in Songwriting und Content-Strategie
+                                            finden
+                                        </a>
+                                    </h3>
+                                    <p class="fs-18 text-gray_2 fw-normal mb-4">
+                                        Welcome Bambee customers; we are glad to have you here. Learn more about
+                                        the
+                                        benefits we ....
+                                    </p>
+                                    <div class="author d-flex gap-3 align-items-center flex-wrap">
+                                        <div class="author-img">
+                                            <a href="#" class="text-decoration-none">
+                                                <img src="assets/img/author-img.png" alt="author img"
+                                                    class="img-fluid w-auto">
+                                            </a>
+                                        </div>
+                                        <div class="author-info">
+                                            <a href="#"
+                                                class="mb-0 text-gray_1 fs-6 text-decoration-none d-block">Written By
+                                                <b>Daniel Eskandar</b>
+                                            </a>
+                                            <a href="#"
+                                                class="mb-0 fs-14 fw-normal text-gray_3 text-decoration-none d-block">October
+                                                26, 2022</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-blog">
+                                <div class="featured-image">
+                                    <a href="#">
+                                        <img src="assets/img/blog-featured-img.png" alt="Featured Image"
+                                            class="img-fluid w-100 radius-4">
+                                    </a>
+                                </div>
+                                <div class="blog-info">
+                                    <h6
+                                        class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block mb-3">
+                                        Dienstleistungen
+                                    </h6>
+                                    <h3 class="mb-4">
+                                        <a href="#" class="blog-title text-gray_1 fs-4 fw-medium text-decoration-none">
+                                            Worte sind die Brücke: Harmonie in Songwriting und Content-Strategie
+                                            finden
+                                        </a>
+                                    </h3>
+                                    <p class="fs-18 text-gray_2 fw-normal mb-4">
+                                        Welcome Bambee customers; we are glad to have you here. Learn more about
+                                        the
+                                        benefits we ....
+                                    </p>
+                                    <div class="author d-flex gap-3 align-items-center flex-wrap">
+                                        <div class="author-img">
+                                            <a href="#" class="text-decoration-none">
+                                                <img src="assets/img/author-img.png" alt="author img"
+                                                    class="img-fluid w-auto">
+                                            </a>
+                                        </div>
+                                        <div class="author-info">
+                                            <a href="#"
+                                                class="mb-0 text-gray_1 fs-6 text-decoration-none d-block">Written By
+                                                <b>Daniel Eskandar</b>
+                                            </a>
+                                            <a href="#"
+                                                class="mb-0 fs-14 fw-normal text-gray_3 text-decoration-none d-block">October
+                                                26, 2022</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <!-- blog-slide-active -END -->
                     </div>
+                    <!--/ case-studies -->
+
+
                 </div>
-
-                <div class="col-md-4">
-                    <div class="subscribe-form radius-16">
-                        <div class="pb-4">
-                            <img src="assets/img/subscribe-form-img.svg" alt="Subscribe form" class="img-fluid">
-                        </div>
-                        <h5 class="fs-4 text-gray_1 fw-bold mb-4">
-                            Abonnieren Sie, um unsere besten Inhalte in Ihrem Posteingang zu erhalten
-                        </h5>
-
-                        <form class="CTA-form">
-                            <div class="mb-3">
-                                <label for="myemail"
-                                    class="fs-14 text-gray_1 lt-space-05 fw-medium mb-2">E-Mail</label>
-                                <input type="email" class="form-control radius-4 text-gray_4"
-                                    placeholder="hey@dartera.ch" id="myemail">
-                            </div>
-
-
-                            <!-- Common Buttons -/ Start -->
-                            <div class="common-btn text-center">
-                                <a href="#"
-                                    class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-flex align-items-center justify-content-center">
-                                    <span>Abonnieren</span>
-                                </a>
-                            </div>
-                            <!-- Common Buttons -/ End -->
-
-
-                        </form>
-                    </div>
+                <div class="tab-pane fade" id="pills-webdesign" role="tabpanel" tabindex="0">
+                    <h2>Webdesign</h2>
+                </div>
+                <div class="tab-pane fade" id="pills-maintenance" role="tabpanel" tabindex="0">
+                    <h2>Maintenance</h2>
+                </div>
+                <div class="tab-pane fade" id="pills-SEO" role="tabpanel" tabindex="0">
+                    <h2>SEO</h2>
+                </div>
+                <div class="tab-pane fade" id="pills-SEA" role="tabpanel" tabindex="0">
+                    <h2>SEA</h2>
+                </div>
+                <div class="tab-pane fade" id="pills-content" role="tabpanel" tabindex="0">
+                    <h2>Content</h2>
+                </div>
+                <div class="tab-pane fade" id="pills-branding" role="tabpanel" tabindex="0">
+                    <h2>Branding</h2>
+                </div>
+                <div class="tab-pane fade" id="pills-animations" role="tabpanel" tabindex="0">
+                    <h2>Animations</h2>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- /Blog list -/End -->
-
-    <!-- /Heading -/Start -->
-   <div class="bg-white">
-    <div class="container">
-        <h2 class="fs-48 fw-bold text-gray_1 text-center mb-0">
-            Entdecken Sie das Neueste in...
-        </h2>
-    </div>
-   </div>
-    <!-- /Heading -/End -->
-
-
-    <!-- /Latest posts -/Start  -->
-    <section class="latest-posts section-padding bg-white">
-        <div class="container">
-            <div class="blogCart-section-title d-flex align-items-center justify-content-between">
-                <h4 class="fs-30 fw-bold text-gray_1 mb-0">
-                    Neueste Beiträge
-                </h4>
-                <a href="#" class="text-decoration-none fw-semi-bold text-lapis_lazuli text-hover d-flex align-items-center gap-2 transition-02">
-                    Alle Beiträge anzeigen
-                    <span>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164Z" fill="#015EA5"/>
-                        </svg>
-                    </span>
-                </a>
-            </div>
-            <div class="border-1px mb-30"></div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="blog-cart-item">
-                        <div class="pb-3">
-                            <a href="#">
-                                <img src="assets/img/blog-featured-img-8.jpg" alt="Featured Image" class="img-fluid radius-4">
-                            </a>
-                        </div>
-                        <p class="fs-11 text-gray_2 lt-space-05 fw-medium mb-2 text-uppercase">
-                            Neueste Beiträge
-                        </p>
-                        <a href="#" class=" text-decoration-none text-hover">
-                            <h3 class="text-gray_1 fs-5 fw-medium mb-0">
-                                Die 10 besten Web-Helpdesk-Optionen für wachsende 
-                            </h3>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="blog-cart-item">
-                        <div class="pb-3">
-                            <a href="#">
-                                <img src="assets/img/blog-featured-img-9.jpg" alt="Featured Image" class="img-fluid radius-4">
-                            </a>
-                        </div>
-                        <p class="fs-11 text-gray_2 lt-space-05 fw-medium mb-2 text-uppercase">
-                            Neueste Beiträge
-                        </p>
-                        <a href="#" class=" text-decoration-none text-hover">
-                            <h3 class="text-gray_1 fs-5 fw-medium mb-0">
-                                Einrichtungsanleitung: So erstellen Sie einen gemeinsamen
-                            </h3>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="blog-cart-item">
-                        <div class="pb-3">
-                            <a href="#">
-                                <img src="assets/img/blog-featured-img-10.jpg" alt="Featured Image" class="img-fluid radius-4">
-                            </a>
-                        </div>
-                        <p class="fs-11 text-gray_2 lt-space-05 fw-medium mb-2 text-uppercase">
-                            Neueste Beiträge
-                        </p>
-                        <a href="#" class=" text-decoration-none text-hover">
-                            <h3 class="text-gray_1 fs-5 fw-medium mb-0">
-                                10 praktische Möglichkeiten zur Steigerung der Teamproduktivität
-                            </h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /Latest posts -/End  -->
-
-
-    <!-- /Help and support post -/Start  -->
-    <section class="help-support section-padding pt-0 bg-white">
-        <div class="container">
-            <div class="blogCart-section-title d-flex align-items-center justify-content-between">
-                <h4 class="fs-30 fw-bold text-gray_1 mb-0">
-                    Hilfe und Unterstützung
-                </h4>
-                <a href="#" class="text-decoration-none fw-semi-bold text-lapis_lazuli text-hover d-flex align-items-center gap-2 transition-02">
-                    Alle Beiträge anzeigen
-                    <span>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164Z" fill="#015EA5"/>
-                        </svg>
-                    </span>
-                </a>
-            </div>
-            <div class="border-1px mb-30"></div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="blog-cart-item">
-                        <div class="pb-3">
-                            <a href="#">
-                                <img src="assets/img/blog-featured-img-11.jpg" alt="Featured Image" class="img-fluid radius-4">
-                            </a>
-                        </div>
-                        <p class="fs-11 text-gray_2 lt-space-05 fw-medium mb-2 text-uppercase">
-                            Hilfe und Unterstützung
-                        </p>
-                        <a href="#" class=" text-decoration-none text-hover">
-                            <h3 class="text-gray_1 fs-5 fw-medium mb-0">
-                                Kunden-Onboarding: Schritte, Beispiele und Best Practices
-                            </h3>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="blog-cart-item">
-                        <div class="pb-3">
-                            <a href="#">
-                                <img src="assets/img/blog-featured-img-12.jpg" alt="Featured Image" class="img-fluid radius-4">
-                            </a>
-                        </div>
-                        <p class="fs-11 text-gray_2 lt-space-05 fw-medium mb-2 text-uppercase">
-                            Hilfe und Unterstützung
-                        </p>
-                        <a href="#" class=" text-decoration-none text-hover">
-                            <h3 class="text-gray_1 fs-5 fw-medium mb-0">
-                                Ankündigung der Partnerschaft zwischen Help Dartera und Bambee
-                            </h3>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="blog-cart-item">
-                        <div class="pb-3">
-                            <a href="#">
-                                <img src="assets/img/blog-featured-img-13.jpg" alt="Featured Image" class="img-fluid radius-4">
-                            </a>
-                        </div>
-                        <p class="fs-11 text-gray_2 lt-space-05 fw-medium mb-2 text-uppercase">
-                            Hilfe und Unterstützung
-                        </p>
-                        <a href="#" class=" text-decoration-none text-hover">
-                            <h3 class="text-gray_1 fs-5 fw-medium mb-0">
-                                Mikroumfragen: Der schnelle Weg, um Kundenfeedback zu erfassen
-                            </h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /Help and support post -/End  -->
-
+    </main>
+    <!--/ blog-main -->
 
     <!-- Footer section -/Start -->
     <footer class="footer-area position-relative">
@@ -1054,18 +1066,24 @@
                             Newsletter
                         </h4>
                         <p class="mb-0 text-dark_6">
-                            Abonnieren Sie unseren Newsletter, um die neuesten <br class="d-none d-lg-block"> Nachrichten und Updates zu erhalten.
+                            Abonnieren Sie unseren Newsletter, um die neuesten <br class="d-none d-lg-block">
+                            Nachrichten und Updates zu erhalten.
                         </p>
 
                         <div class="subscribe-box mt-3 position-relative">
-                            <input class="subscribe-field radius-12 w-100 text-white " type="email" name="subscribe-mail" id="" placeholder="Geben Sie hier Ihre E-Mail ein">
+                            <input class="subscribe-field radius-12 w-100 text-white transition-02" type="email"
+                                name="subscribe-mail" id="" placeholder="Geben Sie hier Ihre E-Mail ein">
                             <div class="subscribe-btn">
-                                <a href="#" class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2">
+                                <a href="#"
+                                    class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2">
                                     <span>Anmelden</span>
                                     <span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.842238 3.8902C0.646913 3.94601 0.469545 4.05186 0.327685 4.19726C0.185826 4.34267 0.0843913 4.52259 0.0334185 4.71923C-0.0175542 4.91588 -0.0162984 5.12242 0.0370618 5.31843C0.090422 5.51444 0.194037 5.69311 0.337654 5.83678L2.32799 7.82478V11.6666H6.1739L8.17765 13.6674C8.2852 13.7759 8.41313 13.8621 8.55408 13.9209C8.69504 13.9798 8.84624 14.0102 8.99899 14.0104C9.09938 14.0102 9.19935 13.9973 9.29649 13.9719C9.49305 13.9224 9.6731 13.822 9.81851 13.6808C9.96393 13.5396 10.0696 13.3626 10.1248 13.1675L13.9947 0.012207L0.842238 3.8902ZM1.16657 5.01195L11.0996 2.08362L3.49582 9.67511V7.34178L1.16657 5.01195ZM9.00657 12.8426L6.65749 10.4999H4.32415L11.9267 2.90379L9.00657 12.8426Z" fill="#002448"/>
-                                            </svg>                                            
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.842238 3.8902C0.646913 3.94601 0.469545 4.05186 0.327685 4.19726C0.185826 4.34267 0.0843913 4.52259 0.0334185 4.71923C-0.0175542 4.91588 -0.0162984 5.12242 0.0370618 5.31843C0.090422 5.51444 0.194037 5.69311 0.337654 5.83678L2.32799 7.82478V11.6666H6.1739L8.17765 13.6674C8.2852 13.7759 8.41313 13.8621 8.55408 13.9209C8.69504 13.9798 8.84624 14.0102 8.99899 14.0104C9.09938 14.0102 9.19935 13.9973 9.29649 13.9719C9.49305 13.9224 9.6731 13.822 9.81851 13.6808C9.96393 13.5396 10.0696 13.3626 10.1248 13.1675L13.9947 0.012207L0.842238 3.8902ZM1.16657 5.01195L11.0996 2.08362L3.49582 9.67511V7.34178L1.16657 5.01195ZM9.00657 12.8426L6.65749 10.4999H4.32415L11.9267 2.90379L9.00657 12.8426Z"
+                                                fill="#002448" />
+                                        </svg>
                                     </span>
                                 </a>
                             </div>
@@ -1078,15 +1096,15 @@
             <!-- Fooetr Main -/Start -->
             <div class="footer-main">
                 <div class="row">
-                    
-                    <div class="col-sm-6 col-lg-3">
+
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
-                            
+
                             <a href="index.html" class="site-logo mb-30 d-inline-block">
                                 <img src="assets/img/footer-logo.svg" alt="">
                             </a>
-                            
-                            <ul class="widget-list list-unstyled m-0 d-flex flex-wrap gap-4">
+
+                            <ul class="widget-list list-unstyled m-0 d-flex flex-wrap gap-lg-4 gap-3 ">
                                 <li class="widget-list-item pb-0">
                                     <a href="#" class="text-decoration-none text-white fs-6 d-flex align-items-center">
                                         <span class="pe-2 me-1 ">
@@ -1121,7 +1139,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
                             <h6
                                 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
@@ -1157,7 +1175,7 @@
                                             </svg>
                                         </span>
                                         <span class="widget-list-item-hover position-relative">
-                                            hey@dartera.ch
+                                            mailto:hey@dartera.ch
                                         </span>
                                     </a>
                                 </li>
@@ -1165,7 +1183,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
                             <h6
                                 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
@@ -1181,7 +1199,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
                             <h6
                                 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
@@ -1196,21 +1214,21 @@
                                     </a>
                                 </li>
                                 <li class="widget-list-item">
-                                    <a href="#" class="text-decoration-none text-white fs-6 fw-medium">
+                                    <a href="impressum.html" class="text-decoration-none text-white fs-6 fw-medium">
                                         <span class="widget-list-item-hover footer-right-arrow position-relative">
                                             Impressum
                                         </span>
                                     </a>
                                 </li>
                                 <li class="widget-list-item">
-                                    <a href="#" class="text-decoration-none text-white fs-6 fw-medium">
+                                    <a href="privacy.html" class="text-decoration-none text-white fs-6 fw-medium">
                                         <span class="widget-list-item-hover footer-right-arrow position-relative">
-                                            Datenschutz
+                                            Privacy
                                         </span>
                                     </a>
                                 </li>
                                 <li class="widget-list-item pb-0">
-                                    <a href="#" class="text-decoration-none text-white fs-6 fw-medium">
+                                    <a href="agb.html" class="text-decoration-none text-white fs-6 fw-medium">
                                         <span class="widget-list-item-hover footer-right-arrow position-relative">
                                             AGB
                                         </span>
@@ -1227,17 +1245,18 @@
 
             <div class="footer-bottom">
                 <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <div class="col text-white fw-medium">
-                            © 2022 Dartera GmbH
+                    <div class="col-12 col-xl-5 text-xl-start text-center">
+                        <div class="text-white fw-medium">
+                            © 2024 Dartera GmbH
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="footer-button-wrapper d-flex align-items-center justify-content-end gap-4">
+                    <div class="col-12 col-xl-7 text-xl-end text-center">
+                        <div
+                            class="footer-button-wrapper d-flex flex-wrap align-items-center justify-content-xl-end justify-content-center mt-xl-0 mt-4 gap-4">
 
                             <div class="footer-common-btn">
-                                <a href="#"
-                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
+                                <a href="blog.html"
+                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between transition-02">
                                     <span class="fw-bold ">
                                         Blog
                                     </span>
@@ -1253,27 +1272,10 @@
                             </div>
 
                             <div class="footer-common-btn">
-                                <a href="#"
-                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
+                                <a href="ressourcen.html"
+                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between transition-02">
                                     <span class="fw-bold ">
                                         Ressourcen
-                                    </span>
-                                    <span>
-                                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.22446 0.214993L3.28476 0.214992L3.28476 2.17137L7.84088 2.17137L0.922998 9.08926L2.30658 10.4728L9.22446 3.55495L9.22446 8.11107L11.1808 8.11107L11.1808 2.17137C11.1808 1.65253 10.9746 1.15496 10.6077 0.78809C10.2409 0.421214 9.7433 0.215072 9.22446 0.214993V0.214993Z"
-                                                fill="#385470" />
-                                        </svg>
-                                    </span>
-                                </a>
-                            </div>
-
-                            <div class="footer-common-btn">
-                                <a href="#"
-                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
-                                    <span class="fw-bold ">
-                                        Preis-Rechner
                                     </span>
                                     <span>
                                         <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
@@ -1291,12 +1293,28 @@
                 </div>
             </div>
         </div>
-        <button type="button" class="border-0 rounded-pill" id="btn-back-to-top">
+        <button type="button" class="border-0 rounded-pill" id="back-to-top">
             <img src="assets/img/back-to-top-icon.svg" alt="Back To Top" class="img-fluid">
         </button>
     </footer>
     <!-- Footer section -/End -->
 
+    <!-- Modal -->
+    <div class="modal fade" id="calendly-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content p-0">
+                <div class="modal-header p-0 border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="calendly-inline-widget" data-url=" https://calendly.com/getwebinc/discovery-call"
+                        style="width:100%; height:660px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ modal -->
 
     <!-- Main Coding End -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -1304,7 +1322,10 @@
     <!-- Local Bootstrap bundle js -->
     <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
 
-    <!-- CDN Bootstrap bundle js -->
+    <!-- <div></div> -->
+
+
+    <script src=" https://assets.calendly.com/assets/external/widget.js " type="text/javascript" async></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- Script JS -->

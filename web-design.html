@@ -41,13 +41,17 @@
     <!-- Local server Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
 
+    <!-- font link -->
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap">
+
     <!-- CDN Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- Main CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/scss/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- jQuery (necessary for jQuery plugins) -->
     <script src="assets/js/jquery-3.6.1.min.js"></script>
 </head>
@@ -55,8 +59,9 @@
 <body>
     <!-- Main Coding Start Here -->
 
+
     <!-- header -/Start -->
-    <header id="header">
+    <header id="header" class="position-absolute top-0 start-0 end-0 w-100">
         <!-- navbar -/Start -->
         <div class="header">
             <div class="container-fluid p-0">
@@ -66,14 +71,41 @@
                             <img src="assets/img/logo.svg" alt="logo" class="img-fluid">
                         </a>
 
-                        <div class="d-xxl-none d-flex align-items-center gap-4 contactInfo px-4">
-                            <a href="+41315520083" class=" text-decoration-none phone text-white fs-5">
+                        <div class="d-xxl-none d-flex align-items-center ms-auto gap-sm-3 gap-2 contactInfo px-0 me-2">
+                            <div class="nav-item dropdown language pe-2">
+                                <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-0 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <!-- Deutsch -->
+                                    <img src="assets/img/language.png" class="img-fluid language-icon" alt="">
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end fade-down all-language ">
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            English
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            Hindi
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
+                                            Bangla
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="tel:+41315520083" class=" text-decoration-none phone text-white fs-5">
                                 <span><img src="assets/img/call.svg" class="img-fluid" alt="call"></span>
-                                +41 31 552 00 83
                             </a>
-                            <button type="button" class="nav-btn px-4 border-0 fs-6 fw-semi-bold text-gray_1">
-                                Termin vereinbaren
-                            </button>
+                            <a href="#" class=" text-decoration-none phone text-white fs-5">
+                                <span><img src="assets/img/appointment.png" class="img-fluid appointment"
+                                        alt="appointment"></span>
+                            </a>
+                            <!-- <button type="button" class="nav-btn px-4 border-0 fs-6 fw-semi-bold text-gray_1">
+                                    Termin vereinbaren
+                                </button> -->
                         </div>
 
 
@@ -88,11 +120,11 @@
                         <div class="collapse navbar-collapse" id="nav-toggle">
                             <ul class="menu navbar-nav mx-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active py-4 px-0 mx-3 active fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link active py-xxl-4 py-2 px-0 mx-3 active fs-14 fw-bold text-uppercase"
                                         aria-current="page" href="index.html">Startseite</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
                                         href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Leistungen
                                     </a>
@@ -103,12 +135,12 @@
                                         </div>
                                         <div class="row gx-2">
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="web-design.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo1.png"
                                                             class="img-fluid dropdown-logo d-flex align-items-center justify-content-center"
-                                                            alt="sidebarlogo">
+                                                            alt="sidebar logo">
                                                         <div>
                                                             <h5 class="fs-6 fw-bold text-indigo_dye">Webdesign</h5>
                                                             <p class="pb-0 text-gray_3 fs-12 mb-0 short-text">
@@ -117,8 +149,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -127,7 +160,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="maintenance.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo6.png"
@@ -141,8 +174,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -151,7 +185,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="seo.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo2.png"
@@ -165,8 +199,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -175,7 +210,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="sea.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo7.png"
@@ -189,8 +224,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -199,7 +235,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="content.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo3.png"
@@ -213,8 +249,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -223,7 +260,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="branding.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo8.png"
@@ -237,8 +274,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -247,7 +285,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-xl-6">
-                                                <a href="#"
+                                                <a href="animations.html"
                                                     class="nav-dropdown-item d-flex align-items-start gap-2 justify-content-between mb-3">
                                                     <div class="sidebar-left d-flex align-items-center gap-3">
                                                         <img src="assets/img/dropdown-logo4.png"
@@ -261,8 +299,9 @@
 
                                                     </div>
                                                     <div class="">
-                                                        <svg class="me-2 mt-2" width="11" height="10" viewBox="0 0 11 10"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="me-2 mt-2" width="11" height="10"
+                                                            viewBox="0 0 11 10" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
                                                                 fill="white" />
@@ -274,41 +313,44 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
                                         href="referenzen.html">Referenzen</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
-                                        href="#">Über
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                        href="uber.html">Über
                                         uns</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 fs-14 fw-bold text-uppercase"
-                                        href="#">Kontakt</a>
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 fs-14 fw-bold text-uppercase"
+                                        href="contact.html">Kontakt</a>
                                 </li>
                             </ul>
 
 
                             <div class="nav-right d-flex align-items-center">
-                                <div class="nav-item dropdown language pe-2">
-                                    <a class="nav-link text-light_white py-4 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
+                                <div class="nav-item dropdown language pe-2 d-xxl-block d-none">
+                                    <a class="nav-link text-light_white py-xxl-4 py-2 px-0 mx-3 dropdown-toggle fs-14 fw-bold text-uppercase"
                                         href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        German
+                                        Deutsch
                                     </a>
-                                    <ul class="dropdown-menu dropdown-menu-end fade-down">
+                                    <ul class="dropdown-menu dropdown-menu-end fade-down all-language ">
                                         <li>
-                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
-                                                Action
+                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
+                                                href="#">
+                                                English
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
-                                                Another action
+                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
+                                                href="#">
+                                                Hindi
                                             </a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase" href="#">
-                                                Something else here
+                                            <a class="dropdown-item text-light_white fs-14 fw-bold text-uppercase"
+                                                href="#">
+                                                Bangla
                                             </a>
                                         </li>
                                     </ul>
@@ -322,32 +364,7 @@
                                         Termin vereinbaren
                                     </button>
                                 </div>
-                                <div class="sidebar">
-                                    <!-- <img src="assets/img/humbarger.svg" class="img-fluid" alt="sidebar"> -->
 
-                                    <!-- <svg width="24" height="18" viewBox="0 0 24 18" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="12" width="12" height="2" fill="#00BAEB" />
-                                                <rect x="12" y="16" width="12" height="2" fill="#00BAEB" />
-                                                <rect x="0" y="8" width="24" height="2" fill="#00BAEB" />
-                                            </svg> -->
-
-                                            <svg class="sidebarToggle d-block" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="12" y="3" width="24" height="2" fill="#00BAEB" />
-                                                <rect x="12" y="19" width="24" height="2" fill="#00BAEB" />
-                                                <rect x="0" y="11" width="24" height="2" fill="#00BAEB" />
-                                            </svg>
-                                            
-                                            
-                                            
-                                            <svg class="sidebarClose d-none" width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="0.804688" y="17.7783" width="24" height="2" transform="rotate(-45 0.804688 17.7783)" fill="#00BAEB" />
-                                                <rect x="2.21875" y="0.807617" width="24" height="2" transform="rotate(45 2.21875 0.807617)" fill="#00BAEB" />
-                                            </svg>
-
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -359,298 +376,72 @@
     <!--/ header -/End -->
 
 
-    <!-- Dropdown -/start -->
-    <div class="nav-dropdown py-5">
-        <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="footer-common-btn mb-4">
-                    <a href="#"
-                        class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
-                        <span class="fw-bold ">
-                            Blog
-                        </span>
-                        <span>
-                            <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9.22446 0.214993L3.28476 0.214992L3.28476 2.17137L7.84088 2.17137L0.922998 9.08926L2.30658 10.4728L9.22446 3.55495L9.22446 8.11107L11.1808 8.11107L11.1808 2.17137C11.1808 1.65253 10.9746 1.15496 10.6077 0.78809C10.2409 0.421214 9.7433 0.215072 9.22446 0.214993V0.214993Z"
-                                    fill="#385470" />
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-                <div>
-                    <a class="sidebar-drop-item transition-02 fs-5 mb-3 d-block fw-bold text-decoration-none">
-                        <svg class="me-2" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.414 4.58597L8.121 0.292969L6.707 1.70697L10 4.99997H0V6.99997H10L6.707 10.293L8.121 11.707L12.414 7.41397C12.7889 7.03891 12.9996 6.5303 12.9996 5.99997C12.9996 5.46964 12.7889 4.96102 12.414 4.58597Z"
-                                fill="#5C83AA" />
-                        </svg>
-                        <span>Startseite</span>
-
-                    </a>
-                </div>
-                <div>
-                    <a class="sidebar-drop-item transition-02 fs-5 mb-3 d-block fw-bold text-decoration-none">
-                        <svg class="me-2" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.414 4.58597L8.121 0.292969L6.707 1.70697L10 4.99997H0V6.99997H10L6.707 10.293L8.121 11.707L12.414 7.41397C12.7889 7.03891 12.9996 6.5303 12.9996 5.99997C12.9996 5.46964 12.7889 4.96102 12.414 4.58597Z"
-                                fill="#5C83AA" />
-                        </svg>
-                        <span>Referenzen</span>
-
-                    </a>
-                </div>
-                <div>
-                    <a class="sidebar-drop-item transition-02 fs-5 mb-3 d-block fw-bold text-decoration-none">
-                        <svg class="me-2" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.414 4.58597L8.121 0.292969L6.707 1.70697L10 4.99997H0V6.99997H10L6.707 10.293L8.121 11.707L12.414 7.41397C12.7889 7.03891 12.9996 6.5303 12.9996 5.99997C12.9996 5.46964 12.7889 4.96102 12.414 4.58597Z"
-                                fill="#5C83AA" />
-                        </svg>
-                        <span>Über uns</span>
-
-                    </a>
-                </div>
-                <div>
-                    <a class="sidebar-drop-item transition-02 fs-5 mb-3 d-block fw-bold text-decoration-none">
-                        <svg class="me-2" width="13" height="12" viewBox="0 0 13 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.414 4.58597L8.121 0.292969L6.707 1.70697L10 4.99997H0V6.99997H10L6.707 10.293L8.121 11.707L12.414 7.41397C12.7889 7.03891 12.9996 6.5303 12.9996 5.99997C12.9996 5.46964 12.7889 4.96102 12.414 4.58597Z"
-                                fill="#5C83AA" />
-                        </svg>
-                        <span>Kontakt</span>
-                    </a>
-                </div>
-
-            </div>
-
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="footer-common-btn mb-4">
-                    <a href="#"
-                        class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
-                        <span class="fw-bold ">
-                            Ressourcen
-                        </span>
-                        <span>
-                            <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9.22446 0.214993L3.28476 0.214992L3.28476 2.17137L7.84088 2.17137L0.922998 9.08926L2.30658 10.4728L9.22446 3.55495L9.22446 8.11107L11.1808 8.11107L11.1808 2.17137C11.1808 1.65253 10.9746 1.15496 10.6077 0.78809C10.2409 0.421214 9.7433 0.215072 9.22446 0.214993V0.214993Z"
-                                    fill="#385470" />
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-                <div>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown1.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Webdesign</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown2.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Webdesign</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown3.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Content</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between mb-3">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown4.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Animations</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="footer-common-btn mb-4">
-                    <a href="#"
-                        class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
-                        <span class="fw-bold ">
-                            Preis-Rechner
-                        </span>
-                        <span>
-                            <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9.22446 0.214993L3.28476 0.214992L3.28476 2.17137L7.84088 2.17137L0.922998 9.08926L2.30658 10.4728L9.22446 3.55495L9.22446 8.11107L11.1808 8.11107L11.1808 2.17137C11.1808 1.65253 10.9746 1.15496 10.6077 0.78809C10.2409 0.421214 9.7433 0.215072 9.22446 0.214993V0.214993Z"
-                                    fill="#385470" />
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-                <div>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown5.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Maintenance</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                    <a href=""
-                        class="text-decoration-none  nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown6.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">SEA</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-                    <a href=""
-                        class="text-decoration-none nav-dropdown-item d-flex radius-8 px-3 mb-2 align-items-center gap-2 justify-content-between">
-                        <div class="sidebar-left d-flex align-items-center gap-3">
-                            <img src="assets/img/dropdown7.svg" class="img-fluid" alt="sidebarlogo">
-                            <p class="pb-0 text-info-light fs-18 fw-bold mb-0">Branding</p>
-                        </div>
-                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.5091 3.82164L6.93156 0.244141L5.75323 1.42247L8.4974 4.16664H0.164062V5.83331H8.4974L5.75323 8.57747L6.93156 9.75581L10.5091 6.17831C10.8215 5.86576 10.997 5.44191 10.997 4.99997C10.997 4.55803 10.8215 4.13419 10.5091 3.82164V3.82164Z"
-                                fill="#5C83AA" />
-                        </svg>
-
-                    </a>
-
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>
-                    <h3 class=" text-info-light fs-5 fw-bold">Weil gutes Marketing schon immer glücklich gemacht hat.
-                    </h3>
-                    <p class="text-info-light fs-14 pt-2">Buchen Sie jetzt einen kostenlosen Beratungstermin. Wir freuen
-                        uns auf das Gespräch.</p>
-                    <div class="common-btn pt-3 mt-3">
-                        <a href="#"
-                            class=" lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2 py-2 px-3 text-gray_1 fs-14 fw-semi-bold">
-                            <span>Buchen Sie Ihren Anruf</span>
-                            <span>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
-                                        fill="#002448" />
-                                </svg>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--/ Dropdown -/End -->
-
-
-
     <!-- Banner -->
     <section class="subpage-page-banner2 seo-banner d-flex align-items-center position-relative">
         <div class="banner-shape position-absolute start-0 bottom-0">
-            <img src="assets/img/banner-left-shape.png" class="img-fluid" alt="Banner Left Shape">
+            <img src="assets/img/banner-left-shape.png" class="img-fluid" alt="banner left shape">
         </div>
         <div class="contact-toggle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
             aria-controls="offcanvasWithBothOptions">
             <img src="assets/img/banner-click.png" class="img-fluid" alt="banner">
         </div>
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-6">
-                    <div class="banner-left">
-                        <div
-                            class="subpage-badge px-3 text-cyan fs-18 fw-semi-bold d-inline-flex align-items-center justify-content-center">
-                            <p class="mb-0">Webdesign Bern, Ihre Webagentur seit 2015</p>
+            <div class="row align-items-center gx-0 banner-wrapper">
+                <div class="row align-items-center gx-0">
+                    <div class="col-lg-6">
+                        <div class="banner-left text-lg-start text-center">
+                            <div
+                                class="subpage-badge px-3 text-cyan fs-18 fw-semi-bold d-inline-flex align-items-center justify-content-center">
+                                <span><img src="assets/img/seo-title-hint.png" alt="" class="img-fluid pe-2"></span>
+                                <p class="mb-0">Webdesign Bern, Ihre Webagentur seit 2015</p>
+                            </div>
+                            <h1 class="fs-48 fw-bold text-white mt-4">
+                                Ihre Website verkauft 24/7 für Sie. Wir holen das Beste raus.
+                            </h1>
+                            <p class="fs-18 text-light_white mt-3">
+                                Wir entwickeln schöne, schnelle, sichere, zuverlässige, benutzerorientierte und
+                                SEO-optimierte WordPress-Websites, welche das Engagement der Benutzer, die Konversionen
+                                und <span class="text-flourescent_blue">den Verkauf fördern.</span>
+                            </p>
+
+                            <!-- Common Buttons -/ Start -->
+                            <div
+                                class="common-btn d-flex flex-wrap align-items-center justify-content-xl-start justify-content-center mb-5 mb-xl-0 gap-3">
+                                <a href="#"
+                                    class="hvr-sweep-to-right fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2">
+                                    <span>Referenzen</span>
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
+                                                fill="#002448" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="#"
+                                    class="minimal-btn cyan-border fw-semi-bold text-flourescent_blue lh-20 text-decoration-none radius-4 d-inline-flex align-items-center gap-2">
+                                    <span>Buchen Sie einen Rückruf</span>
+                                    <span class="">
+                                        <svg width="11" height="10" viewBox="0 0 11 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
+                                                fill="#00F5EB" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                            <!-- Common Buttons -/ End -->
                         </div>
-                        <h1 class="fs-48 fw-bold text-white mt-4">
-                            Ihre Website verkauft 24/7 für Sie. Wir holen das Beste raus.
-                        </h1>
-                        <p class="fs-18 text-light_white mt-3 mb-30">
-                            Wir entwickeln <span class="text-flourescent_blue">schöne,</span> schnelle, sichere,
-                            zuverlässige, benutzerorientierte und SEO-optimierte WordPress-Websites, welche das
-                            Engagement der Benutzer, die Konversionen und den Verkauf fördern.
-                        </p>
-                        <!-- Common Buttons -/ Start -->
-                        <div class="common-btn d-flex align-items-center justify-content-start gap-3">
-                            <a href="#"
-                                class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2">
-                                <span>Buchen Sie einen Rückruf</span>
-                                <span>
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
-                                            fill="#002448" />
-                                    </svg>
-                                </span>
-                            </a>
-                            <a href="#"
-                                class="minimal-btn cyan-border fw-semi-bold text-flourescent_blue lh-20 text-decoration-none radius-4 d-inline-flex align-items-center gap-2">
-                                <span>Referenzen</span>
-                                <span class="">
-                                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M10.5117 3.82164L6.93425 0.244141L5.75591 1.42247L8.50008 4.16664H0.166748V5.83331H8.50008L5.75591 8.57747L6.93425 9.75581L10.5117 6.17831C10.8242 5.86576 10.9997 5.44191 10.9997 4.99997C10.9997 4.55803 10.8242 4.13419 10.5117 3.82164V3.82164Z"
-                                            fill="#00F5EB" />
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-                        <!-- Common Buttons -/ End -->
                     </div>
-                </div>
-                <div class="col-xl-6">
-                    <div class="mx-5">
-                        <img src="assets/img/web-design-hero-img.png" class="img-fluid" alt="banner">
+                    <div class="col-lg-6">
+                        <div class="mx-0 text-lg-end text-center">
+                            <img src="assets/img/web-design-hero-img.png" class="img-fluid" alt="banner">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <!--/ Banner -->
 
@@ -666,7 +457,7 @@
             <div class="section-heading text-center pb-5">
                 <h6
                     class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block">
-                    Wir bieten
+                    Angebot
                 </h6>
                 <h2 class="fs-48 fw-bold text-gray_1 mt-2 mb-0">
                     Eine Website die Ihre #1 <br class="d-none d-lg-block"> Einnahmequelle wird
@@ -689,7 +480,8 @@
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div class="features-card h-100">
-                        <div class="mb-3 we-offer-icon radius-16 d-flex align-items-center justify-content-center">
+                        <div
+                            class="mb-3 we-offer-icon bg-gray_7 radius-16 d-flex align-items-center justify-content-center">
                             <img class="img-fluid w-auto" src="assets/img/chat-icon.svg" alt="sea-feat-img">
                         </div>
                         <div class="text-area mt-1">
@@ -798,7 +590,7 @@
             <div class="section-heading text-center pb-5">
                 <h6
                     class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block">
-                    Arbeitsprozess
+                    Vorgehen
                 </h6>
                 <h2 class="fs-48 fw-bold text-gray_1 mt-2 mb-3">
                     Unser einfacher, 6-stufiger <br class="d-none d-lg-block"> Prozess
@@ -809,11 +601,11 @@
             </div>
 
             <!-- Portfolio step item - 1  -->
-            <div class="step-item stape-left-bg mt-2">
+            <div class="portfolio-step-item mt-2">
                 <div class="row align-items-center gx-2">
-                    <div class="col-xl-7">
-                        <div class="step-img d-flex justify-content-end px-5">
-                            <img src="assets/img/web-design-step-1.png" alt="Task One" class="img-fluid pe-5">
+                    <div class="col-xl-6">
+                        <div class="step-img d-flex justify-content-end">
+                            <img src="assets/img/web-design-step-1.png" alt="Task One" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-xl-5">
@@ -854,9 +646,9 @@
 
 
             <!-- Portfolio step item - 2  -->
-            <div class="step-item stape-right-bg">
+            <div class="portfolio-step-item">
                 <div class="row align-items-center gx-2 ">
-                    <div class="col-xl-5">
+                    <div class="col-xl-5 offset-xl-1">
                         <div class="step-content-area mb-30">
                             <div class="step-number">
                                 <span class="fs-120 fw-bold">
@@ -897,8 +689,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-7">
-                        <div class="step-img px-5">
+                    <div class="col-xl-6">
+                        <div class="step-img">
                             <img src="assets/img/web-design-step-2.png" alt="Task One" class="img-fluid">
                         </div>
                     </div>
@@ -907,11 +699,11 @@
             <!-- Portfolio step item - 2  -->
 
             <!-- Portfolio step item - 3  -->
-            <div class="step-item stape-left-bg step-item-3">
+            <div class="portfolio-step-item">
                 <div class="row align-items-center gx-2">
-                    <div class="col-xl-7">
-                        <div class="step-img d-flex justify-content-end px-5">
-                            <img src="assets/img/web-design-step-3.png" alt="Task One" class="img-fluid pe-5">
+                    <div class="col-xl-6">
+                        <div class="step-img d-flex justify-content-end">
+                            <img src="assets/img/web-design-step-3.png" alt="Task One" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-xl-5">
@@ -949,9 +741,9 @@
             <!-- Portfolio step item - 3  -->
 
             <!-- Portfolio step item - 4  -->
-            <div class="step-item stape-right-bg">
+            <div class="portfolio-step-item">
                 <div class="row align-items-center gx-2">
-                    <div class="col-xl-5">
+                    <div class="col-xl-5 offset-xl-1">
                         <div class="step-content-area">
                             <div class="step-number">
                                 <span class="fs-120 fw-bold">
@@ -962,7 +754,7 @@
                                 Testing
                             </h3>
                             <ul class=" p-0 m-0 list-unstyled">
-                                <li class=" d-flex align-items-center gap-1 mb-2">
+                                <li class=" d-flex gap-1 mb-2">
                                     <div class="flex-shrink-0">
                                         <img src="assets/img/done-icon.svg" alt="Icon" class="img-fluid">
                                     </div>
@@ -970,7 +762,7 @@
                                         <strong>Qualität und Testing!</strong> Funktioniert alles, wie es sollte?
                                     </p>
                                 </li>
-                                <li class=" d-flex align-items-center gap-1 mb-2">
+                                <li class=" d-flex gap-1 mb-2">
                                     <div class="flex-shrink-0">
                                         <img src="assets/img/done-icon.svg" alt="Icon" class="img-fluid">
                                     </div>
@@ -983,9 +775,9 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-7">
-                        <div class="step-img px-5">
-                            <img src="assets/img/portfolio-step-4.png" alt="Task One" class="img-fluid">
+                    <div class="col-xl-6">
+                        <div class="step-img">
+                            <img src="assets/img/web-design-step-4.png" alt="Task One" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -993,11 +785,11 @@
             <!-- Portfolio step item - 4  -->
 
             <!-- Portfolio step item - 5  -->
-            <div class="step-item stape-left-bg step-item-5">
+            <div class="portfolio-step-item">
                 <div class="row align-items-center gx-2">
-                    <div class="col-xl-7">
-                        <div class="step-img d-flex justify-content-end px-5">
-                            <img src="assets/img/web-design-step-5.png" alt="Task One" class="img-fluid pe-5">
+                    <div class="col-xl-6 offset-xl-1">
+                        <div class="step-img d-flex justify-content-end">
+                            <img src="assets/img/web-design-step-5.png" alt="Task One" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-xl-5">
@@ -1036,7 +828,7 @@
             <!-- Portfolio step item - 5  -->
 
             <!-- Portfolio step item - 6  -->
-            <div class="step-item stape-right-bg">
+            <div class="portfolio-step-item">
                 <div class="row align-items-center gx-2">
                     <div class="col-xl-5">
                         <div class="step-content-area">
@@ -1049,7 +841,7 @@
                                 Completion
                             </h3>
                             <ul class=" p-0 m-0 list-unstyled">
-                                <li class=" d-flex align-items-center gap-1 mb-2">
+                                <li class=" d-flex gap-1 mb-2">
                                     <div class="flex-shrink-0">
                                         <img src="assets/img/done-icon.svg" alt="Icon" class="img-fluid">
                                     </div>
@@ -1057,7 +849,7 @@
                                         Hurra! Die Website ist <strong>live und funktioniert einwandfrei.</strong>
                                     </p>
                                 </li>
-                                <li class=" d-flex align-items-center gap-1 mb-2">
+                                <li class=" d-flex gap-1 mb-2">
                                     <div class="flex-shrink-0">
                                         <img src="assets/img/done-icon.svg" alt="Icon" class="img-fluid">
                                     </div>
@@ -1066,7 +858,7 @@
                                         <strong>vollumfänglich zufrieden.</strong>
                                     </p>
                                 </li>
-                                <li class=" d-flex align-items-center gap-1 mb-2">
+                                <li class=" d-flex gap-1 mb-2">
                                     <div class="flex-shrink-0">
                                         <img src="assets/img/done-icon.svg" alt="Icon" class="img-fluid">
                                     </div>
@@ -1079,9 +871,9 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-7">
-                        <div class="step-img px-5">
-                            <img src="assets/img/portfolio-step-4.png" alt="Task One" class="img-fluid">
+                    <div class="col-xl-6">
+                        <div class="step-img">
+                            <img src="assets/img/web-design-step-6.png" alt="Task One" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -1115,159 +907,105 @@
     <section class="common-slider section-padding bg-gray_7">
         <div class="container">
             <div class="section-heading text-center mb-5 pb-2">
-                <h6 class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block">
+                <h6
+                    class="sub-title fs-18 fw-semi-bold text-lapis_lazuli bg-lapis_lazuli_light radius-4 d-inline-block">
                     Portfolio
                 </h6>
                 <h2 class="fs-48 fw-bold text-gray_1 mt-2 mb-3">
                     einige unserer Projekte
                 </h2>
             </div>
-            <div id="common-slider" class="owl-carousel">
+            <div id="common-slider" class="owl-carousel owl-theme">
                 <!--slider 1 -->
                 <div class="item">
-                    <div class="slider-card">
+                    <div class="slider-card position-relative">
                         <div class="img-box">
-                            <img class="img-fluid" src="./assets/img/common-slider-1.png" alt="img" />
-                            <!-- Common Buttons -/ Start -->
-                            <!-- <div class="slider-btn text-center"> -->
-                            <a href="#"
-                                class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2 slider-btn text-center">
-                                <span>Lass dich inspirieren</span>
-                                <span>
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
-                                            fill="#002448" />
-                                    </svg>
-                                </span>
-                            </a>
-                            <!-- </div> -->
-                            <!-- Common Buttons -/ End -->
-                        </div>
-                        <div class="slider-details">
-                            <p>seo</p>
-                            <h5>Dartera Corporate  Website Design</h5>
+                            <img class="img-fluid slide-img" src="assets/img/slider-img2.png" alt="img" />
+                            <div
+                                class="btn-wrap position-absolute bottom-0 start-0 end-0 d-flex justify-content-center px-2">
+                                <a href="#"
+                                    class="slider-btn fs-5 fw-bold text-gray_1 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex justify-content-between align-items-center gap-2">
+                                    <span>Webdesign </span>
+                                    <span class="ni ni-forward-ios fs-14 fw-bold"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!--END OF slider 1 -->
+
                 <!--slidr 2 -->
                 <div class="item">
-                    <div class="slider-card">
+                    <div class="slider-card position-relative">
                         <div class="img-box">
-                            <img class="img-fluid" src="./assets/img/common-slider-2.png" alt="img" />
-                            <!-- Common Buttons -/ Start -->
-                            <!-- <div class="slider-btn text-center"> -->
-                            <a href="#"
-                                class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2 slider-btn text-center">
-                                <span>Lass dich inspirieren</span>
-                                <span>
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
-                                            fill="#002448" />
-                                    </svg>
-                                </span>
-                            </a>
-                            <!-- </div> -->
-                            <!-- Common Buttons -/ End -->
-                        </div>
-                        <div class="slider-details">
-                            <p>Webdesign </p>
-                            <h5>Dartera Corporate Website Design</h5>
+                            <img class="img-fluid slide-img" src="assets/img/slider-img3.png" alt="img" />
+                            <div
+                                class="btn-wrap position-absolute bottom-0 start-0 end-0 d-flex justify-content-center px-2">
+                                <a href="#"
+                                    class="slider-btn fs-5 fw-bold text-gray_1 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex justify-content-between align-items-center gap-2">
+                                    <span>Webdesign </span>
+                                    <span class="ni ni-forward-ios fs-14 fw-bold"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!--END OF slider 2 -->
+
                 <!--slider 3 -->
                 <div class="item">
-                    <div class="slider-card">
+                    <div class="slider-card position-relative">
                         <div class="img-box">
-                            <img class="img-fluid" src="./assets/img/common-slider-1.png" alt="img" />
-                            <!-- Common Buttons -/ Start -->
-                            <!-- <div class="slider-btn text-center"> -->
-                            <a href="#"
-                                class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2 slider-btn text-center">
-                                <span>Lass dich inspirieren</span>
-                                <span>
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
-                                            fill="#002448" />
-                                    </svg>
-                                </span>
-                            </a>
-                            <!-- </div> -->
-                            <!-- Common Buttons -/ End -->
-                        </div>
-                        <div class="slider-details">
-                            <p>Maintenance</p>
-                            <h5>Dartera Corporate Website Design</h5>
+                            <img class="img-fluid slide-img" src="assets/img/slider-img3.png" alt="img" />
+                            <div
+                                class="btn-wrap position-absolute bottom-0 start-0 end-0 d-flex justify-content-center px-2">
+                                <a href="#"
+                                    class="slider-btn fs-5 fw-bold text-gray_1 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex justify-content-between align-items-center gap-2">
+                                    <span>Webdesign </span>
+                                    <span class="ni ni-forward-ios fs-14 fw-bold"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!--END OF slider 3 -->
+
                 <!--slider 4 -->
                 <div class="item">
-                    <div class="slider-card">
+                    <div class="slider-card position-relative">
                         <div class="img-box">
-                            <img class="img-fluid" src="./assets/img/common-slider-2.png" alt="img" />
-                            <!-- Common Buttons -/ Start -->
-                            <!-- <div class="slider-btn text-center"> -->
-                            <a href="#"
-                                class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2 slider-btn text-center">
-                                <span>Lass dich inspirieren</span>
-                                <span>
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
-                                            fill="#002448" />
-                                    </svg>
-                                </span>
-                            </a>
-                            <!-- </div> -->
-                            <!-- Common Buttons -/ End -->
-                        </div>
-                        <div class="slider-details">
-                            <p>seo</p>
-                            <h5>Dartera Corporate Website Design</h5>
+                            <img class="img-fluid slide-img" src="assets/img/slider-img2.png" alt="img" />
+                            <div
+                                class="btn-wrap position-absolute bottom-0 start-0 end-0 d-flex justify-content-center px-2">
+                                <a href="#"
+                                    class="slider-btn fs-5 fw-bold text-gray_1 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex justify-content-between align-items-center gap-2">
+                                    <span>Webdesign </span>
+                                    <span class="ni ni-forward-ios fs-14 fw-bold"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!--End slider 4 -->
+
                 <!--slider 5 -->
                 <div class="item">
-                    <div class="slider-card">
+                    <div class="slider-card position-relative">
                         <div class="img-box">
-                            <img class="img-fluid" src="./assets/img/common-slider-1.png" alt="img" />
-                            <!-- Common Buttons -/ Start -->
-                            <!-- <div class="slider-btn text-center"> -->
-                            <a href="#"
-                                class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2 slider-btn text-center">
-                                <span>Lass dich inspirieren</span>
-                                <span>
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
-                                            fill="#002448" />
-                                    </svg>
-                                </span>
-                            </a>
-                            <!-- </div> -->
-                            <!-- Common Buttons -/ End -->
-                        </div>
-                        <div class="slider-details">
-                            <p>Maintenance</p>
-                            <h5>Dartera Corporate Website Design</h5>
+                            <img class="img-fluid slide-img" src="assets/img/slider-img1.png" alt="img" />
+                            <div
+                                class="btn-wrap position-absolute bottom-0 start-0 end-0 d-flex justify-content-center px-2">
+                                <a href="#"
+                                    class="slider-btn fs-5 fw-bold text-gray_1 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex justify-content-between align-items-center gap-2">
+                                    <span>Webdesign </span>
+                                    <span class="ni ni-forward-ios fs-14 fw-bold"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!--END OF slider 5 -->
+
             </div>
         </div>
     </section>
@@ -1524,7 +1262,7 @@
 
 
     <!-- FAQ's -Start -->
-    <section id="faq" class="section-padding bg-white">
+    <div id="faq" class="section-padding bg-white">
         <div class="container">
             <div class="faq-wrapper">
                 <div class="section-heading text-center">
@@ -1537,53 +1275,35 @@
                     </h2>
                 </div>
             </div>
-            <div class="row align-items-center pt-5">
-                <div class="col-xl-6">
-                    <img src="assets/img/faqImage.png" class="img-fluid" alt="">
-                </div>
-                <div class="col-xl-6">
-                    <div class="faq">
+            <div class="faq">
+                <div class="row pt-5">
+                    <div class="col-xl-6">
                         <ul class="accordion-list list-unstyled">
-                            <li class="accordion-list-item radius-16 bg-white  mb-3 open">
+                            <li class="accordion-list-item radius-16 bg-white  mb-2 open">
                                 <h5
-                                    class="accordion-title fw-bold fs-20 text-indigo_dye px-4 d-flex justify-content-between align-items-center">
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
                                     Warum brauche ich eine neue Website?
-                                    <span class="ni ni-sort-up-fill"></span>
+                                    <span class="ni ni-minus"></span>
                                 </h5>
                                 <div class="accordion-desc">
                                     <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
-                                        Google Tag Manager allows you to combine hundreds of
-                                        pixels into a single pixel. Please make sure to add
-                                        the correct "Container ID" otherwise events will not
-                                        be tracked!
-                                        <span class="text-clr-pink">e.g. GTM-ABC123DE</span>
+                                        Amazon Web Services (AWS) ist eine sichere Plattform für Cloud-Dienste,
+                                        <a href="#" class="text-indigo_dye fw-bold text-decoration-none">
+                                            die
+                                            Rechenleistung, Datenbankspeicher, Inhaltsbereitstellung und andere
+                                            Funktionen
+                                            bietet, um Unternehmen beim Skalieren und Wachsen zu helfen.
+                                        </a> Web- und
+                                        Anwendungsserver werden in der Cloud betrieben, um dynamische Websites zu
+                                        hosten.
                                     </p>
                                 </div>
                             </li>
-
-                            <li class="accordion-list-item radius-16 bg-white  mb-3">
+                            <li class="accordion-list-item radius-16 bg-white  mb-2">
                                 <h5
-                                    class="accordion-title fw-bold fs-20 text-indigo_dye px-4 d-flex justify-content-between align-items-center">
-                                    Was sind die Merkmale unserer modernen Webdesigns?
-                                    <span class="ni ni-sort-down-fill"></span>
-                                </h5>
-                                <div class="accordion-desc" style="display: none">
-                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
-                                        Es dauert etwa 8-10 Wochen, eine Website von Anfang bis Ende zu erstellen,
-                                        vorausgesetzt, wir haben alle Informationen von Ihnen. Unser vollständiger
-                                        Webdesign-Prozess ist <a href="#"
-                                            class="text-hover text-decoration-none text-cyan fw-bold">hier</a>
-                                        aufgeschlüsselt. Im Allgemeinen dauert die Website nur dann länger, wenn wir
-                                        noch auf Texte und Bilder von Ihnen warten.
-                                    </p>
-                                </div>
-                            </li>
-
-                            <li class="accordion-list-item radius-16 bg-white  mb-3">
-                                <h5
-                                    class="accordion-title fw-bold fs-20 text-indigo_dye px-4 d-flex justify-content-between align-items-center">
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
                                     Wie kann unser Webdesign zu mehr Konversion führen?
-                                    <span class="ni ni-sort-down-fill"></span>
+                                    <span class="ni ni-plus-sm"></span>
                                 </h5>
                                 <div class="accordion-desc" style="display: none">
                                     <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
@@ -1601,56 +1321,287 @@
                                     </p>
                                 </div>
                             </li>
-                            <li class="accordion-list-item radius-16 bg-white  mb-3">
+                            <li class="accordion-list-item radius-16 bg-white mb-2">
                                 <h5
-                                    class="accordion-title fw-bold fs-20 text-indigo_dye px-4 d-flex justify-content-between align-items-center">
-                                    Was bedeutet eine gute User Experience?
-                                    <span class="ni ni-sort-down-fill"></span>
-                                </h5>
-                                <div class="accordion-desc" style="display: none">
-                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
-                                        TypeScript stands in an unusual relationship to
-                                        JavaScript. TypeScript offers all of JavaScript’s
-                                        features, and an additional layer on top of these:
-                                        TypeScript’s type system.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="accordion-list-item radius-16 bg-white  mb-3">
-                                <h5
-                                    class="accordion-title fw-bold fs-20 text-indigo_dye px-4 d-flex justify-content-between align-items-center">
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
                                     Warum ist eine gute User Experience auf der Website wichtig?
-                                    <span class="ni ni-sort-down-fill"></span>
+                                    <span class="ni ni-plus-sm"></span>
                                 </h5>
-                                <div class="accordion-desc" style="display: none">
+                                <div class="accordion-desc" style="display: none;">
                                     <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
-                                        TypeScript stands in an unusual relationship to
-                                        JavaScript. TypeScript offers all of JavaScript’s
-                                        features, and an additional layer on top of these:
-                                        TypeScript’s type system.
+                                        Google Tag Manager allows you to combine hundreds of
+                                        pixels into a single pixel. Please make sure to add
+                                        the correct "Container ID" otherwise events will not
+                                        be tracked!
+                                        <span class="text-clr-pink">e.g. GTM-ABC123DE</span>
                                     </p>
                                 </div>
                             </li>
-                            <li class="accordion-list-item radius-16 bg-white  mb-3">
+                            <li class="accordion-list-item radius-16 bg-white  mb-2">
                                 <h5
-                                    class="accordion-title fw-bold fs-20 text-indigo_dye px-4 d-flex justify-content-between align-items-center">
-                                    Woran erkenne ich eine gut funktionierende Website?
-                                    <span class="ni ni-sort-down-fill"></span>
-                                </h5>
-                                <div class="accordion-desc" style="display: none">
-                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
-                                        TypeScript stands in an unusual relationship to
-                                        JavaScript. TypeScript offers all of JavaScript’s
-                                        features, and an additional layer on top of these:
-                                        TypeScript’s type system.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="accordion-list-item radius-16 bg-white  mb-3">
-                                <h5
-                                    class="accordion-title fw-bold fs-20 text-indigo_dye px-4 d-flex justify-content-between align-items-center">
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
                                     Warum sollte meine Website auch mobil gut funktionieren?
-                                    <span class="ni ni-sort-down-fill"></span>
+                                    <span class="ni ni-plus-sm"></span>
+                                </h5>
+                                <div class="accordion-desc" style="display: none">
+                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                        TypeScript stands in an unusual relationship to
+                                        JavaScript. TypeScript offers all of JavaScript’s
+                                        features, and an additional layer on top of these:
+                                        TypeScript’s type system. For example, JavaScript
+                                        provides language primitives like string, number, and
+                                        object, but it doesn’t check that you’ve consistently
+                                        assigned these. TypeScript does. This means that your
+                                        existing working JavaScript code is also TypeScript
+                                        code. The main benefit of TypeScript is that it can
+                                        highlight unexpected behavior in your code, lowering
+                                        the chance of bugs.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-list-item radius-16 bg-white  mb-2">
+                                <h5
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                    Wie wähle ich eine Webdesignagentur aus?
+                                    <span class="ni ni-plus-sm"></span>
+                                </h5>
+                                <div class="accordion-desc" style="display: none">
+                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                        TypeScript stands in an unusual relationship to
+                                        JavaScript. TypeScript offers all of JavaScript’s
+                                        features, and an additional layer on top of these:
+                                        TypeScript’s type system. For example, JavaScript
+                                        provides language primitives like string, number, and
+                                        object, but it doesn’t check that you’ve consistently
+                                        assigned these. TypeScript does. This means that your
+                                        existing working JavaScript code is also TypeScript
+                                        code. The main benefit of TypeScript is that it can
+                                        highlight unexpected behavior in your code, lowering
+                                        the chance of bugs.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-list-item radius-16 bg-white  mb-2">
+                                <h5
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                    Wie viel kostet die Erstellung einer Website?
+                                    <span class="ni ni-plus-sm"></span>
+                                </h5>
+                                <div class="accordion-desc" style="display: none">
+                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                        TypeScript stands in an unusual relationship to
+                                        JavaScript. TypeScript offers all of JavaScript’s
+                                        features, and an additional layer on top of these:
+                                        TypeScript’s type system.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-list-item radius-16 bg-white  mb-2">
+                                <h5
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                    Wie kommunizieren wir während der Entwicklung Ihrer Website?
+                                    <span class="ni ni-plus-sm"></span>
+                                </h5>
+                                <div class="accordion-desc" style="display: none">
+                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                        TypeScript stands in an unusual relationship to
+                                        JavaScript. TypeScript offers all of JavaScript’s
+                                        features, and an additional layer on top of these:
+                                        TypeScript’s type system.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-list-item radius-16 bg-white  mb-2">
+                                <h5
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                    Wie wird sichergestellt, dass meine neue Website schnell lädt?
+                                    <span class="ni ni-plus-sm"></span>
+                                </h5>
+                                <div class="accordion-desc" style="display: none">
+                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                        TypeScript stands in an unusual relationship to
+                                        JavaScript. TypeScript offers all of JavaScript’s
+                                        features, and an additional layer on top of these:
+                                        TypeScript’s type system.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-list-item radius-16 bg-white  mb-2">
+                                <h5
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                    Übernimmt unsere Webagentur die Pflege und Wartung Ihrer Website?
+                                    <span class="ni ni-plus-sm"></span>
+                                </h5>
+                                <div class="accordion-desc" style="display: none">
+                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                        Mit den Dartera Website Care Packages erhalten Sie einen Partner, der sowohl
+                                        Ihren Server als auch Ihre Website zuverlässig wartet und optimiert, um die
+                                        Erreichbarkeit und Sicherheit zu gewährleisten.
+                                    </p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-xl-6">
+                        <ul class="accordion-list list-unstyled">
+                            <li class="accordion-list-item radius-16 bg-white mb-2">
+                                <h5
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                    Was sind die Merkmale unserer modernen Webdesigns?
+                                    <span class="ni ni-plus-sm"></span>
+                                </h5>
+                                <div class="accordion-desc" style="display: none;">
+                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                        Google Tag Manager allows you to combine hundreds of
+                                        pixels into a single pixel. Please make sure to add
+                                        the correct "Container ID" otherwise events will not
+                                        be tracked!
+                                        <span class="text-clr-pink">e.g. GTM-ABC123DE</span>
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="accordion-list-item radius-16 bg-white  mb-2">
+                                <h5
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                    Was bedeutet eine gute User Experience?
+                                    <span class="ni ni-plus-sm"></span>
+                                </h5>
+                                <div class="accordion-desc" style="display: none">
+                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                        TypeScript stands in an unusual relationship to
+                                        JavaScript. TypeScript offers all of JavaScript’s
+                                        features, and an additional layer on top of these:
+                                        TypeScript’s type system. For example, JavaScript
+                                        provides language primitives like string, number, and
+                                        object, but it doesn’t check that you’ve consistently
+                                        assigned these. TypeScript does. This means that your
+                                        existing working JavaScript code is also TypeScript
+                                        code. The main benefit of TypeScript is that it can
+                                        highlight unexpected behavior in your code, lowering
+                                        the chance of bugs.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="accordion-list-item radius-16 bg-white  mb-2">
+                                <h5
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                    Woran erkenne ich eine gut funktionierende Website?
+                                    <span class="ni ni-plus-sm"></span>
+                                </h5>
+                                <div class="accordion-desc" style="display: none">
+                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                        TypeScript stands in an unusual relationship to
+                                        JavaScript. TypeScript offers all of JavaScript’s
+                                        features, and an additional layer on top of these:
+                                        TypeScript’s type system. For example, JavaScript
+                                        provides language primitives like string, number, and
+                                        object, but it doesn’t check that you’ve consistently
+                                        assigned these. TypeScript does. This means that your
+                                        existing working JavaScript code is also TypeScript
+                                        code. The main benefit of TypeScript is that it can
+                                        highlight unexpected behavior in your code, lowering
+                                        the chance of bugs.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-list-item radius-16 bg-white  mb-2">
+                                <h5
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                    Warum sollte ich meine Website von einer Webdesign-Agentur erstellen lassen?
+                                    <span class="ni ni-plus-sm"></span>
+                                </h5>
+                                <div class="accordion-desc" style="display: none">
+                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                        TypeScript stands in an unusual relationship to
+                                        JavaScript. TypeScript offers all of JavaScript’s
+                                        features, and an additional layer on top of these:
+                                        TypeScript’s type system.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-list-item radius-16 bg-white  mb-2">
+                                <h5
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                    Wie lange dauert es, eine Website zu erstellen?
+                                    <span class="ni ni-plus-sm"></span>
+                                </h5>
+                                <div class="accordion-desc" style="display: none">
+                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                        TypeScript stands in an unusual relationship to
+                                        JavaScript. TypeScript offers all of JavaScript’s
+                                        features, and an additional layer on top of these:
+                                        TypeScript’s type system.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-list-item radius-16 bg-white  mb-2">
+                                <h5
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                    Was sollte ich einer Webdesign-Agentur bereitstellen?
+                                    <span class="ni ni-plus-sm"></span>
+                                </h5>
+                                <div class="accordion-desc" style="display: none">
+                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                        TypeScript stands in an unusual relationship to
+                                        JavaScript. TypeScript offers all of JavaScript’s
+                                        features, and an additional layer on top of these:
+                                        TypeScript’s type system.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-list-item radius-16 bg-white  mb-2">
+                                <h5
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                    Was ist, wenn mir die Website nicht gefällt?
+                                    <span class="ni ni-plus-sm"></span>
+                                </h5>
+                                <div class="accordion-desc" style="display: none">
+                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                        TypeScript stands in an unusual relationship to
+                                        JavaScript. TypeScript offers all of JavaScript’s
+                                        features, and an additional layer on top of these:
+                                        TypeScript’s type system.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-list-item radius-16 bg-white  mb-2">
+                                <h5
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                    Wie wird die Sicherheit meiner Website gewährleistet?
+                                    <span class="ni ni-plus-sm"></span>
+                                </h5>
+                                <div class="accordion-desc" style="display: none">
+                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                        TypeScript stands in an unusual relationship to
+                                        JavaScript. TypeScript offers all of JavaScript’s
+                                        features, and an additional layer on top of these:
+                                        TypeScript’s type system.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-list-item radius-16 bg-white  mb-2">
+                                <h5
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                    Kann ich meine Website auch selbst verwalten?
+                                    <span class="ni ni-plus-sm"></span>
+                                </h5>
+                                <div class="accordion-desc" style="display: none">
+                                    <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
+                                        TypeScript stands in an unusual relationship to
+                                        JavaScript. TypeScript offers all of JavaScript’s
+                                        features, and an additional layer on top of these:
+                                        TypeScript’s type system.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-list-item radius-16 bg-white  mb-2">
+                                <h5
+                                    class="accordion-title fw-bold fs-20 text-gray_3 px-4 d-flex justify-content-between align-items-center">
+                                    Bieten Sie neben Webdesign auch weitere Dienstleistungen an?
+                                    <span class="ni ni-plus-sm"></span>
                                 </h5>
                                 <div class="accordion-desc" style="display: none">
                                     <p class="px-4 m-0 fw-normal fs-16 text-gray_3">
@@ -1664,27 +1615,10 @@
 
                         </ul>
                     </div>
-                    
-                    <!-- Common Buttons -/ Start -->
-                    <div class="common-btn mt-3 pt-4">
-                        <a href="#"
-                            class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2">
-                            <span>Mehr laden</span>
-                            <span>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
-                                        fill="#002448" />
-                                </svg>
-                            </span>
-                        </a>
-                    </div>
-                    <!-- Common Buttons -/ End -->
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- FAQ's -/End -->
 
 
@@ -1702,18 +1636,24 @@
                             Newsletter
                         </h4>
                         <p class="mb-0 text-dark_6">
-                            Abonnieren Sie unseren Newsletter, um die neuesten <br class="d-none d-lg-block"> Nachrichten und Updates zu erhalten.
+                            Abonnieren Sie unseren Newsletter, um die neuesten <br class="d-none d-lg-block">
+                            Nachrichten und Updates zu erhalten.
                         </p>
 
                         <div class="subscribe-box mt-3 position-relative">
-                            <input class="subscribe-field radius-12 w-100 text-white " type="email" name="subscribe-mail" id="" placeholder="Geben Sie hier Ihre E-Mail ein">
+                            <input class="subscribe-field radius-12 w-100 text-white transition-02" type="email"
+                                name="subscribe-mail" id="" placeholder="Geben Sie hier Ihre E-Mail ein">
                             <div class="subscribe-btn">
-                                <a href="#" class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2">
+                                <a href="#"
+                                    class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-inline-flex align-items-center gap-2">
                                     <span>Anmelden</span>
                                     <span>
-                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.842238 3.8902C0.646913 3.94601 0.469545 4.05186 0.327685 4.19726C0.185826 4.34267 0.0843913 4.52259 0.0334185 4.71923C-0.0175542 4.91588 -0.0162984 5.12242 0.0370618 5.31843C0.090422 5.51444 0.194037 5.69311 0.337654 5.83678L2.32799 7.82478V11.6666H6.1739L8.17765 13.6674C8.2852 13.7759 8.41313 13.8621 8.55408 13.9209C8.69504 13.9798 8.84624 14.0102 8.99899 14.0104C9.09938 14.0102 9.19935 13.9973 9.29649 13.9719C9.49305 13.9224 9.6731 13.822 9.81851 13.6808C9.96393 13.5396 10.0696 13.3626 10.1248 13.1675L13.9947 0.012207L0.842238 3.8902ZM1.16657 5.01195L11.0996 2.08362L3.49582 9.67511V7.34178L1.16657 5.01195ZM9.00657 12.8426L6.65749 10.4999H4.32415L11.9267 2.90379L9.00657 12.8426Z" fill="#002448"/>
-                                            </svg>                                            
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.842238 3.8902C0.646913 3.94601 0.469545 4.05186 0.327685 4.19726C0.185826 4.34267 0.0843913 4.52259 0.0334185 4.71923C-0.0175542 4.91588 -0.0162984 5.12242 0.0370618 5.31843C0.090422 5.51444 0.194037 5.69311 0.337654 5.83678L2.32799 7.82478V11.6666H6.1739L8.17765 13.6674C8.2852 13.7759 8.41313 13.8621 8.55408 13.9209C8.69504 13.9798 8.84624 14.0102 8.99899 14.0104C9.09938 14.0102 9.19935 13.9973 9.29649 13.9719C9.49305 13.9224 9.6731 13.822 9.81851 13.6808C9.96393 13.5396 10.0696 13.3626 10.1248 13.1675L13.9947 0.012207L0.842238 3.8902ZM1.16657 5.01195L11.0996 2.08362L3.49582 9.67511V7.34178L1.16657 5.01195ZM9.00657 12.8426L6.65749 10.4999H4.32415L11.9267 2.90379L9.00657 12.8426Z"
+                                                fill="#002448" />
+                                        </svg>
                                     </span>
                                 </a>
                             </div>
@@ -1726,15 +1666,15 @@
             <!-- Fooetr Main -/Start -->
             <div class="footer-main">
                 <div class="row">
-                    
-                    <div class="col-sm-6 col-lg-3">
+
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
-                            
+
                             <a href="index.html" class="site-logo mb-30 d-inline-block">
                                 <img src="assets/img/footer-logo.svg" alt="">
                             </a>
-                            
-                            <ul class="widget-list list-unstyled m-0 d-flex flex-wrap gap-4">
+
+                            <ul class="widget-list list-unstyled m-0 d-flex flex-wrap gap-lg-4 gap-3 ">
                                 <li class="widget-list-item pb-0">
                                     <a href="#" class="text-decoration-none text-white fs-6 d-flex align-items-center">
                                         <span class="pe-2 me-1 ">
@@ -1769,7 +1709,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
                             <h6
                                 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
@@ -1805,7 +1745,7 @@
                                             </svg>
                                         </span>
                                         <span class="widget-list-item-hover position-relative">
-                                            hey@dartera.ch
+                                            mailto:hey@dartera.ch
                                         </span>
                                     </a>
                                 </li>
@@ -1813,7 +1753,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
                             <h6
                                 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
@@ -1829,7 +1769,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3 mb-lg-0 mb-5">
                         <div class="footer-widget">
                             <h6
                                 class="footer-widget-heading fw-semi-bold text-cyan text-uppercase lt-space-05 pb-4 mb-1">
@@ -1844,21 +1784,21 @@
                                     </a>
                                 </li>
                                 <li class="widget-list-item">
-                                    <a href="#" class="text-decoration-none text-white fs-6 fw-medium">
+                                    <a href="impressum.html" class="text-decoration-none text-white fs-6 fw-medium">
                                         <span class="widget-list-item-hover footer-right-arrow position-relative">
                                             Impressum
                                         </span>
                                     </a>
                                 </li>
                                 <li class="widget-list-item">
-                                    <a href="#" class="text-decoration-none text-white fs-6 fw-medium">
+                                    <a href="privacy.html" class="text-decoration-none text-white fs-6 fw-medium">
                                         <span class="widget-list-item-hover footer-right-arrow position-relative">
-                                            Datenschutz
+                                            Privacy
                                         </span>
                                     </a>
                                 </li>
                                 <li class="widget-list-item pb-0">
-                                    <a href="#" class="text-decoration-none text-white fs-6 fw-medium">
+                                    <a href="agb.html" class="text-decoration-none text-white fs-6 fw-medium">
                                         <span class="widget-list-item-hover footer-right-arrow position-relative">
                                             AGB
                                         </span>
@@ -1875,17 +1815,18 @@
 
             <div class="footer-bottom">
                 <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <div class="col text-white fw-medium">
-                            © 2022 Dartera GmbH
+                    <div class="col-12 col-xl-5 text-xl-start text-center">
+                        <div class="text-white fw-medium">
+                            © 2024 Dartera GmbH
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="footer-button-wrapper d-flex align-items-center justify-content-end gap-4">
+                    <div class="col-12 col-xl-7 text-xl-end text-center">
+                        <div
+                            class="footer-button-wrapper d-flex flex-wrap align-items-center justify-content-xl-end justify-content-center mt-xl-0 mt-4 gap-4">
 
                             <div class="footer-common-btn">
-                                <a href="#"
-                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
+                                <a href="blog.html"
+                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between transition-02">
                                     <span class="fw-bold ">
                                         Blog
                                     </span>
@@ -1901,27 +1842,10 @@
                             </div>
 
                             <div class="footer-common-btn">
-                                <a href="#"
-                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
+                                <a href="ressourcen.html"
+                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between transition-02">
                                     <span class="fw-bold ">
                                         Ressourcen
-                                    </span>
-                                    <span>
-                                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.22446 0.214993L3.28476 0.214992L3.28476 2.17137L7.84088 2.17137L0.922998 9.08926L2.30658 10.4728L9.22446 3.55495L9.22446 8.11107L11.1808 8.11107L11.1808 2.17137C11.1808 1.65253 10.9746 1.15496 10.6077 0.78809C10.2409 0.421214 9.7433 0.215072 9.22446 0.214993V0.214993Z"
-                                                fill="#385470" />
-                                        </svg>
-                                    </span>
-                                </a>
-                            </div>
-
-                            <div class="footer-common-btn">
-                                <a href="#"
-                                    class="radius-8 text-white text-decoration-none w-100 d-flex align-items-center justify-content-between">
-                                    <span class="fw-bold ">
-                                        Preis-Rechner
                                     </span>
                                     <span>
                                         <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
@@ -1939,7 +1863,7 @@
                 </div>
             </div>
         </div>
-        <button type="button" class="border-0 rounded-pill" id="btn-back-to-top">
+        <button type="button" class="border-0 rounded-pill" id="back-to-top">
             <img src="assets/img/back-to-top-icon.svg" alt="Back To Top" class="img-fluid">
         </button>
     </footer>
@@ -2141,7 +2065,8 @@
                         class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-flex align-items-center gap-2 justify-content-center">
                         <span>Senden</span>
                         <span>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
                                     fill="#002448" />
@@ -2269,7 +2194,8 @@
                         class="fill-btn fw-semi-bold text-gray_1 lh-20 text-decoration-none bg-flourescent_blue radius-4 d-flex align-items-center gap-2 justify-content-center">
                         <span>Senden</span>
                         <span>
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M14.5117 8.82164L10.9342 5.24414L9.75591 6.42247L12.5001 9.16664H4.16675V10.8333H12.5001L9.75591 13.5775L10.9342 14.7558L14.5117 11.1783C14.8242 10.8658 14.9997 10.4419 14.9997 9.99997C14.9997 9.55803 14.8242 9.13419 14.5117 8.82164Z"
                                     fill="#002448" />
